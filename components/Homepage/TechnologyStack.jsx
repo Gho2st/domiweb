@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
 import { RiNextjsLine } from "react-icons/ri";
-import { FaWordpressSimple } from "react-icons/fa";
+import { RiWordpressFill } from "react-icons/ri";
 import { FaFigma } from "react-icons/fa";
 import { AiOutlinePython } from "react-icons/ai";
-import { FaReact } from "react-icons/fa";
-import { LuBrainCircuit } from "react-icons/lu";
+import { RiReactjsFill } from "react-icons/ri";
+import { RiBrainLine } from "react-icons/ri";
 
 export default function TechnologyStack() {
   const [activeTech, setActiveTech] = useState("Next.js");
@@ -48,40 +48,40 @@ export default function TechnologyStack() {
       <h2 className="text-2xl text-center font-semibold">
         Wykorzystywane Technologie
       </h2>
-      <div className="flex px-6 my-14 justify-between text-6xl">
+      <div className="flex items-center text-6xl px-6 my-14 justify-between ">
         <RiNextjsLine
           onClick={() => setActiveTech("Next.js")}
-          className={`p-2 rounded-xl cursor-pointer hover:bg-green-200 transtion duration-300 ${
+          className={`p-2  rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
             activeTech === "Next.js" ? "bg-green-500 text-white" : ""
           }`}
         />
-        <FaWordpressSimple
+        <RiWordpressFill
           onClick={() => setActiveTech("Wordpress")}
-          className={`p-2 rounded-xl cursor-pointer hover:bg-green-200 transtion duration-300 ${
+          className={`p-2  rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
             activeTech === "Wordpress" ? "bg-green-500 text-white" : ""
           }`}
         />
         <FaFigma
           onClick={() => setActiveTech("Figma")}
-          className={`p-2 rounded-xl cursor-pointer hover:bg-green-200 transtion duration-300 ${
+          className={`items-center p-3 text-6xl rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
             activeTech === "Figma" ? "bg-green-500 text-white" : ""
           }`}
         />
         <AiOutlinePython
           onClick={() => setActiveTech("Python")}
-          className={`p-2 rounded-xl cursor-pointer hover:bg-green-200 transtion duration-300 ${
+          className={`p-2 rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
             activeTech === "Python" ? "bg-green-500 text-white" : ""
           }`}
         />
-        <FaReact
+        <RiReactjsFill
           onClick={() => setActiveTech("React")}
-          className={`p-2 rounded-xl cursor-pointer hover:bg-green-200 transtion duration-300 ${
+          className={`p-2 rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
             activeTech === "React" ? "bg-green-500 text-white" : ""
           }`}
         />
-        <LuBrainCircuit
+        <RiBrainLine
           onClick={() => setActiveTech("AI")}
-          className={`p-2 rounded-xl cursor-pointer  hover:bg-green-200 transtion duration-300 ${
+          className={`p-3 text-6xl rounded-xl cursor-pointer  hover:shadow-xl transition duration-300 ${
             activeTech === "AI" ? "bg-green-500 text-white" : ""
           }`}
         />

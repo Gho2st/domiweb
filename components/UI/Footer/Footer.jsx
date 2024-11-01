@@ -20,7 +20,7 @@ export default function Footer() {
       <Link href="#" className="text-sm">
         Polityka Prywatności
       </Link>
-      <span className="absolute text-3xl text-green-600 bottom-3 right-3">
+      <span className="absolute text-3xl text-green-600 bottom-10 right-3">
         <IoIosArrowUp onClick={scrollToTop} className="cursor-pointer" />
       </span>
     </footer>

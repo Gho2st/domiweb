@@ -4,19 +4,20 @@ import { FaLongArrowAltDown } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <section>
+    <section className="overflow-hidden">
       <div className="relative px-6 min-h-[86vh] ">
-        <p className="mt-14 text-sm text-gray-500 font-semibold">
-          Twój Partner w Nowoczesnych Technologiach IT
-        </p>
-        <h1 className="mx-auto mt-6 font-semibold text-4xl rounded-xl capitalize  ">
+        <h1 className="mt-14 text-sm text-gray-500 font-semibold">
           Tworzenie Stron Internetowych i Aplikacji Mobilnych z SEO
         </h1>
+        <h2 className="mx-auto mt-6 font-semibold text-4xl rounded-xl capitalize  ">
+          Nowoczesne Strony i Aplikacje Mobilne – Wysokiej Jakości User
+          Experience
+        </h2>
 
         <p className="my-10 text-neutral-900 text-lg font-light ">
-          Projektujemy nowoczesne, responsywne strony internetowe i aplikacje
-          mobilne, które przyciągają użytkowników i są zoptymalizowane pod kątem
-          wyszukiwarek.
+          Tworzymy nowoczesne, responsywne strony internetowe i aplikacje
+          mobilne, które przyciągają użytkowników oraz są zoptymalizowane pod
+          kątem SEO, zapewniając widoczność w wyszukiwarkach
         </p>
 
         <div className="ml-6 pt-14 animate-bounce">
@@ -26,7 +27,7 @@ export default function Hero() {
         </div>
 
         {/* Obrazek jako tło pod tekstem */}
-        <div className="absolute w-3/4 -bottom-8 -right-16 -z-10  ">
+        <div className="absolute w-3/4 -bottom-8 -right-16 -z-10 md:w-3/5   ">
           <Image
             src="/blok.png"
             alt="Dekoracyjny obrazek"
