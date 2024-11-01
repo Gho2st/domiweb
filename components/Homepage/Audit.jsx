@@ -52,7 +52,7 @@ export default function Audit() {
           className="inline-flex gap-2 items-center font-semibold group"
           href="#"
         >
-          Przejdź do witryny
+          Czytaj więcej
           <div className="p-2 rounded-full transition duration-300 group-hover:bg-green-500">
             <FaLongArrowAltRight className="text-xl transition duration-300 group-hover:text-white" />
           </div>

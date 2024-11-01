@@ -8,11 +8,18 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 export default function Portfolio() {
   const projects = [
     {
-      image: "/dominik.png",
-      title: "Dominik Jojczyk - Portfolio",
+      image: "/wesolewygibasy.png",
+      title: "Żłobki Wesołe Wygibasy.",
       description:
-        "Osobiste portfolio Dominika Jojczyka - autora DomiWeb, które przedstawia jego umiejętności i projekty. Zoptymalizowane dla wyszukiwarek, co zwiększa szanse na dotarcie do potencjalnych klientów.",
-      link: "/https://dominikjojczyk.pl/",
+        "Nowoczesny projekt w Next.js dla krakowskiej firmy żłobkowej. Strona stworzona z myślą o łatwej nawigacji i dostępności dla rodziców. Design strony - pastelowe kolory + odpowiednia czcionka.",
+      link: "/https://www.wesolewygibasy.pl/",
+    },
+    {
+      image: "/hukimuki.png",
+      title: "Pub & Club Huki Muki.",
+      description:
+        "Dla krakowskiego pubu Huki Muki stworzyliśmy nowoczesną stronę w technologii Next.js, z integracją płatności Stripe i bazą danych PostgreSQL. Strona zawiera również system rezerwacji online.",
+      link: "/https://www.hukimuki.pl/",
     },
     {
       image: "/barbarapiekos.png",
@@ -73,7 +80,7 @@ export default function Portfolio() {
           className="inline-flex gap-2 items-center font-semibold group"
           href={projects[currentIndex].link}
         >
-          Przejdź do witryny
+          Zobacz sam
           <div className="p-2 rounded-full transition duration-300 group-hover:bg-green-500">
             <FaLongArrowAltRight className="text-xl transition duration-300 group-hover:text-white " />
           </div>

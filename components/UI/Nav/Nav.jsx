@@ -46,6 +46,7 @@ export default function Nav() {
                 width={100}
                 height={100}
                 layout="responsive"
+                alt="logo firmy Domiweb składające się z liter D i W"
               />
             </div>
           </Link>
@@ -90,10 +91,10 @@ export default function Nav() {
               className="absolute p-6 pt-2 bg-neutral-100 w-full h-screen top-15 z-20"
             >
               <div className="flex flex-col items-center justify-center w-full space-y-6 font-bold rounded-sm">
-                <Link href="#" className="w-full text-center">
+                <Link href="/o-nas" className="w-full text-center">
                   O Nas
                 </Link>
-                <Link href="#" className="w-full text-center">
+                <Link href="o-nas" className="w-full text-center">
                   Ile to kosztuje?
                 </Link>
                 <Link href="#" className="w-full text-center">
