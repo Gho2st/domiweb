@@ -9,7 +9,7 @@ export default function FAQ() {
     {
       question: "Jaki jest koszt strony internetowej / aplikacji?",
       answer:
-        "Koszt strony internetowej / aplikacji zależy od jej funkcjonalności, projektu i technologii. Proste strony wizytówkowe od 600zł.",
+        "Koszt stworzenia strony internetowej lub aplikacji zależy od stopnia jej funkcjonalności, złożoności projektu oraz użytej technologii. Proste strony wizytówkowe zaczynają się od 600 zł.",
     },
     {
       question: "Jaki jest czas realizacji projektu?",

@@ -53,14 +53,14 @@ export default function Nav() {
 
           {/* Desktop Menu */}
           <div className="hidden space-x-8 font-bold lg:flex">
-            <Link href="#" className=" ">
+            <Link href="/o-nas" className=" ">
               O Nas
             </Link>
-            <Link href="#" className=" ">
-              Ile to kosztuje?
+            <Link href="/kontakt" className=" ">
+              Kontakt
             </Link>
-            <Link href="#" className=" ">
-              Pozycjonowanie{" "}
+            <Link href="/pozycjonowanie" className=" ">
+              Pozycjonowanie
             </Link>
           </div>
 

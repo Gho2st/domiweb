@@ -5,7 +5,7 @@ export default function People() {
     <section className="p-6">
       <h2 className="text-2xl font-semibold">Ludzie, którzy tworzą DomiWeb</h2>
       {/* card container */}
-      <div className="grid grid-cols-2 gap-10 mt-10">
+      <div className="grid grid-cols-2 gap-6 mt-10">
         <div>
           <div className="relative w-full h-64 bg-green-300 rounded-2xl overflow-hidden">
             <Image

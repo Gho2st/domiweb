@@ -42,7 +42,7 @@ export default function Home() {
 
         <Experience />
 
-        <section className="pb-2 mt-14 ">
+        <section className="pb-2 mt-10 ">
           {/* Card 1 */}
           <article className="relative w-5/6 p-6 rounded-r-xl bg-white">
             <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
