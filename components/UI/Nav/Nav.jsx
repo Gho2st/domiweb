@@ -97,12 +97,12 @@ export default function Nav() {
                 <Link href="kontakt" className="w-full text-center">
                   Kontakt
                 </Link>
-                <Link href="#" className="w-full text-center">
+                <Link href="/pozycjonowanie" className="w-full text-center">
                   Pozycjonowanie
                 </Link>
                 <div className="h-[0.1rem] w-full bg-gray-300"></div>
                 <Link
-                  href="#"
+                  href="tel:+48576985894"
                   className="inline-flex justify-center items-center gap-2  text-center text-green-500 font-bold"
                 >
                   Umów Spotkanie

@@ -24,7 +24,7 @@ export default function Cta() {
         </Link>
       </div>
 
-      <div className="flex justify-between text-4xl mt-14 mb-4">
+      <div className="px-6 flex justify-between text-4xl mt-14 mb-4">
         <FaFacebook className="transtion duration-300 hover:text-green-500 cursor-pointer" />
         <FaInstagram className="transtion duration-300 hover:text-green-500 cursor-pointer" />
         <FaLinkedinIn className="transtion duration-300 hover:text-green-500 cursor-pointer" />

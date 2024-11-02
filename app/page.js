@@ -2,6 +2,7 @@ import Audit from "@/components/Homepage/Audit";
 import Cta from "@/components/Homepage/Cta";
 import FAQ from "@/components/Homepage/FAQ";
 import Hero from "@/components/Homepage/Hero";
+import MoreInfo from "@/components/Homepage/MoreInfo";
 import Portfolio from "@/components/Homepage/Portfolio";
 import Review from "@/components/Homepage/Review";
 import Services from "@/components/Homepage/Services";
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
       <TechnologyStack />
       <Audit />
+      <MoreInfo />
       <Testimonials />
       <FAQ />
       <Cta />

@@ -9,12 +9,12 @@ export default function FAQ() {
     {
       question: "Jaki jest koszt strony internetowej / aplikacji?",
       answer:
-        "Koszt strony internetowej zależy od jej funkcjonalności, projektu i technologii.",
+        "Koszt strony internetowej / aplikacji zależy od jej funkcjonalności, projektu i technologii. Proste strony wizytówkowe od 600zł.",
     },
     {
       question: "Jaki jest czas realizacji projektu?",
       answer:
-        "Czas realizacji projektu wynosi zazwyczaj od 2 do 6 tygodni, w zależności od jego skomplikowania.",
+        "Czas realizacji projektu wynosi zazwyczaj od tygodnia do miesiąca, w zależności od jego skomplikowania.",
     },
     {
       question: "Ile kosztuje utrzymanie witryny internetowej?",

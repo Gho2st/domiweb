@@ -63,7 +63,7 @@ export default function TechnologyStack() {
         />
         <FaFigma
           onClick={() => setActiveTech("Figma")}
-          className={`items-center p-3 text-6xl rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
+          className={`items-center p-2 text-5xl rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
             activeTech === "Figma" ? "bg-green-500 text-white" : ""
           }`}
         />
