@@ -34,11 +34,11 @@ export default function Testimonials() {
             <div className="flex gap-1">{stars}</div>
           </div>
           <p className="my-8 text-neutral-900 font-light">
-            Profesjonalna pomoc w doborze hostingu, domeny i administracji
-            strony w zakresie usługi. Konkurecyjne wyceny! Pomoc w zakresie
-            social media w cenie. Dziekuje.
+            Daję pięć gwiazdek za świetny projekt ale również za współpracę.
+            Jeśli potrzebujesz profesjonalnie wykonanej strony polecam Pana
+            Dominika
           </p>
-          <span className="font-semibold">Julia Płachecka</span>
+          <span className="font-semibold">Milena Głowacka</span>
         </div>
       </div>
     </section>

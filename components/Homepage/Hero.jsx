@@ -9,7 +9,7 @@ export default function Hero() {
         <h1 className="mt-14 text-sm text-gray-500 font-semibold">
           Tworzenie Stron Internetowych i Aplikacji Mobilnych z SEO
         </h1>
-        <h2 className="mx-auto mt-6 font-semibold text-4xl rounded-xl capitalize  ">
+        <h2 className="mx-auto mt-6 font-semibold text-4xl capitalize  ">
           Nowoczesne Strony i Aplikacje Mobilne – Wysokiej Jakości User
           Experience
         </h2>

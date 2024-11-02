@@ -5,6 +5,9 @@ import { FaCode } from "react-icons/fa6";
 import { FaArrowTurnDown } from "react-icons/fa6";
 import Link from "next/link";
 import { FaLongArrowAltDown } from "react-icons/fa";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import People from "@/components/UI/People";
+import Experience from "@/components/UI/Experience";
 
 export default function Home() {
   return (
@@ -37,121 +40,94 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="p-6">
-        <h2 className="text-2xl font-semibold">Doświadczenie</h2>
-        <p className="text-neutral-900 text-lg font-light mt-6 mb-10 ">
-          Dziś, prowadząc firmę, wierzymy, że kluczowym elementem sukcesu jest
-          ludzki kontakt. Tworzymy nowoczesne projekty, ale najważniejsze są dla
-          nas relacje z klientami. Chcemy poznać Twoje potrzeby i wspólnie
-          wypracować efektywne rozwiązania. Jeśli szukasz zaangażowanego
-          partnera do współpracy, zapraszamy!
-        </p>
-        <div className="grid grid-cols-2 gap-5">
-          <div className="flex flex-col justify-center rounded-xl  p-6 bg-white">
-            <div className="text-5xl mb-3 ">10+</div>
-            <span className="font-light text-neutral-900">
-              zrealizowanych stron internetowych
-            </span>
+      <Experience />
+
+      <section className=" pb-2 mt-14 ">
+        {/* Card 1 */}
+        <article className="relative w-5/6 p-6 rounded-r-xl bg-white">
+          <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
+            <div className="text-4xl">1</div>
           </div>
-          <div className="flex flex-col justify-center rounded-xl p-6 bg-white">
-            <div className="text-5xl mb-3 ">3</div>
-            <span className="font-light text-neutral-900">
-              lata doświadczenia w programowaniu
-            </span>
+          <h2 className="text-xl my-5 font-semibold">Pierwszy Kontakt</h2>
+          <p className="text-neutral-900 font-light">
+            Rozpocznij swoją podróż z nami, dzieląc się swoimi pomysłami lub
+            wyzwaniami. Możesz skontaktować się z nami za pośrednictwem e-maila,
+            telefonu lub umówić się na osobiste spotkanie. Nasz zespół zapewni
+            Ci szybką odpowiedź i pomoc, aby zrozumieć Twoje potrzeby i
+            oczekiwania.
+          </p>
+          <span className="absolute top-[50%] right-[-30px]">
+            <FaArrowTurnDown className="text-5xl text-green-500" />
+          </span>
+        </article>
+
+        {/* Card 2 */}
+        <article className="relative w-5/6 ml-auto p-6 my-14 rounded-l-lg bg-white">
+          <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
+            <div className="text-4xl">2</div>
           </div>
-          <div className="flex flex-col justify-center rounded-xl  p-6 bg-white">
-            <div className="text-5xl mb-3 ">28</div>
-            <span className="font-light text-neutral-900">
-              5 gwiazdkowych opinii na profilu firmowym
-            </span>
+          <h2 className="text-xl my-5 font-semibold">Analiza i Planowanie</h2>
+          <p className="text-neutral-900 font-light">
+            Po zrozumieniu Twoich potrzeb, przeprowadzimy dokładną analizę i
+            zaplanujemy strategię działania. Naszym celem jest stworzenie
+            rozwiązania, które spełni Twoje oczekiwania i pomoże w osiągnięciu
+            celów biznesowych. Zawsze staramy się dostarczyć najwyższą jakość
+            usług.
+          </p>
+          <span className="absolute top-[50%] left-[-30px]">
+            <FaArrowTurnDown className="text-5xl text-green-500 transform scale-x-[-1]" />
+          </span>
+        </article>
+
+        {/* Card 3 */}
+        <article className="relative w-5/6 p-6 rounded-r-lg bg-white my-14">
+          <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
+            <div className="text-4xl">3</div>
           </div>
-          <div className="flex flex-col justify-center rounded-xl  p-6 bg-white">
-            <div className="text-5xl mb-3 ">2</div>
-            <span className="font-light text-neutral-900">
-              osoby pracujące na Twój sukces
-            </span>
+          <h2 className="text-xl my-5 font-semibold">Programowanie i Rozwój</h2>
+          <p className="text-neutral-900 font-light">
+            Nasz zespół programistów pracuje nad stworzeniem funkcjonalnej i
+            estetycznej strony internetowej, dostosowanej do Twoich potrzeb.
+            Oferujemy wsparcie techniczne na każdym etapie realizacji projektu,
+            aby zapewnić pełne zadowolenie z efektów naszej pracy.
+          </p>
+          <span className="absolute top-[50%] right-[-30px]">
+            <FaArrowTurnDown className="text-5xl text-green-500" />
+          </span>
+        </article>
+
+        {/* Card 4 */}
+        <article className="relative w-5/6 ml-auto p-6 my-14 rounded-l-lg bg-white">
+          <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
+            <div className="text-4xl">4</div>
           </div>
-        </div>
+          <h2 className="text-xl my-5 font-semibold">Publikacja i Wsparcie</h2>
+          <p className="text-neutral-900 font-light">
+            Po zakończeniu procesu programowania, Twoja strona zostanie
+            opublikowana i udostępniona światu. Nasza praca nie kończy się na
+            tym etapie – oferujemy również długoterminowe wsparcie, monitorując
+            wydajność strony i wprowadzając niezbędne poprawki, aby zapewnić jej
+            optymalne działanie w Internecie.
+          </p>
+          <span className="absolute top-[50%] left-[-30px]">
+            <FaArrowTurnDown className="text-5xl text-green-500 transform scale-x-[-1]" />
+          </span>
+        </article>
       </section>
 
-      <section className=" pb-10 mt-14 ">
-        <section className="pb-10 mt-14">
-          {/* Card 1 */}
-          <article className="relative w-5/6 p-6 rounded-r-xl bg-white">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">1</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">Pierwszy Kontakt</h2>
-            <p className="text-neutral-900 font-light">
-              Rozpocznij swoją podróż z nami, dzieląc się swoimi pomysłami lub
-              wyzwaniami. Możesz skontaktować się z nami za pośrednictwem
-              e-maila, telefonu lub umówić się na osobiste spotkanie. Nasz
-              zespół zapewni Ci szybką odpowiedź i pomoc, aby zrozumieć Twoje
-              potrzeby i oczekiwania.
-            </p>
-            <span className="absolute top-[50%] right-[-30px]">
-              <FaArrowTurnDown className="text-5xl text-green-500" />
-            </span>
-          </article>
+      <div className="flex justify-center pb-10">
+        <Link
+          className="inline-flex gap-2 items-center font-semibold group"
+          href="#"
+        >
+          Pracuj z nami
+          <div className="p-2 rounded-full transition duration-300 group-hover:bg-green-500">
+            <FaLongArrowAltRight className="text-xl transition duration-300 group-hover:text-white " />
+          </div>
+        </Link>
+      </div>
 
-          {/* Card 2 */}
-          <article className="relative w-5/6 ml-auto p-6 my-14 rounded-l-lg bg-white">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">2</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">Analiza i Planowanie</h2>
-            <p className="text-neutral-900 font-light">
-              Po zrozumieniu Twoich potrzeb, przeprowadzimy dokładną analizę i
-              zaplanujemy strategię działania. Naszym celem jest stworzenie
-              rozwiązania, które spełni Twoje oczekiwania i pomoże w osiągnięciu
-              celów biznesowych. Zawsze staramy się dostarczyć najwyższą jakość
-              usług.
-            </p>
-            <span className="absolute top-[50%] left-[-30px]">
-              <FaArrowTurnDown className="text-5xl text-green-500 transform scale-x-[-1]" />
-            </span>
-          </article>
-
-          {/* Card 3 */}
-          <article className="relative w-5/6 p-6 rounded-r-lg bg-white my-14">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">3</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">
-              Programowanie i Rozwój
-            </h2>
-            <p className="text-neutral-900 font-light">
-              Nasz zespół programistów pracuje nad stworzeniem funkcjonalnej i
-              estetycznej strony internetowej, dostosowanej do Twoich potrzeb.
-              Oferujemy wsparcie techniczne na każdym etapie realizacji
-              projektu, aby zapewnić pełne zadowolenie z efektów naszej pracy.
-            </p>
-            <span className="absolute top-[50%] right-[-30px]">
-              <FaArrowTurnDown className="text-5xl text-green-500" />
-            </span>
-          </article>
-
-          {/* Card 4 */}
-          <article className="relative w-5/6 ml-auto p-6 my-14 rounded-l-lg bg-white">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">4</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">
-              Publikacja i Wsparcie
-            </h2>
-            <p className="text-neutral-900 font-light">
-              Po zakończeniu procesu programowania, Twoja strona zostanie
-              opublikowana i udostępniona światu. Nasza praca nie kończy się na
-              tym etapie – oferujemy również długoterminowe wsparcie,
-              monitorując wydajność strony i wprowadzając niezbędne poprawki,
-              aby zapewnić jej optymalne działanie w Internecie.
-            </p>
-            <span className="absolute top-[50%] left-[-30px]">
-              <FaArrowTurnDown className="text-5xl text-green-500 transform scale-x-[-1]" />
-            </span>
-          </article>
-        </section>
-      </section>
+      <People />
 
       <Footer />
     </main>

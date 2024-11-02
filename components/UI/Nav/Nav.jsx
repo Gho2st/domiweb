@@ -94,8 +94,8 @@ export default function Nav() {
                 <Link href="/o-nas" className="w-full text-center">
                   O Nas
                 </Link>
-                <Link href="o-nas" className="w-full text-center">
-                  Ile to kosztuje?
+                <Link href="kontakt" className="w-full text-center">
+                  Kontakt
                 </Link>
                 <Link href="#" className="w-full text-center">
                   Pozycjonowanie
