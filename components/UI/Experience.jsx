@@ -10,25 +10,25 @@ export default function Experience() {
         do współpracy, zapraszamy!
       </p>
       <div className="grid grid-cols-2 gap-5">
-        <div className="flex flex-col justify-center rounded-xl  p-6 bg-white">
+        <div className="flex flex-col rounded-xl  p-6 bg-white">
           <div className="text-5xl mb-3 ">10+</div>
           <span className="font-light text-neutral-900">
             zrealizowanych stron internetowych
           </span>
         </div>
-        <div className="flex flex-col justify-center rounded-xl p-6 bg-white">
+        <div className="flex flex-col  rounded-xl p-6 bg-white">
           <div className="text-5xl mb-3 ">3</div>
           <span className="font-light text-neutral-900">
             lata doświadczenia w programowaniu
           </span>
         </div>
-        <div className="flex flex-col justify-center rounded-xl  p-6 bg-white">
+        <div className="flex flex-col  rounded-xl  p-6 bg-white">
           <div className="text-5xl mb-3 ">26</div>
           <span className="font-light text-neutral-900">
             5 - gwiazdkowych opinii na profilu firmowym
           </span>
         </div>
-        <div className="flex flex-col justify-center rounded-xl  p-6 bg-white">
+        <div className="flex flex-col  rounded-xl  p-6 bg-white">
           <div className="text-5xl mb-3 ">2</div>
           <span className="font-light text-neutral-900">
             osoby pracujące na Twój sukces

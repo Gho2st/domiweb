@@ -1,10 +1,8 @@
 import Footer from "@/components/UI/Footer/Footer";
 import Nav from "@/components/UI/Nav/Nav";
 import Image from "next/image";
-import { FaCode } from "react-icons/fa6";
 import { FaArrowTurnDown } from "react-icons/fa6";
 import Link from "next/link";
-import { FaLongArrowAltDown } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import People from "@/components/UI/People";
 import Experience from "@/components/UI/Experience";
@@ -30,9 +28,9 @@ export default function Home() {
             </p>
 
             {/* Obrazek jako tło pod tekstem */}
-            <div className="absolute w-3/4 -bottom-8 -right-16 -z-10 md:w-3/5   ">
+            <div className="absolute w-4/5 lg:w-2/5 -bottom-8 -right-16 -z-10 md:w-3/5   ">
               <Image
-                src="/blok.png"
+                src="/o-nas.png"
                 alt="Dekoracyjny obrazek"
                 layout="responsive"
                 width={100}
@@ -44,7 +42,7 @@ export default function Home() {
 
         <Experience />
 
-        <section className=" pb-2 mt-14 ">
+        <section className="pb-2 mt-14 ">
           {/* Card 1 */}
           <article className="relative w-5/6 p-6 rounded-r-xl bg-white">
             <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
@@ -120,18 +118,6 @@ export default function Home() {
             </span>
           </article>
         </section>
-
-        <div className="flex justify-center pb-10">
-          <Link
-            className="inline-flex gap-2 items-center font-semibold group"
-            href="#"
-          >
-            Pracuj z nami
-            <div className="p-2 rounded-full transition duration-300 group-hover:bg-green-500">
-              <FaLongArrowAltRight className="text-xl transition duration-300 group-hover:text-white " />
-            </div>
-          </Link>
-        </div>
 
         <People />
         <Cta />

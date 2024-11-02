@@ -37,7 +37,7 @@ export default function Nav() {
     <>
       {/* Nav Container */}
       <nav className="relative mx-auto">
-        <div className="flex p-6 pb-2 items-center justify-between">
+        <div className="flex p-6 lg:px-24 pb-2 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="font-semibold text-xl">
             <div className="w-16">
@@ -88,9 +88,9 @@ export default function Nav() {
               animate="open"
               exit="closed"
               variants={menuVariants}
-              className="absolute p-6 pt-2 bg-neutral-100 w-full h-screen top-15 z-20"
+              className="absolute p-6 pt-4 bg-neutral-100 w-full h-screen top-15 z-20"
             >
-              <div className="flex flex-col items-center justify-center w-full space-y-6 font-bold rounded-sm">
+              <div className="flex flex-col items-center justify-center w-full text-lg space-y-6 font-semibold rounded-sm">
                 <Link href="/o-nas" className="w-full text-center">
                   O Nas
                 </Link>
