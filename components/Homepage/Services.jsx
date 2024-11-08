@@ -3,14 +3,13 @@ import { FaArrowTurnDown } from "react-icons/fa6";
 
 export default function Services() {
   return (
-    <section className=" pb-10 mt-14 ">
+    <section className=" pb-10 mt-14 xl:px-44 ">
       {/* Card 1 */}
-
-      <article className="relative w-5/6 p-6 rounded-r-xl bg-white  ">
+      <article className="relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-r-xl bg-white  ">
         <div className="bg-green-500  rounded-lg inline-block p-3">
           <FaCode className="text-4xl text-green-100 " />
         </div>
-        <h2 className="text-xl my-5 font-semibold">
+        <h2 className="text-xl xl:text-2xl my-5 font-semibold">
           Tworzenie Responsywnych Stron Internetowych
         </h2>
         <p className="text-neutral-900 font-light">
@@ -25,11 +24,11 @@ export default function Services() {
       </article>
 
       {/* card 2 */}
-      <article className="relative w-5/6 ml-auto p-6 my-14 rounded-l-lg  bg-white ">
+      <article className="relative w-5/6 xl:w-3/5 ml-auto p-6 my-14 xl:my-24 rounded-l-lg  bg-white ">
         <div className="bg-green-500 rounded-lg inline-block p-3">
           <FaCode className="text-4xl text-green-100 " />
         </div>
-        <h2 className="text-xl my-5 font-semibold">
+        <h2 className="text-xl xl:text-2xl my-5 font-semibold">
           Pozycjonowanie Stron Internetowych (SEO) – Skuteczna Optymalizacja i
           Wzrost Widoczności
         </h2>
@@ -46,11 +45,11 @@ export default function Services() {
       </article>
 
       {/* Card 3 */}
-      <article className="relative w-5/6 p-6 rounded-r-lg  bg-white ">
+      <article className="relative w-5/6 xl:w-3/5 p-6 rounded-r-lg  bg-white ">
         <div className="bg-green-500  rounded-lg inline-block p-3">
           <FaCode className="text-4xl text-green-100 " />
         </div>
-        <h2 className="text-xl my-5 font-semibold">
+        <h2 className="text-xl xl:text-2xl my-5 font-semibold">
           Wsparcie Techniczne Stron Internetowych i Aktualizacje
         </h2>
         <p className="text-neutral-900 font-light">
@@ -60,9 +59,6 @@ export default function Services() {
           zaangażowanie. Oferujemy aktualizacje, zabezpieczenia i konserwację
           stron, dbając o to, by Twoja witryna była zawsze w doskonałej formie.
         </p>
-        <span className="absolute top-[50%] right-[-30px]">
-          <FaArrowTurnDown className="text-5xl text-green-500" />
-        </span>
       </article>
     </section>
   );

@@ -37,7 +37,7 @@ export default function Nav() {
     <>
       {/* Nav Container */}
       <nav className="relative mx-auto">
-        <div className="flex p-6 lg:px-24 pb-2 items-center justify-between">
+        <div className="flex p-6 xl:px-24 2xl:px-44 pb-2 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="font-semibold text-xl">
             <div className="w-16">
@@ -61,6 +61,13 @@ export default function Nav() {
             </Link>
             <Link href="/pozycjonowanie" className=" ">
               Pozycjonowanie
+            </Link>
+            <Link
+              href="tel:+48576985894"
+              className="inline-flex justify-center items-center gap-2  text-center text-green-500 font-bold"
+            >
+              Umów Spotkanie
+              <IoIosCall className="text-xl" />
             </Link>
           </div>
 

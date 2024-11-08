@@ -44,53 +44,48 @@ export default function TechnologyStack() {
   };
 
   return (
-    <section className="p-6 my-10">
-      <h2 className="text-2xl text-center font-semibold">
+    <section className="p-6 my-10 xl:my-20 lg:px-24 2xl:px-44">
+      <h2 className="text-2xl xl:text-5xl text-center font-semibold">
         Wykorzystywane Technologie
       </h2>
-      <div className="flex items-center text-6xl px-6 my-14 justify-between ">
+      <div className="flex items-center text-6xl px-6 xl:px-52 my-14 xl:my-20 justify-between ">
         <RiNextjsLine
           onClick={() => setActiveTech("Next.js")}
-          className={`p-2  rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
-            activeTech === "Next.js" ? "bg-green-500 text-white" : ""
+          className={`rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
+            activeTech === "Next.js" ? "bg-green-500 p-1 text-white" : ""
           }`}
         />
         <RiWordpressFill
           onClick={() => setActiveTech("Wordpress")}
-          className={`p-2  rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
-            activeTech === "Wordpress" ? "bg-green-500 text-white" : ""
+          className={`  rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
+            activeTech === "Wordpress" ? "bg-green-500 p-1 text-white" : ""
           }`}
         />
-        <FaFigma
-          onClick={() => setActiveTech("Figma")}
-          className={`items-center p-2 text-5xl rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
-            activeTech === "Figma" ? "bg-green-500 text-white" : ""
-          }`}
-        />
+
         <AiOutlinePython
           onClick={() => setActiveTech("Python")}
-          className={`p-2 rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
-            activeTech === "Python" ? "bg-green-500 text-white" : ""
+          className={` rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
+            activeTech === "Python" ? "bg-green-500 p-1 text-white" : ""
           }`}
         />
         <RiReactjsFill
           onClick={() => setActiveTech("React")}
-          className={`p-2 rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
-            activeTech === "React" ? "bg-green-500 text-white" : ""
+          className={` rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
+            activeTech === "React" ? "bg-green-500 p-1 text-white" : ""
           }`}
         />
         <RiBrainLine
           onClick={() => setActiveTech("AI")}
-          className={`p-3 text-6xl rounded-xl cursor-pointer  hover:shadow-xl transition duration-300 ${
-            activeTech === "AI" ? "bg-green-500 text-white" : ""
+          className={`rounded-xl cursor-pointer  hover:shadow-xl transition duration-300 ${
+            activeTech === "AI" ? "bg-green-500 p-1 text-white" : ""
           }`}
         />
       </div>
-      <div className="text-center">
-        <h3 className="mt-10 mb-6 text-2xl font-semibold">
+      <div className="text-center xl:w-3/5 xl:mx-auto">
+        <h3 className="mt-10 mb-6 text-2xl xl:text-3xl font-semibold">
           {techDetails[activeTech].name}
         </h3>
-        <p className="text-neutral-900 font-light">
+        <p className="text-neutral-900 font-light xl:text-lg">
           {techDetails[activeTech].description}
         </p>
       </div>
