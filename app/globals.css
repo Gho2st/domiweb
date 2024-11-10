@@ -7,7 +7,7 @@ body {
   overflow-x: hidden;
 }
 
-p{
+p {
   line-height: 2.5rem !important;
 }
 
@@ -63,4 +63,12 @@ span {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+
+/* slider */
+
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+  font-size: 1.5rem !important;
 }

@@ -39,16 +39,17 @@ export default function TechnologyStack() {
     },
     AI: {
       name: "AI",
-      description: "Sztuczna inteligencja to...",
+      description:
+        "Sztuczna inteligencja wspiera nowoczesne strony internetowe, automatyzując procesy, analizując dane użytkowników oraz personalizując ich doświadczenia. Dzięki AI mogę tworzyć inteligentne funkcje, takie jak rekomendacje treści, automatyczne analizy SEO czy chatboty wspomagające obsługę klienta, co zwiększa interaktywność i efektywność witryny.",
     },
   };
 
   return (
-    <section className="p-6 my-10 xl:my-20 lg:px-24 2xl:px-44">
+    <section className="p-6 my-10 xl:my-32 lg:px-24 2xl:px-44 2xl:min-h-[55vh]">
       <h2 className="text-2xl xl:text-5xl text-center font-semibold">
         Wykorzystywane Technologie
       </h2>
-      <div className="flex items-center text-6xl px-6 xl:px-52 my-14 xl:my-20 justify-between ">
+      <div className="flex items-center text-6xl px-6 xl:px-52 my-14 xl:my-24 justify-between ">
         <RiNextjsLine
           onClick={() => setActiveTech("Next.js")}
           className={`rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${

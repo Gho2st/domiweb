@@ -38,7 +38,7 @@ export default function FAQ() {
       <h2 className="text-2xl xl:text-4xl text-center font-semibold">
         Często zadawane pytania
       </h2>
-      <div className="flex flex-col space-y-4 mt-10">
+      <div className="flex flex-col space-y-4 mt-10 2xl:mt-20">
         {faqs.map((faq, index) => {
           const isOpen = expandedIndex === index;
 
@@ -49,7 +49,7 @@ export default function FAQ() {
                 onClick={() => toggleFAQ(index)}
               >
                 <div className="flex justify-between">
-                  <span className="font-medium xl:text-lg">{faq.question}</span>
+                  <span className="font-medium xl:text-xl">{faq.question}</span>
                   <div className="text-2xl">{isOpen ? "−" : "+"}</div>
                 </div>
               </div>
@@ -63,7 +63,7 @@ export default function FAQ() {
                     transition={{ duration: 0.3, ease: "easeInOut" }} // Użycie easing dla płynniejszego przejścia
                     style={{ overflow: "hidden" }} // Zapewnia, że zawartość nie wychodzi poza granice
                   >
-                    <div className="font-light text-neutral-900 xl:w-3/4 xl:mx-auto bg-white px-3 pb-5">
+                    <div className="font-light text-neutral-900 xl:w-3/4 xl:mx-auto xl:text-lg bg-white px-3 pb-5">
                       {faq.answer}
                     </div>
                   </motion.div>

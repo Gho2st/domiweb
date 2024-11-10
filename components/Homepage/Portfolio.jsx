@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -8,32 +8,53 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 export default function Portfolio() {
   const projects = [
     {
-      image: "/wesolewygibasy.png",
+      image: "/portfolio/wesolewygibasy.png",
       title: "Żłobki Wesołe Wygibasy.",
       description:
         "Nowoczesny projekt w Next.js dla krakowskiej firmy żłobkowej. Strona stworzona z myślą o łatwej nawigacji i dostępności dla rodziców. Design strony - pastelowe kolory + odpowiednia czcionka.",
-      link: "/https://www.wesolewygibasy.pl/",
+      link: "https://www.wesolewygibasy.pl/",
     },
     {
-      image: "/hukimuki.png",
+      image: "/portfolio/hukimuki.png",
       title: "Pub & Club Huki Muki.",
       description:
         "Dla krakowskiego pubu Huki Muki stworzyliśmy nowoczesną stronę w technologii Next.js, z integracją płatności Stripe i bazą danych PostgreSQL. Strona zawiera również system rezerwacji online.",
-      link: "/https://www.hukimuki.pl/",
+      link: "https://www.hukimuki.pl/",
     },
     {
-      image: "/barbarapiekos.png",
+      image: "/portfolio/barbarapiekos.png",
       title: "Barbara Piękoś - Artystka.",
       description:
         "Strona internetowa dla Barbary Piękoś - artystki, która prezentuje swoje prace oraz najnowsze wystawy. Projekt oparty na minimalistycznym designie, by podkreślić jej artystyczny styl.",
-      link: "/https://www.barbarapiekos.pl/",
+      link: "https://www.barbarapiekos.pl/",
     },
     {
-      image: "/szlafroki.png",
+      image: "/portfolio/szlafroki.png",
       title: "Sklep Specjalistyczny SzlafrO.K.",
       description:
         "Dzięki integracji z AWS, strona zapewnia szybkie ładowanie i wysoką dostępność. Użytkownicy mogą łatwo przeglądać ofertę, a responsywny design gwarantuje wygodę na różnych urządzeniach.",
       link: "https://www.szlafroki.krakow.pl/",
+    },
+    {
+      image: "/portfolio/ptaki.png",
+      title: "Stowarzyszenie hodowców ptaków",
+      description:
+        "Dynamiczna strona internetowa z panelem administracyjnym stworzona w PHP i MySQL, która umożliwia łatwe zarządzanie treścią i użytkownikami, a także szybki dostęp do aktualizacji.",
+      link: "https://www.nshkipe.com.pl/",
+    },
+    {
+      image: "/portfolio/olmart.png",
+      title: "Olmart - Zakład Zduński",
+      description:
+        "Strona internetowa wykorzystująca Bootstrap i jQuery, prezentująca ofertę usług zduńskich, z naciskiem na SEO i widoczność w sieci.",
+      link: "https://www.olmart-ns.pl/",
+    },
+    {
+      image: "/portfolio/optyk.png",
+      title: "Optyk - Andrzej Świerczek 1980",
+      description:
+        "Stworzyliśmy responsywną stronę internetową dla lokalnego optyka, która została zaprojektowana w technologii Bootstrap. Dzięki optymalizacji SEO, strona zwiększyła widoczność w wynikach wyszukiwarek, a użytkownicy mogą łatwo umawiać wizyty online.",
+      link: "https://www.olmart-ns.pl/",
     },
   ];
 
@@ -49,6 +70,26 @@ export default function Portfolio() {
     );
   };
 
+  // keybord handle
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === "ArrowLeft") {
+        handlePrevious();
+      } else if (event.key === "ArrowRight") {
+        handleNext();
+      }
+    };
+
+    // event listening
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      //remove event listening
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   return (
     <section className=" my-10 mb-20 px-6 xl:px-24 2xl:px-44">
       {/* card */}
@@ -57,7 +98,7 @@ export default function Portfolio() {
           <span className="text-green-500 text-lg font-semibold xl:text-2xl">
             Zobacz, co udało nam się stworzyć!
           </span>
-          <h2 className="text-3xl mt-4 xl:mt-8 font-semibold  xl:text-4xl lg:leading-snug ">
+          <h2 className="text-3xl mt-4 xl:mt-8 font-semibold xl:text-4xl xl:leading-snug ">
             Nasze Projekty - Zrealizowane Strony Internetowe i Kampanie SEO
           </h2>
         </div>
@@ -78,7 +119,7 @@ export default function Portfolio() {
               <h3 className="text-xl xl:text-2xl mb-4 font-semibold">
                 {projects[currentIndex].title}
               </h3>
-              <p className="text-neutral-900 xl:text-xl font-light mb-6">
+              <p className="text-neutral-900 xl:text-lg font-light mb-6">
                 {projects[currentIndex].description}
               </p>
               <Link

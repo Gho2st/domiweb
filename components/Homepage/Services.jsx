@@ -1,5 +1,7 @@
 import { FaCode } from "react-icons/fa6";
 import { FaArrowTurnDown } from "react-icons/fa6";
+import { FaSearch } from "react-icons/fa";
+import { FaPeopleCarry } from "react-icons/fa";
 
 export default function Services() {
   return (
@@ -9,10 +11,10 @@ export default function Services() {
         <div className="bg-green-500  rounded-lg inline-block p-3">
           <FaCode className="text-4xl text-green-100 " />
         </div>
-        <h2 className="text-xl xl:text-2xl my-5 font-semibold">
+        <h2 className="text-xl 2xl:text-3xl my-5 font-semibold">
           Tworzenie Responsywnych Stron Internetowych
         </h2>
-        <p className="text-neutral-900 font-light">
+        <p className="text-neutral-900 font-light 2xl:text-lg">
           Oferujemy nowoczesne strony internetowe, które rozwijamy wspólnie z
           klientami od pierwszego kontaktu aż do wdrożenia. Każda nasza strona
           jest unikalna, stworzona tak, by wyróżniać się w sieci i spełniać
@@ -24,15 +26,15 @@ export default function Services() {
       </article>
 
       {/* card 2 */}
-      <article className="relative w-5/6 xl:w-3/5 ml-auto p-6 my-14 xl:my-24 rounded-l-lg  bg-white ">
+      <article className="relative w-5/6 xl:w-3/5 ml-auto p-6 xl:p-10 my-14 xl:my-24 rounded-l-lg  bg-white ">
         <div className="bg-green-500 rounded-lg inline-block p-3">
-          <FaCode className="text-4xl text-green-100 " />
+          <FaSearch className="text-4xl text-green-100 " />
         </div>
-        <h2 className="text-xl xl:text-2xl my-5 font-semibold">
+        <h2 className="text-xl 2xl:text-3xl my-5 font-semibold 2xl:leading-snug">
           Pozycjonowanie Stron Internetowych (SEO) – Skuteczna Optymalizacja i
           Wzrost Widoczności
         </h2>
-        <p className="text-neutral-900 font-light">
+        <p className="text-neutral-900 font-light 2xl:text-lg">
           Naszym celem jest, aby Twoja strona zajmowała czołowe miejsca w
           wynikach wyszukiwania. Oferujemy pełne wsparcie w zakresie SEO,
           pomagając Ci osiągnąć sukces i wyprzedzić konkurencję w Google. Dzięki
@@ -45,14 +47,14 @@ export default function Services() {
       </article>
 
       {/* Card 3 */}
-      <article className="relative w-5/6 xl:w-3/5 p-6 rounded-r-lg  bg-white ">
+      <article className="relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-r-lg  bg-white ">
         <div className="bg-green-500  rounded-lg inline-block p-3">
-          <FaCode className="text-4xl text-green-100 " />
+          <FaPeopleCarry className="text-4xl text-green-100 " />
         </div>
-        <h2 className="text-xl xl:text-2xl my-5 font-semibold">
+        <h2 className="text-xl 2xl:text-3xl my-5 font-semibold">
           Wsparcie Techniczne Stron Internetowych i Aktualizacje
         </h2>
-        <p className="text-neutral-900 font-light">
+        <p className="text-neutral-900 font-light 2xl:text-lg">
           Zapewniamy wsparcie techniczne na każdym etapie działania Twojej
           strony. Niezależnie od tego, czy jesteś naszym klientem, czy dopiero
           zaczynasz przygodę z naszą firmą, możesz liczyć na naszą pomoc i

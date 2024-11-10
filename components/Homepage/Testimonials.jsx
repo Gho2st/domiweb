@@ -1,46 +1,103 @@
 "use client";
 import Image from "next/image";
-import { FaGoogle } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
+import Slider from "react-slick";
+import { FaGoogle, FaStar } from "react-icons/fa";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Testimonials() {
   const stars = Array.from({ length: 5 }, (_, index) => (
     <FaStar key={index} className="fill-yellow-400 text-xl xl:text-3xl" />
   ));
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1224,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 680,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  const testimonials = [
+    {
+      name: "Milena Głowacka",
+      review:
+        "Jestem bardzo zadowolona z całokształtu wykonanego projektu. Pan Dominik jest miłą osobą z poczuciem humoru, widać że ma wiedzę niezbędną do wykonywania swojej pracy :)",
+    },
+    {
+      name: "Kinga Fraś",
+      review: "Polecam, pełen profesjonalizm. Starannie wykonywane zlecenia!!",
+    },
+    {
+      name: "Barbara Piękoś",
+      review:
+        "Daję pięć gwiazdek za świetny projekt ale również za współpracę. Jeśli potrzebujesz profesjonalnie wykonanej strony polecam Pana Dominika",
+    },
+  ];
+
   return (
     <section className="p-6 xl:px-24 2xl:px-44">
       <div>
-        <h2 className="text-2xl xl:text-3xl font-semibold my-6">
+        <h2 className="text-2xl 2xl:text-4xl font-semibold my-6">
           Opinie Klientów o Naszych Usługach Tworzenia Stron i SEO
         </h2>
-        <p className="text-neutral-900 xl:text-lg font-light">
+        <p className="text-neutral-900 xl:text-xl font-light">
           Podziel się swoją opinią, aby pomóc innym użytkownikom! Twoja opinia
           to wirtualny drogowskaz dla innych.
         </p>
       </div>
-      <div className="my-10 xl:my-20 ">
-        <div className="p-6 xl:p-10 bg-white rounded-xl xl:w-3/5 xl:mx-auto">
-          <div className="flex justify-between mb-10">
-            <div className="w-9 xl:w-14">
-              <Image
-                src={"/google.png"}
-                width={10}
-                height={10}
-                layout="responsive"
-              />
+      <Slider {...settings} className="my-10 mt-20 ">
+        {testimonials.map((testimonial, index) => (
+          <div key={index} className="pb-10">
+            <div className="p-6 xl:p-10 bg-white rounded-xl w-11/12 mx-auto ">
+              <div className="flex justify-between mb-6">
+                <div className="w-9 xl:w-14">
+                  <Image
+                    src="/google.png"
+                    alt="Google logo"
+                    width={10}
+                    height={10}
+                    layout="responsive"
+                  />
+                </div>
+                <div className="flex gap-1">{stars}</div>
+              </div>
+              <p className="my-8 xl:text-lg text-neutral-900 font-light">
+                {testimonial.review}
+              </p>
+              <span className="font-semibold xl:text-lg">
+                {testimonial.name}
+              </span>
             </div>
-
-            <div className="flex gap-1">{stars}</div>
           </div>
-          <p className="my-8 xl:text-lg text-neutral-900 font-light">
-            Daję pięć gwiazdek za świetny projekt ale również za współpracę.
-            Jeśli potrzebujesz profesjonalnie wykonanej strony polecam Pana
-            Dominika
-          </p>
-          <span className="font-semibold xl:text-lg">Milena Głowacka</span>
-        </div>
-      </div>
+        ))}
+      </Slider>
     </section>
   );
 }
