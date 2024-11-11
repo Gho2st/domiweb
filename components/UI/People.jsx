@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function People() {
   return (
     <section className="p-6">
-      <h2 className="text-2xl font-semibold">Ludzie, którzy tworzą DomiWeb</h2>
+      <h2 className="text-3xl leading-snug font-semibold">Ludzie, którzy tworzą DomiWeb</h2>
       {/* card container */}
       <div className="grid grid-cols-2 gap-6 mt-10">
         <div>

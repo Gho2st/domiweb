@@ -12,21 +12,22 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main>
-        <section className="overflow-hidden">
-          <div className="relative px-6 min-h-[86vh] ">
-            <h1 className="mt-14 text-sm text-gray-500 font-semibold">O Nas</h1>
-            <h2 className="mx-auto mt-6 font-semibold text-4xl rounded-xl capitalize  ">
-              Jesteśmy ludźmi którym zależy na Twoim Sukcesie
-            </h2>
+      <main className=" xl:px-24 2xl:px-44 py-10">
+        <section className="overflow-hidden p-6">
+          <div className="relative min-h-[86vh] ">
+            <div className="lg:w-3/5">
+              <h1 className="text-sm text-gray-500 font-semibold">O Nas</h1>
+              <h2 className="mt-6 font-semibold text-4xl leading-snug 2xl:text-5xl rounded-xl capitalize  ">
+                Jesteśmy ludźmi którym zależy na Twoim Sukcesie
+              </h2>
 
-            <p className="my-10  text-neutral-900 text-lg font-light ">
-              Przygoda zaczęła się od dziecięcej pasji i wielkich ambicji
-              zrodzonych przy starym laptopie. Z biegiem lat, dzięki
-              zaangażowaniu i ciężkiej pracy, udało się przekształcić te
-              marzenia w rzeczywistość.
-            </p>
-
+              <p className="my-10  text-neutral-900 text-lg font-light ">
+                Przygoda zaczęła się od dziecięcej pasji i wielkich ambicji
+                zrodzonych przy starym laptopie. Z biegiem lat, dzięki
+                zaangażowaniu i ciężkiej pracy, udało się przekształcić te
+                marzenia w rzeczywistość.
+              </p>
+            </div>
             {/* Obrazek jako tło pod tekstem */}
             <div className="absolute w-4/5 lg:w-2/5 -bottom-8 -right-16 -z-10 md:w-3/5   ">
               <Image
@@ -113,9 +114,6 @@ export default function Home() {
               monitorując wydajność strony i wprowadzając niezbędne poprawki,
               aby zapewnić jej optymalne działanie w Internecie.
             </p>
-            <span className="absolute top-[50%] left-[-30px]">
-              <FaArrowTurnDown className="text-5xl text-green-500 transform scale-x-[-1]" />
-            </span>
           </article>
         </section>
 

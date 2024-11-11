@@ -45,7 +45,7 @@ export default function FAQ() {
           return (
             <div key={index} className="rounded-lg overflow-hidden">
               <div
-                className="flex flex-col justify-between  xl:w-3/4 xl:mx-auto bg-white p-3 xl:pt-5  cursor-pointer"
+                className="flex flex-col justify-between  xl:w-3/4 xl:mx-auto bg-white p-3 xl:p-5  cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
                 <div className="flex justify-between">
@@ -63,7 +63,7 @@ export default function FAQ() {
                     transition={{ duration: 0.3, ease: "easeInOut" }} // Użycie easing dla płynniejszego przejścia
                     style={{ overflow: "hidden" }} // Zapewnia, że zawartość nie wychodzi poza granice
                   >
-                    <div className="font-light text-neutral-900 xl:w-3/4 xl:mx-auto xl:text-lg bg-white px-3 pb-5">
+                    <div className="font-light text-neutral-900 xl:w-3/4 xl:mx-auto xl:text-lg bg-white px-3 pb-5 xl:px-6">
                       {faq.answer}
                     </div>
                   </motion.div>

@@ -1,7 +1,7 @@
 export default function Experience() {
   return (
-    <section className="p-6">
-      <h2 className="text-2xl font-semibold">Doświadczenie</h2>
+    <section className="px-6 my-20">
+      <h2 className="text-3xl font-semibold">Doświadczenie</h2>
       <p className="text-neutral-900 text-lg font-light mt-6 mb-10 ">
         Dziś, prowadząc firmę, wierzymy, że kluczowym elementem sukcesu jest
         ludzki kontakt. Tworzymy nowoczesne projekty, ale najważniejsze są dla
