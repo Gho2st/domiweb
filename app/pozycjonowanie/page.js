@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Nav />
       <main>
-        <section className="p-6">
+        <section className="p-6 xl:px-24 2xl:px-44 py-10">
           <h1 className="mt-6 text-3xl font-semibold">
             Pozycjonowanie stron internetowych – dlaczego warto?
           </h1>

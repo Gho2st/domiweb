@@ -9,13 +9,13 @@ export default function Hero() {
         <h1 className="mt-14 text-sm xl:text-xl text-gray-500 font-semibold">
           Tworzenie Stron Internetowych i Aplikacji Mobilnych z SEO
         </h1>
-        <div className="lg:w-4/5 xl:w-4/5">
+        <div className="lg:w-4/5 xl:w-9/12">
           <h2 className="mt-6 font-semibold text-4xl capitalize lg:text-5xl lg:leading-snug 2xl:text-6xl 2xl:leading-snug ">
             Nowoczesne Strony i Aplikacje Mobilne – Wysokiej Jakości User
             Experience
           </h2>
 
-          <p className="my-7 xl:my-10 text-neutral-900 text-base font-light xl:text-2xl  xl:w-full  ">
+          <p className="my-7 xl:my-10 text-neutral-900 text-base font-light xl:text-xl 2xl:text-2xl   ">
             Tworzymy nowoczesne, responsywne strony internetowe i aplikacje
             mobilne, które przyciągają użytkowników oraz są zoptymalizowane pod
             kątem SEO, zapewniając widoczność w wyszukiwarkach

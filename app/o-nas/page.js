@@ -12,16 +12,18 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main className=" xl:px-24 2xl:px-44 py-10">
-        <section className="overflow-hidden p-6">
+      <main className=" p-6 xl:px-24 2xl:px-44 py-10">
+        <section className="overflow-hidden ">
           <div className="relative min-h-[86vh] ">
             <div className="lg:w-3/5">
-              <h1 className="text-sm text-gray-500 font-semibold">O Nas</h1>
-              <h2 className="mt-6 font-semibold text-4xl leading-snug 2xl:text-5xl rounded-xl capitalize  ">
+              <h1 className="text-sm xl:text-xl text-gray-500 font-semibold">
+                O Nas
+              </h1>
+              <h2 className="mt-6 font-semibold  capitalize text-4xl leading-snug lg:text-5xl lg:leading-snug 2xl:text-6xl 2xl:leading-snug   ">
                 Jesteśmy ludźmi którym zależy na Twoim Sukcesie
               </h2>
 
-              <p className="my-10  text-neutral-900 text-lg font-light ">
+              <p className="my-10 text-neutral-900 text-lg font-light xl:text-xl ">
                 Przygoda zaczęła się od dziecięcej pasji i wielkich ambicji
                 zrodzonych przy starym laptopie. Z biegiem lat, dzięki
                 zaangażowaniu i ciężkiej pracy, udało się przekształcić te
@@ -29,7 +31,7 @@ export default function Home() {
               </p>
             </div>
             {/* Obrazek jako tło pod tekstem */}
-            <div className="absolute w-4/5 lg:w-2/5 -bottom-8 -right-16 -z-10 md:w-3/5   ">
+            <div className="absolute w-4/5 md:w-3/5 lg:w-2/5 xl:w-5/12 -bottom-8 -right-16 -z-10   ">
               <Image
                 src="/o-nas.png"
                 alt="Dekoracyjny obrazek"
@@ -43,9 +45,9 @@ export default function Home() {
 
         <Experience />
 
-        <section className="pb-2 mt-10 ">
+        <section className="pb-10 mt-32 ">
           {/* Card 1 */}
-          <article className="relative w-5/6 p-6 rounded-r-xl bg-white">
+          <article className="relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-r-xl bg-white  ">
             <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
               <div className="text-4xl">1</div>
             </div>
@@ -63,7 +65,7 @@ export default function Home() {
           </article>
 
           {/* Card 2 */}
-          <article className="relative w-5/6 ml-auto p-6 my-14 rounded-l-lg bg-white">
+          <article className="relative w-5/6 xl:w-3/5 ml-auto p-6 xl:p-10 my-14 xl:my-24 rounded-l-lg  bg-white ">
             <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
               <div className="text-4xl">2</div>
             </div>
@@ -81,7 +83,7 @@ export default function Home() {
           </article>
 
           {/* Card 3 */}
-          <article className="relative w-5/6 p-6 rounded-r-lg bg-white my-14">
+          <article className="relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-r-lg  bg-white ">
             <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
               <div className="text-4xl">3</div>
             </div>
@@ -100,7 +102,7 @@ export default function Home() {
           </article>
 
           {/* Card 4 */}
-          <article className="relative w-5/6 ml-auto p-6 my-14 rounded-l-lg bg-white">
+          <article className="relative w-5/6 xl:w-3/5 ml-auto p-6 xl:p-10 my-14 xl:my-24 rounded-l-lg  bg-white ">
             <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
               <div className="text-4xl">4</div>
             </div>

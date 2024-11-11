@@ -17,7 +17,10 @@ export default function Footer() {
       <p className="my-3">
         <span> &copy; {currentYear} DomiWeb</span> - Wszelkie Prawa Zastrzeżone
       </p>
-      <Link href="#" className="text-sm">
+      <Link
+        href="/polityka_prywatnosci_domiweb.pdf"
+        className="text-sm cursor-pointer hover:text-green-500"
+      >
         Polityka Prywatności
       </Link>
       <span className="absolute text-3xl text-green-600 bottom-10 right-3">

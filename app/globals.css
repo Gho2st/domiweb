@@ -72,3 +72,14 @@ span {
   color: black !important;
   font-size: 1.5rem !important;
 }
+
+
+/* custom css */
+
+.object-cover{
+  object-fit: cover;
+}
+
+.object-contain{
+  object-fit: contain;
+}

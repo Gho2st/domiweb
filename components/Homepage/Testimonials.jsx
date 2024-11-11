@@ -59,6 +59,15 @@ export default function Testimonials() {
       review:
         "Daję pięć gwiazdek za świetny projekt ale również za współpracę. Jeśli potrzebujesz profesjonalnie wykonanej strony polecam Pana Dominika",
     },
+    {
+      name: "szabaga",
+      review: "Szczerze polecam, pełen profesjonalizm!",
+    },
+    {
+      name: "Dominik Cebula",
+      review:
+        "Polecam, profesjonalna obsługa, strona przemyślana i miła dla oka:)",
+    },
   ];
 
   return (

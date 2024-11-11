@@ -175,7 +175,7 @@ export default function Contact() {
               )}
             </div>
 
-            <div className="mt-10 bg-white p-6 py-10">
+            <div className="mt-10 bg-white p-6 py-10 rounded-xl">
               <h2 className="text-xl xl:text-2xl font-semibold mb-5">
                 Oczekujesz bardziej personalnego kontaktu?
               </h2>
