@@ -54,7 +54,7 @@ export default function Portfolio() {
       title: "Optyk - Andrzej Świerczek 1980",
       description:
         "Stworzyliśmy responsywną stronę internetową dla lokalnego optyka, która została zaprojektowana w technologii Bootstrap. Dzięki optymalizacji SEO, strona zwiększyła widoczność w wynikach wyszukiwarek, a użytkownicy mogą łatwo umawiać wizyty online.",
-      link: "https://www.olmart-ns.pl/",
+      link: "https://www.optyk-andrzej.pl/",
     },
   ];
 
@@ -98,7 +98,7 @@ export default function Portfolio() {
           <span className="text-green-500 text-lg font-semibold xl:text-2xl">
             Zobacz, co udało nam się stworzyć!
           </span>
-          <h2 className="text-3xl mt-4 xl:mt-8 font-semibold xl:text-4xl xl:leading-snug ">
+          <h2 className="text-2xl mt-4 xl:mt-8 font-semibold xl:text-4xl xl:leading-snug ">
             Nasze Projekty - Zrealizowane Strony Internetowe i Kampanie SEO
           </h2>
         </div>

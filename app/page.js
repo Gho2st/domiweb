@@ -12,7 +12,7 @@ import Footer from "@/components/UI/Footer/Footer";
 import Nav from "@/components/UI/Nav/Nav";
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <Nav />
       <Hero />
       <Portfolio />

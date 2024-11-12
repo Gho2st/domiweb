@@ -1,10 +1,10 @@
 "use client";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { IoIosCall } from "react-icons/io";
-
-import { useState, useEffect } from "react";
+import { MdDarkMode } from "react-icons/md";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,6 +62,9 @@ export default function Nav() {
             <Link href="/pozycjonowanie" className=" ">
               Pozycjonowanie
             </Link>
+            <Link href="/portfolio" className=" ">
+              Portfolio
+            </Link>
             <Link
               href="tel:+48576985894"
               className="inline-flex justify-center items-center gap-2  text-center text-green-500 font-bold"
@@ -69,6 +72,9 @@ export default function Nav() {
               Umów Spotkanie
               <IoIosCall className="text-xl" />
             </Link>
+            <div className="inline-flex justify-center items-center">
+              <MdDarkMode className="text-xl" />
+            </div>
           </div>
 
           {/* Hamburger button */}

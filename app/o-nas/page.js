@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main className=" p-6 xl:px-24 2xl:px-44 py-10">
-        <section className="overflow-hidden ">
+      <main className=" ">
+        <section className="overflow-hidden p-6 xl:px-24 2xl:px-44 py-10 ">
           <div className="relative min-h-[86vh] ">
             <div className="lg:w-3/5">
               <h1 className="text-sm xl:text-xl text-gray-500 font-semibold">
@@ -45,7 +45,7 @@ export default function Home() {
 
         <Experience />
 
-        <section className="pb-10 mt-32 ">
+        <section className="xl:px-24 2xl:px-44 mt-20 ">
           {/* Card 1 */}
           <article className="relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-r-xl bg-white  ">
             <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
@@ -118,10 +118,9 @@ export default function Home() {
             </p>
           </article>
         </section>
-
-        <People />
-        <Cta />
       </main>
+      <People />
+      <Cta />
       <Footer />
     </>
   );

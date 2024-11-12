@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function People() {
   return (
-    <section className="p-6 my-10">
+    <section className="p-6 xl:px-24 2xl:px-44 py-10 my-10">
       <h2 className="text-3xl leading-snug font-semibold">
         Ludzie, którzy tworzą DomiWeb
       </h2>

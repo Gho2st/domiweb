@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <section className="my-20">
+    <section className="p-6 xl:px-24 2xl:px-44 py-10">
       <h2 className="text-3xl xl:text-4xl font-semibold">Doświadczenie</h2>
       <p className="text-neutral-900 text-lg font-light mt-6 mb-10 ">
         Dziś, prowadząc firmę, wierzymy, że kluczowym elementem sukcesu jest

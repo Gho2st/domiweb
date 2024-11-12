@@ -5,7 +5,7 @@ import { FaPeopleCarry } from "react-icons/fa";
 
 export default function Services() {
   return (
-    <section className=" pb-10 mt-14 xl:px-44 ">
+    <section className=" pb-10 mt-14 xl:px-44  ">
       {/* Card 1 */}
       <article className="relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-r-xl bg-white  ">
         <div className="bg-green-500  rounded-lg inline-block p-3">
