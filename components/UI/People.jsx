@@ -32,7 +32,7 @@ export default function People() {
               alt="Zdjęcie Julii Płacheckiej, projektantki UI & UX firmy Domiweb."
             />
           </div>
-          <h3 className="mt-5">Julia Płachecka</h3>
+          <h3 className="mt-5">Julia</h3>
           <p className="text-sm mt-1 font-semibold text-gray-500">
             Projektant UI & UX
           </p>
