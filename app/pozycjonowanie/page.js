@@ -1,6 +1,16 @@
 import Footer from "@/components/UI/Footer/Footer";
 import Nav from "@/components/UI/Nav/Nav";
 
+export const metadata = {
+  title: "Pozycjonowanie stron internetowych | DomiWeb",
+  alternates: {
+    canonical: "/pozycjonowanie",
+  },
+
+  description:
+    "Dowiedz się, dlaczego pozycjonowanie stron internetowych jest ważne. Dzięki SEO Twoja strona może zyskać większy ruch i wyróżnić się w Google.",
+};
+
 export default function Home() {
   return (
     <>

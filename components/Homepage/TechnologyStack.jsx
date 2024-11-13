@@ -49,7 +49,7 @@ export default function TechnologyStack() {
       <h2 className="text-2xl xl:text-5xl text-center font-semibold">
         Wykorzystywane Technologie
       </h2>
-      <div className="flex items-center text-6xl px-6 xl:px-52 my-14 xl:my-24 justify-between ">
+      <div className="flex items-center text-5xl xl:text-6xl px-6 xl:px-52 my-14 xl:my-24 justify-between ">
         <RiNextjsLine
           onClick={() => setActiveTech("Next.js")}
           className={`rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${

@@ -28,7 +28,7 @@ export default function Hero() {
         </div>
 
         {/* Obrazek jako tło pod tekstem */}
-        <div className="absolute w-3/4 -bottom-10 -right-16 -z-10 md:w-3/5 lg:w-2/5 lg:right-24   ">
+        <div className="absolute w-3/4 -bottom-16 -right-16 -z-10 md:w-3/5 lg:w-2/5 lg:right-24   ">
           <Image
             src="/blok.png"
             alt="Dekoracyjny obrazek"

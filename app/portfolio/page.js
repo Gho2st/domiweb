@@ -4,6 +4,17 @@ import Footer from "@/components/UI/Footer/Footer";
 import Nav from "@/components/UI/Nav/Nav";
 import PortfolioItem from "@/components/UI/PortfolioItem";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata = {
+  title: "Portfolio - Realizacje i Projekty | Domiweb",
+  alternates: {
+    canonical: "/portfolio",
+  },
+
+  description:
+    "Poznaj nasze portfolio – Domiweb realizuje projekty dla klientów z różnych branż, tworząc nowoczesne i funkcjonalne strony internetowe. Od systemów rezerwacji po optymalizację SEO i zaawansowane integracje, nasze realizacje pokazują różnorodność technologii i designu, które przynoszą naszym klientom realne korzyści.",
+};
 
 export default function Home() {
   const portfolioItems = [

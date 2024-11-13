@@ -12,7 +12,7 @@ export default function Review() {
         <div className="mt-6 mb-1 xl:text-xl font-semibold">Jakub Oleś</div>
         <div className="text-sm xl:text-base text-gray-500">Oleś Garage</div>
         <div className="absolute -z-10 top-0 right-5">
-          <FaQuoteRight className="text-[13rem] opacity-60  text-slate-200" />
+          <FaQuoteRight className="text-[13rem] opacity-60 text-slate-200" />
         </div>
       </div>
     </section>

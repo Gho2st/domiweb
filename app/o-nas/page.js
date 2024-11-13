@@ -8,6 +8,16 @@ import People from "@/components/UI/People";
 import Experience from "@/components/UI/Experience";
 import Cta from "@/components/Homepage/Cta";
 
+export const metadata = {
+  title: "O nas - Kim jesteśmy i jak wspieramy Twój rozwój | Domiweb",
+  alternates: {
+    canonical: "/o-nas",
+  },
+
+  description:
+    "Poznaj zespół Domiweb – ludzi z pasją do tworzenia stron internetowych, których celem jest wspieranie sukcesu Twojej marki. Od pierwszego kontaktu po długoterminowe wsparcie, towarzyszymy Ci na każdym etapie, zapewniając profesjonalizm, jakość, i efektywność.",
+};
+
 export default function Home() {
   return (
     <>
