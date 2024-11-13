@@ -5,7 +5,7 @@ import { FaLongArrowAltDown } from "react-icons/fa";
 export default function Hero() {
   return (
     <section className="">
-      <div className="relative px-6 min-h-[86vh] lg:px-24 2xl:px-44 lg:min-h-[100vh] ">
+      <div className="relative px-6 min-h-[100vh] lg:px-24 2xl:px-44  ">
         <h1 className="mt-14 text-sm xl:text-xl text-gray-500 font-semibold">
           Tworzenie Stron Internetowych i Aplikacji Mobilnych z SEO
         </h1>
