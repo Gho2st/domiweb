@@ -38,7 +38,7 @@ export default function Home() {
               </p>
             </div>
             {/* Obrazek jako tło pod tekstem */}
-            <div className="absolute w-3/5 md:w-3/5 lg:w-2/5 xl:w-4/12 -bottom-16 lg:-bottom-0 -right-0 -z-10   ">
+            <div className="absolute w-3/5 md:w-3/5 lg:w-2/5 xl:w-4/12 -bottom-24 lg:-bottom-0 -right-0 -z-10   ">
               <Image
                 src="/seo.png"
                 alt="Obrazek przedstawiający chłopaka zajmującego się pozycjonowaniem stron internetowych"

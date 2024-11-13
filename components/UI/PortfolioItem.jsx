@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function PortfolioItem({ title, description, imageSrc, link }) {
   return (
-    <div className="bg-white rounded-xl p-6 2xl:p-10">
+    <div className="bg-white shadow-lg rounded-xl p-6 2xl:p-10">
       <div>
         <Image
           className="rounded-xl"
