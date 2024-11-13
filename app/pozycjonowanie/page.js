@@ -2,7 +2,11 @@ import Cta from "@/components/Homepage/Cta";
 import Footer from "@/components/UI/Footer/Footer";
 import Nav from "@/components/UI/Nav/Nav";
 import Image from "next/image";
-import { FaArrowTurnDown } from "react-icons/fa6";
+import { FaCode } from "react-icons/fa6";
+import { FaSearch } from "react-icons/fa";
+import { FaPeopleCarry } from "react-icons/fa";
+import { RiPlantFill } from "react-icons/ri";
+import Services from "@/components/UI/Services";
 
 export const metadata = {
   title: "Pozycjonowanie stron internetowych | DomiWeb",
@@ -15,6 +19,33 @@ export const metadata = {
 };
 
 export default function Home() {
+  const cardsData = [
+    {
+      icon: <FaCode className="text-4xl text-green-100" />,
+      title: "Zwiększenie widoczności w Google",
+      description:
+        "Pozycjonowanie to klucz do osiągnięcia wysokich wyników w wyszukiwarce Google. Im wyżej znajduje się Twoja strona w wynikach wyszukiwania, tym większa szansa, że dotrzesz do potencjalnych klientów. Działania SEO pomagają zoptymalizować stronę, aby była bardziej atrakcyjna i lepiej rozpoznawalna w Google.",
+    },
+    {
+      icon: <FaSearch className="text-4xl text-green-100" />,
+      title: "Zwiększenie ruchu na stronie",
+      description:
+        "Dobrze przeprowadzone pozycjonowanie zwiększa liczbę odwiedzin Twojej strony. Zwiększony ruch oznacza więcej potencjalnych klientów, którzy mogą zapoznać się z Twoją ofertą i dokonać zakupu lub skorzystać z usług. Poprzez optymalizację treści, słów kluczowych i struktury strony, możesz przyciągnąć nowych użytkowników. </p>",
+    },
+    {
+      icon: <RiPlantFill className="text-4xl text-green-100" />,
+      title: "Budowanie zaufania i autorytetu",
+      description:
+        "Dzięki odpowiednim działaniom SEO, Twoja strona staje się bardziej wiarygodna i autentyczna w oczach użytkowników. Wysoka pozycja w Google buduje zaufanie do Twojej firmy i sprawia, że użytkownicy chętniej odwiedzają Twoją stronę oraz podejmują decyzje zakupowe.",
+    },
+    {
+      icon: <FaPeopleCarry className="text-4xl text-green-100" />,
+      title: "Konkurencyjność na rynku",
+      description:
+        "Pozycjonowanie pozwala Twojej stronie wyróżnić się wśród konkurencji. Dzięki odpowiednim działaniom SEO, możesz przyciągnąć klientów, którzy szukają produktów lub usług podobnych do Twoich, ale wybiorą Ciebie, ponieważ Twoja strona jest lepiej widoczna i bardziej dopasowana do ich potrzeb.",
+    },
+  ];
+
   return (
     <>
       <Nav />
@@ -49,87 +80,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* sekcja 2 */}
-
-        <section className="xl:px-24 2xl:px-44 mt-20 ">
-          {/* Card 1 */}
-          <article className="relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-r-xl bg-white  ">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">1</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">
-              Zwiększenie widoczności w Google
-            </h2>
-            <p className="text-neutral-900 font-light">
-              Pozycjonowanie to klucz do osiągnięcia wysokich wyników w
-              wyszukiwarce Google. Im wyżej znajduje się Twoja strona w wynikach
-              wyszukiwania, tym większa szansa, że dotrzesz do potencjalnych
-              klientów. Działania SEO pomagają zoptymalizować stronę, aby była
-              bardziej atrakcyjna i lepiej rozpoznawalna w Google.
-            </p>
-            <span className="absolute top-[50%] right-[-30px]">
-              <FaArrowTurnDown className="text-5xl text-green-500" />
-            </span>
-          </article>
-
-          {/* Card 2 */}
-          <article className="relative w-5/6 xl:w-3/5 ml-auto p-6 xl:p-10 my-14 xl:my-24 rounded-l-lg  bg-white ">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">2</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">
-              Zwiększenie ruchu na stronie
-            </h2>
-            <p className="text-neutral-900 font-light">
-              Dobrze przeprowadzone pozycjonowanie zwiększa liczbę odwiedzin
-              Twojej strony. Zwiększony ruch oznacza więcej potencjalnych
-              klientów, którzy mogą zapoznać się z Twoją ofertą i dokonać zakupu
-              lub skorzystać z usług. Poprzez optymalizację treści, słów
-              kluczowych i struktury strony, możesz przyciągnąć nowych
-              użytkowników.
-            </p>
-            <span className="absolute top-[50%] left-[-30px]">
-              <FaArrowTurnDown className="text-5xl text-green-500 transform scale-x-[-1]" />
-            </span>
-          </article>
-
-          {/* Card 3 */}
-          <article className="relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-r-lg  bg-white ">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">3</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">
-              Budowanie zaufania i autorytetu
-            </h2>
-            <p className="text-neutral-900 font-light">
-              Dzięki odpowiednim działaniom SEO, Twoja strona staje się bardziej
-              wiarygodna i autentyczna w oczach użytkowników. Wysoka pozycja w
-              Google buduje zaufanie do Twojej firmy i sprawia, że użytkownicy
-              chętniej odwiedzają Twoją stronę oraz podejmują decyzje zakupowe.
-            </p>
-            <span className="absolute top-[50%] right-[-30px]">
-              <FaArrowTurnDown className="text-5xl text-green-500" />
-            </span>
-          </article>
-
-          {/* Card 4 */}
-          <article className="relative w-5/6 xl:w-3/5 ml-auto p-6 xl:p-10 my-14 xl:my-24 rounded-l-lg  bg-white ">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">4</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">
-              Konkurencyjność na rynku
-            </h2>
-            <p className="text-neutral-900 font-light">
-              Pozycjonowanie pozwala Twojej stronie wyróżnić się wśród
-              konkurencji. Dzięki odpowiednim działaniom SEO, możesz przyciągnąć
-              klientów, którzy szukają produktów lub usług podobnych do Twoich,
-              ale wybiorą Ciebie, ponieważ Twoja strona jest lepiej widoczna i
-              bardziej dopasowana do ich potrzeb.
-            </p>
-          </article>
-        </section>
+        <Services cards={cardsData} />
       </main>
       <Cta />
       <Footer />

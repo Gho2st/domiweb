@@ -1,12 +1,14 @@
 import Footer from "@/components/UI/Footer/Footer";
 import Nav from "@/components/UI/Nav/Nav";
 import Image from "next/image";
-import { FaArrowTurnDown } from "react-icons/fa6";
-import Link from "next/link";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import People from "@/components/UI/People";
 import Experience from "@/components/UI/Experience";
 import Cta from "@/components/Homepage/Cta";
+import Services from "@/components/UI/Services";
+import { FaCode } from "react-icons/fa6";
+import { FaSearch } from "react-icons/fa";
+import { FaPeopleCarry } from "react-icons/fa";
+import { RiPlantFill } from "react-icons/ri";
 
 export const metadata = {
   title: "O nas - Kim jesteśmy i jak wspieramy Twój rozwój | Domiweb",
@@ -19,6 +21,32 @@ export const metadata = {
 };
 
 export default function Home() {
+  const cardsData = [
+    {
+      icon: <FaCode className="text-4xl text-green-100" />,
+      title: "Pierwszy Kontakt",
+      description:
+        "Rozpocznij swoją podróż z nami, dzieląc się swoimi pomysłami lub wyzwaniami. Możesz skontaktować się z nami za pośrednictwem e-maila, telefonu lub umówić się na osobiste spotkanie. Nasz zespół zapewni Ci szybką odpowiedź i pomoc, aby zrozumieć Twoje potrzeby i oczekiwania.",
+    },
+    {
+      icon: <FaSearch className="text-4xl text-green-100" />,
+      title: "Analiza i Planowanie",
+      description:
+        "Po zrozumieniu Twoich potrzeb, przeprowadzimy dokładną analizę i zaplanujemy strategię działania. Naszym celem jest stworzenie rozwiązania, które spełni Twoje oczekiwania i pomoże w osiągnięciu celów biznesowych. Zawsze staramy się dostarczyć najwyższą jakość usług.",
+    },
+    {
+      icon: <RiPlantFill className="text-4xl text-green-100" />,
+      title: " Programowanie i Rozwój",
+      description:
+        "Nasz zespół programistów pracuje nad stworzeniem funkcjonalnej i estetycznej strony internetowej, dostosowanej do Twoich potrzeb. Oferujemy wsparcie techniczne na każdym etapie realizacji projektu, aby zapewnić pełne zadowolenie z efektów naszej pracy.",
+    },
+    {
+      icon: <FaPeopleCarry className="text-4xl text-green-100" />,
+      title: "Publikacja i Wsparcie",
+      description:
+        "Po zakończeniu procesu programowania, Twoja strona zostanie opublikowana i udostępniona światu. Nasza praca nie kończy się na tym etapie – oferujemy również długoterminowe wsparcie, monitorując wydajność strony i wprowadzając niezbędne poprawki, aby zapewnić jej optymalne działanie w Internecie.",
+    },
+  ];
   return (
     <>
       <Nav />
@@ -54,80 +82,7 @@ export default function Home() {
         </section>
 
         <Experience />
-
-        <section className="xl:px-24 2xl:px-44 mt-20 ">
-          {/* Card 1 */}
-          <article className="relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-r-xl bg-white  ">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">1</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">Pierwszy Kontakt</h2>
-            <p className="text-neutral-900 font-light">
-              Rozpocznij swoją podróż z nami, dzieląc się swoimi pomysłami lub
-              wyzwaniami. Możesz skontaktować się z nami za pośrednictwem
-              e-maila, telefonu lub umówić się na osobiste spotkanie. Nasz
-              zespół zapewni Ci szybką odpowiedź i pomoc, aby zrozumieć Twoje
-              potrzeby i oczekiwania.
-            </p>
-            <span className="absolute top-[50%] right-[-30px]">
-              <FaArrowTurnDown className="text-5xl text-green-500" />
-            </span>
-          </article>
-
-          {/* Card 2 */}
-          <article className="relative w-5/6 xl:w-3/5 ml-auto p-6 xl:p-10 my-14 xl:my-24 rounded-l-lg  bg-white ">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">2</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">Analiza i Planowanie</h2>
-            <p className="text-neutral-900 font-light">
-              Po zrozumieniu Twoich potrzeb, przeprowadzimy dokładną analizę i
-              zaplanujemy strategię działania. Naszym celem jest stworzenie
-              rozwiązania, które spełni Twoje oczekiwania i pomoże w osiągnięciu
-              celów biznesowych. Zawsze staramy się dostarczyć najwyższą jakość
-              usług.
-            </p>
-            <span className="absolute top-[50%] left-[-30px]">
-              <FaArrowTurnDown className="text-5xl text-green-500 transform scale-x-[-1]" />
-            </span>
-          </article>
-
-          {/* Card 3 */}
-          <article className="relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-r-lg  bg-white ">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">3</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">
-              Programowanie i Rozwój
-            </h2>
-            <p className="text-neutral-900 font-light">
-              Nasz zespół programistów pracuje nad stworzeniem funkcjonalnej i
-              estetycznej strony internetowej, dostosowanej do Twoich potrzeb.
-              Oferujemy wsparcie techniczne na każdym etapie realizacji
-              projektu, aby zapewnić pełne zadowolenie z efektów naszej pracy.
-            </p>
-            <span className="absolute top-[50%] right-[-30px]">
-              <FaArrowTurnDown className="text-5xl text-green-500" />
-            </span>
-          </article>
-
-          {/* Card 4 */}
-          <article className="relative w-5/6 xl:w-3/5 ml-auto p-6 xl:p-10 my-14 xl:my-24 rounded-l-lg  bg-white ">
-            <div className="bg-green-500 text-white rounded-lg inline-block p-2 px-5">
-              <div className="text-4xl">4</div>
-            </div>
-            <h2 className="text-xl my-5 font-semibold">
-              Publikacja i Wsparcie
-            </h2>
-            <p className="text-neutral-900 font-light">
-              Po zakończeniu procesu programowania, Twoja strona zostanie
-              opublikowana i udostępniona światu. Nasza praca nie kończy się na
-              tym etapie – oferujemy również długoterminowe wsparcie,
-              monitorując wydajność strony i wprowadzając niezbędne poprawki,
-              aby zapewnić jej optymalne działanie w Internecie.
-            </p>
-          </article>
-        </section>
+        <Services cards={cardsData} />
       </main>
       <People />
       <Cta />
