@@ -65,7 +65,7 @@ export default function Audit() {
             </ul>
             <Link
               className="inline-flex gap-2 items-center font-semibold group"
-              href="#"
+              href="/pozycjonowanie"
             >
               Czytaj więcej
               <div className="p-2 rounded-full transition duration-300 group-hover:bg-green-500">

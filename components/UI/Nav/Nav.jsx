@@ -56,14 +56,15 @@ export default function Nav() {
             <Link href="/o-nas" className=" ">
               O Nas
             </Link>
-            <Link href="/kontakt" className=" ">
-              Kontakt
+            <Link href="/portfolio" className=" ">
+              Portfolio
             </Link>
             <Link href="/pozycjonowanie" className=" ">
               Pozycjonowanie
             </Link>
-            <Link href="/portfolio" className=" ">
-              Portfolio
+
+            <Link href="/kontakt" className=" ">
+              Kontakt
             </Link>
             <Link
               href="tel:+48576985894"
@@ -107,8 +108,11 @@ export default function Nav() {
                 <Link href="/o-nas" className="w-full text-center">
                   O Nas
                 </Link>
-                <Link href="kontakt" className="w-full text-center">
+                <Link href="/kontakt" className="w-full text-center">
                   Kontakt
+                </Link>
+                <Link href="/portfolio" className="w-full text-center">
+                  Portfolio
                 </Link>
                 <Link href="/pozycjonowanie" className="w-full text-center">
                   Pozycjonowanie
