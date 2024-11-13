@@ -73,13 +73,21 @@ span {
   font-size: 1.5rem !important;
 }
 
-
 /* custom css */
 
-.object-cover{
+.object-cover {
   object-fit: cover;
 }
 
-.object-contain{
+.object-contain {
   object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .slick-next:before {
+    visibility: hidden !important;
+  }
+  .slick-prev:before{
+    visibility: hidden !important;
+  }
 }
