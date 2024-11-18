@@ -30,7 +30,7 @@ export default function Home() {
       icon: <FaSearch className="text-4xl text-green-100" />,
       title: "Zwiększenie ruchu na stronie",
       description:
-        "Dobrze przeprowadzone pozycjonowanie zwiększa liczbę odwiedzin Twojej strony. Zwiększony ruch oznacza więcej potencjalnych klientów, którzy mogą zapoznać się z Twoją ofertą i dokonać zakupu lub skorzystać z usług. Poprzez optymalizację treści, słów kluczowych i struktury strony, możesz przyciągnąć nowych użytkowników. </p>",
+        "Dobrze przeprowadzone pozycjonowanie zwiększa liczbę odwiedzin Twojej strony. Zwiększony ruch oznacza więcej potencjalnych klientów, którzy mogą zapoznać się z Twoją ofertą i dokonać zakupu lub skorzystać z usług. Poprzez optymalizację treści, słów kluczowych i struktury strony, możesz przyciągnąć nowych użytkowników.",
     },
     {
       icon: <RiPlantFill className="text-4xl text-green-100" />,
@@ -49,8 +49,8 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main>
-        <section className="p-6 xl:px-24 2xl:px-44 py-10 ">
+      <main className="overflow-hidden">
+        <section className="p-6 xl:px-24 2xl:px-44 py-10 mb-20">
           <div className="relative min-h-[100vh] lg:min-h-[86vh] ">
             <div className="lg:w-3/5">
               <h1 className="text-sm xl:text-xl text-gray-500 font-semibold">
