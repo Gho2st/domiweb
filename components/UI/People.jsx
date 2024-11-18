@@ -17,7 +17,7 @@ export default function People() {
               className="rounded-2xl object-cover xl:object-contain"
             />
           </div>
-          <h3 className="mt-5">Dominik Jojczyk</h3>
+          <h3 className="mt-5 font-semibold">Dominik Jojczyk</h3>
           <p className="text-sm mt-1 font-semibold text-gray-500">
             Założyciel, Engineering Team Leader
           </p>
@@ -32,7 +32,7 @@ export default function People() {
               alt="Zdjęcie Julii Płacheckiej, projektantki UI & UX firmy Domiweb."
             />
           </div>
-          <h3 className="mt-5">Julia</h3>
+          <h3 className="mt-5 font-semibold">Julia</h3>
           <p className="text-sm mt-1 font-semibold text-gray-500">
             Projektant UI & UX
           </p>

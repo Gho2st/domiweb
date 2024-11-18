@@ -53,7 +53,7 @@ export default function Portfolio() {
       image: "/portfolio/optyk.png",
       title: "Optyk - Andrzej Świerczek 1980",
       description:
-        "Stworzyliśmy responsywną stronę internetową dla lokalnego optyka, która została zaprojektowana w technologii Bootstrap. Dzięki optymalizacji SEO, strona zwiększyła widoczność w wynikach wyszukiwarek, a użytkownicy mogą łatwo umawiać wizyty online.",
+        "Stworzyliśmy responsywną stronę internetową dla lokalnego optyka. Dzięki optymalizacji SEO, strona zwiększyła widoczność w wynikach wyszukiwarek.",
       link: "https://www.optyk-andrzej.pl/",
     },
   ];
