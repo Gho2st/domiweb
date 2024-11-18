@@ -11,21 +11,21 @@ export default function Portfolio() {
       image: "/portfolio/wesolewygibasy.png",
       title: "Żłobki Wesołe Wygibasy.",
       description:
-        "Nowoczesny projekt w Next.js dla krakowskiej firmy żłobkowej. Strona stworzona z myślą o łatwej nawigacji i dostępności dla rodziców. Design strony - pastelowe kolory + odpowiednia czcionka.",
+        "Strona internetowa dla krakowskiej sieci żłobków, zaprojektowana z myślą o rodzicach. Jasny, przyjazny design, intuicyjna nawigacja i pastelowa kolorystyka tworzą komfortowe doświadczenie użytkownika.",
       link: "https://www.wesolewygibasy.pl/",
     },
     {
       image: "/portfolio/hukimuki.png",
       title: "Pub & Club Huki Muki.",
       description:
-        "Dla krakowskiego pubu Huki Muki stworzyliśmy nowoczesną stronę w technologii Next.js, z integracją płatności Stripe i bazą danych PostgreSQL. Strona zawiera również system rezerwacji online.",
+        "Strona internetowa dla jednego z najpopularniejszych pubów w Krakowie. Zawiera system rezerwacji online, integrację płatności oraz dynamiczny design, który oddaje klimat miejsca.",
       link: "https://www.hukimuki.pl/",
     },
     {
       image: "/portfolio/barbarapiekos.png",
       title: "Barbara Piękoś - Artystka.",
       description:
-        "Strona internetowa dla Barbary Piękoś - artystki, która prezentuje swoje prace oraz najnowsze wystawy. Projekt oparty na minimalistycznym designie, by podkreślić jej artystyczny styl.",
+        "Strona, która eksponuje sztukę. Elegancki, minimalistyczny design podkreśla unikalny charakter twórczości Barbary, zapewniając jednocześnie czytelność i łatwą nawigację.",
       link: "https://www.barbarapiekos.pl/",
     },
     {
@@ -35,25 +35,25 @@ export default function Portfolio() {
         "Dzięki integracji z AWS, strona zapewnia szybkie ładowanie i wysoką dostępność. Użytkownicy mogą łatwo przeglądać ofertę, a responsywny design gwarantuje wygodę na różnych urządzeniach.",
       link: "https://www.szlafroki.krakow.pl/",
     },
-    {
-      image: "/portfolio/ptaki.png",
-      title: "Stowarzyszenie hodowców ptaków",
-      description:
-        "Dynamiczna strona internetowa z panelem administracyjnym stworzona w PHP i MySQL, która umożliwia łatwe zarządzanie treścią i użytkownikami, a także szybki dostęp do aktualizacji.",
-      link: "https://www.nshkipe.com.pl/",
-    },
+    // {
+    //   image: "/portfolio/ptaki.png",
+    //   title: "Stowarzyszenie hodowców ptaków",
+    //   description:
+    //     "Dynamiczna strona internetowa z panelem administracyjnym stworzona w PHP i MySQL, która umożliwia łatwe zarządzanie treścią i użytkownikami, a także szybki dostęp do aktualizacji.",
+    //   link: "https://www.nshkipe.com.pl/",
+    // },
     {
       image: "/portfolio/olmart.png",
       title: "Olmart - Zakład Zduński",
       description:
-        "Strona internetowa wykorzystująca Bootstrap i jQuery, prezentująca ofertę usług zduńskich, z naciskiem na SEO i widoczność w sieci.",
+        "Nowoczesna strona prezentująca usługi zduńskie. Prosty układ i optymalizacja pod kątem SEO pomagają w dotarciu do klientów poszukujących rzetelnych specjalistów.",
       link: "https://www.olmart-ns.pl/",
     },
     {
       image: "/portfolio/optyk.png",
       title: "Optyk - Andrzej Świerczek 1980",
       description:
-        "Stworzyliśmy responsywną stronę internetową dla lokalnego optyka. Dzięki optymalizacji SEO, strona zwiększyła widoczność w wynikach wyszukiwarek.",
+        "Strona lokalnego optyka z ponad 40-letnią tradycją. Dopracowany projekt wspiera pozycjonowanie w wyszukiwarkach, zwiększając zasięg firmy w regionie.",
       link: "https://www.optyk-andrzej.pl/",
     },
   ];

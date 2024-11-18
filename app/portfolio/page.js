@@ -3,8 +3,6 @@ import Review from "@/components/Homepage/Review";
 import Footer from "@/components/UI/Footer/Footer";
 import Nav from "@/components/UI/Nav/Nav";
 import PortfolioItem from "@/components/UI/PortfolioItem";
-import Link from "next/link";
-import { Metadata } from "next";
 
 export const metadata = {
   title: "Portfolio - Realizacje i Projekty | Domiweb",
