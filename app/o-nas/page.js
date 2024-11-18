@@ -50,8 +50,8 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <main className=" ">
-        <section className="overflow-hidden p-6 xl:px-24 2xl:px-44 py-10 ">
+      <main className="overflow-hidden ">
+        <section className=" p-6 xl:px-24 2xl:px-44 py-10 ">
           <div className="relative min-h-[100vh] lg:min-h-[86vh] ">
             <div className="lg:w-3/5">
               <h1 className="text-sm xl:text-xl text-gray-500 font-semibold">
