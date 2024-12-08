@@ -44,14 +44,17 @@ export default function Form() {
       return;
     }
 
+    // Pobranie tokena reCAPTCHA
+    const recaptchaToken = recaptchaRef.current.getValue();
+    if (!recaptchaToken) {
+      setFormError("Proszę zaznacz CAPTCHA przed wysłaniem.");
+      return;
+    }
+
     setIsSending(true);
     setFormError(null);
 
     try {
-      // Pobranie tokena reCAPTCHA
-      const recaptchaToken = await recaptchaRef.current.executeAsync();
-      recaptchaRef.current.reset();
-
       const response = await fetch("/api/send-mail", {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -65,6 +68,7 @@ export default function Form() {
           fullName: "",
           email: "",
         });
+        recaptchaRef.current.reset(); // Zresetuj CAPTCHA po wysłaniu
       } else {
         const errorData = await response.json();
         setFormError(`Error: ${errorData.message}`);
@@ -168,7 +172,6 @@ export default function Form() {
                 <ReCAPTCHA
                   ref={recaptchaRef}
                   sitekey="6LetqpUqAAAAABRwX_slcBybtlkC7S4X4QZZEYUo" // Wstaw swój Site Key
-                  size="invisible"
                 />
                 <button
                   disabled={isSending}
