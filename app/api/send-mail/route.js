@@ -82,12 +82,12 @@ export async function POST(request) {
 
     // Konfiguracja transporteru SMTP
     const transporter = nodemailer.createTransport({
-      service: process.env.SMTP_SERVICE || "gmail",
-      host: process.env.SMTP_HOST || "smtp.gmail.com",
-      port: process.env.SMTP_PORT || 465,
-      secure: process.env.SMTP_SECURE === "true",
+      service: "gmail",
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: "true",
       auth: {
-        user: process.env.NODEMAILER_EMAIL,
+        user: "biosite.praca@gmail.com",
         pass: process.env.NODEMAILER_PW,
       },
     });
