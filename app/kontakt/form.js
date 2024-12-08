@@ -51,7 +51,7 @@ export default function Form() {
       return;
     }
 
-    console.log("Wysyłanie danych:", { ...formData, recaptchaToken }); // Dodaj logowanie danych
+    // console.log("Wysyłanie danych:", { ...formData, recaptchaToken }); // Dodaj logowanie danych
 
     setIsSending(true);
     setFormError(null);
