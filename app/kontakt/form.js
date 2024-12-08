@@ -172,13 +172,14 @@ export default function Form() {
                   className="w-full h-40 mt-3 placeholder:text-neutral-500 p-3 rounded-lg border border-gray-400"
                 />
                 <ReCAPTCHA
+                  className="mt-4"
                   ref={recaptchaRef}
                   sitekey="6LetqpUqAAAAABRwX_slcBybtlkC7S4X4QZZEYUo" // Wstaw swój Site Key
                 />
                 <button
                   disabled={isSending}
                   type="submit"
-                  className="flex justify-center items-center gap-2 bg-green-500 font-semibold rounded-lg p-4 w-full mt-8"
+                  className="flex justify-center items-center gap-2 bg-green-500 font-semibold rounded-lg p-4 w-full mt-6"
                 >
                   {isSending ? "Wysyłanie..." : "Wyślij wiadomość!"}
                   <FaLongArrowAltRight className="text-xl transition duration-300 group-hover:text-white" />
