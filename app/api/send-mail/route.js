@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-// Funkcja walidacji pól formularza
+// Funkcja walidacji pól formularza :)
 function validateFields(fields) {
   return Object.entries(fields).every(
     ([key, value]) => value && value.trim() !== ""
