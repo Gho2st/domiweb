@@ -47,7 +47,7 @@ export default function Form() {
     // Pobranie tokena reCAPTCHA
     const recaptchaToken = recaptchaRef.current.getValue();
     if (!recaptchaToken) {
-      setFormError("Proszę zaznacz CAPTCHA przed wysłaniem.");
+      setFormError("Proszę zaznacz, że nie jesteś robotem przed wysłaniem.");
       return;
     }
 
