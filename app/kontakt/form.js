@@ -3,6 +3,8 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -14,6 +16,7 @@ export default function Form() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formError, setFormError] = useState(null);
   const [errorFields, setErrorFields] = useState([]);
+  const recaptchaRef = useRef(null); // Ref dla reCAPTCHA
 
   // Funkcja walidacji pól formularza
   function validateForm(data) {
@@ -45,10 +48,14 @@ export default function Form() {
     setFormError(null);
 
     try {
+      // Pobranie tokena reCAPTCHA
+      const recaptchaToken = await recaptchaRef.current.executeAsync();
+      recaptchaRef.current.reset();
+
       const response = await fetch("/api/send-mail", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, recaptchaToken }),
       });
 
       if (response.ok) {
@@ -157,6 +164,11 @@ export default function Form() {
                       : "0",
                   }}
                   className="w-full h-40 mt-3 placeholder:text-neutral-500 p-3 rounded-lg border border-gray-400"
+                />
+                <ReCAPTCHA
+                  ref={recaptchaRef}
+                  sitekey="YOUR_SITE_KEY" // Wstaw swój Site Key
+                  size="invisible"
                 />
                 <button
                   disabled={isSending}

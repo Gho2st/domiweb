@@ -31,9 +31,28 @@ function createEmailTemplate({ text, fullName, email }) {
   `;
 }
 
+// Funkcja weryfikująca token reCAPTCHA
+async function verifyRecaptcha(token) {
+  const secret = process.env.RECAPTCHA_SECRET_KEY; // Secret Key reCAPTCHA
+  const response = await fetch(
+    `https://www.google.com/recaptcha/api/siteverify`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        secret,
+        response: token,
+      }),
+    }
+  );
+
+  const data = await response.json();
+  return data.success;
+}
+
 export async function POST(request) {
   try {
-    const { text, fullName, email } = await request.json();
+    const { text, fullName, email, recaptchaToken } = await request.json();
 
     // Sprawdzenie, czy wszystkie pola są wypełnione
     const fields = {
@@ -44,6 +63,15 @@ export async function POST(request) {
     if (!validateFields(fields)) {
       return NextResponse.json(
         { message: "Uzupełnij wymagane pola" },
+        { status: 400 }
+      );
+    }
+
+    // Weryfikacja reCAPTCHA
+    const recaptchaValid = await verifyRecaptcha(recaptchaToken);
+    if (!recaptchaValid) {
+      return NextResponse.json(
+        { message: "Weryfikacja reCAPTCHA nie powiodła się." },
         { status: 400 }
       );
     }
