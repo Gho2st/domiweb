@@ -61,6 +61,7 @@ export async function POST(request) {
       email,
     };
     if (!validateFields(fields)) {
+      console.error("Wymagane pola są puste:", fields); // Dodaj logowanie
       return NextResponse.json(
         { message: "Uzupełnij wymagane pola" },
         { status: 400 }
@@ -70,6 +71,7 @@ export async function POST(request) {
     // Weryfikacja reCAPTCHA
     const recaptchaValid = await verifyRecaptcha(recaptchaToken);
     if (!recaptchaValid) {
+      console.error("Nieudana weryfikacja reCAPTCHA"); // Dodaj logowanie
       return NextResponse.json(
         { message: "Weryfikacja reCAPTCHA nie powiodła się." },
         { status: 400 }
