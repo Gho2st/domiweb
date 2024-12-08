@@ -167,7 +167,7 @@ export default function Form() {
                 />
                 <ReCAPTCHA
                   ref={recaptchaRef}
-                  sitekey="YOUR_SITE_KEY" // Wstaw swój Site Key
+                  sitekey="6LetqpUqAAAAABRwX_slcBybtlkC7S4X4QZZEYUo" // Wstaw swój Site Key
                   size="invisible"
                 />
                 <button
