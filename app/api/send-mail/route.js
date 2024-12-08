@@ -53,6 +53,7 @@ async function verifyRecaptcha(token) {
 export async function POST(request) {
   try {
     const { text, fullName, email, recaptchaToken } = await request.json();
+    console.log("Otrzymane dane:", { text, fullName, email, recaptchaToken });
 
     // Sprawdzenie, czy wszystkie pola są wypełnione
     const fields = {
@@ -61,7 +62,7 @@ export async function POST(request) {
       email,
     };
     if (!validateFields(fields)) {
-      console.error("Wymagane pola są puste:", fields); // Dodaj logowanie
+      console.log("Błąd walidacji pól:", fields); // Logowanie błędu walidacji
       return NextResponse.json(
         { message: "Uzupełnij wymagane pola" },
         { status: 400 }
@@ -70,6 +71,7 @@ export async function POST(request) {
 
     // Weryfikacja reCAPTCHA
     const recaptchaValid = await verifyRecaptcha(recaptchaToken);
+    console.log("Weryfikacja reCAPTCHA:", recaptchaValid); // Sprawdzamy wynik weryfikacji
     if (!recaptchaValid) {
       console.error("Nieudana weryfikacja reCAPTCHA"); // Dodaj logowanie
       return NextResponse.json(
