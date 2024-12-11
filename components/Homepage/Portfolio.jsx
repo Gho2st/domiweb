@@ -4,61 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import projects from "../../app/data/project"; // Ścieżka do danych
+
 
 export default function Portfolio() {
-  const projects = [
-    {
-      image: "/portfolio/wesolewygibasy.png",
-      title: "Żłobki Wesołe Wygibasy.",
-      description:
-        "Strona internetowa dla krakowskiej sieci żłobków, zaprojektowana z myślą o rodzicach. Jasny, przyjazny design, intuicyjna nawigacja i pastelowa kolorystyka tworzą komfortowe doświadczenie użytkownika.",
-      link: "https://www.wesolewygibasy.pl/",
-    },
-    {
-      image: "/portfolio/hukimuki.png",
-      title: "Pub & Club Huki Muki.",
-      description:
-        "Strona internetowa dla jednego z najpopularniejszych pubów w Krakowie. Zawiera system rezerwacji online, integrację płatności oraz dynamiczny design, który oddaje klimat miejsca.",
-      link: "https://www.hukimuki.pl/",
-    },
-    {
-      image: "/portfolio/barbarapiekos.png",
-      title: "Barbara Piękoś - Artystka.",
-      description:
-        "Strona, która eksponuje sztukę. Elegancki, minimalistyczny design podkreśla unikalny charakter twórczości Barbary, zapewniając jednocześnie czytelność i łatwą nawigację.",
-      link: "https://www.barbarapiekos.pl/",
-    },
-    {
-      image: "/portfolio/szlafroki.png",
-      title: "Sklep Specjalistyczny SzlafrO.K.",
-      description:
-        "Dzięki integracji z AWS, strona zapewnia szybkie ładowanie i wysoką dostępność. Użytkownicy mogą łatwo przeglądać ofertę, a responsywny design gwarantuje wygodę na różnych urządzeniach.",
-      link: "https://www.szlafroki.krakow.pl/",
-    },
-    // {
-    //   image: "/portfolio/ptaki.png",
-    //   title: "Stowarzyszenie hodowców ptaków",
-    //   description:
-    //     "Dynamiczna strona internetowa z panelem administracyjnym stworzona w PHP i MySQL, która umożliwia łatwe zarządzanie treścią i użytkownikami, a także szybki dostęp do aktualizacji.",
-    //   link: "https://www.nshkipe.com.pl/",
-    // },
-    {
-      image: "/portfolio/olmart.png",
-      title: "Olmart - Zakład Zduński",
-      description:
-        "Nowoczesna strona prezentująca usługi zduńskie. Prosty układ i optymalizacja pod kątem SEO pomagają w dotarciu do klientów poszukujących rzetelnych specjalistów.",
-      link: "https://www.olmart-ns.pl/",
-    },
-    {
-      image: "/portfolio/optyk.png",
-      title: "Optyk - Andrzej Świerczek 1980",
-      description:
-        "Strona lokalnego optyka z ponad 40-letnią tradycją. Dopracowany projekt wspiera pozycjonowanie w wyszukiwarkach, zwiększając zasięg firmy w regionie.",
-      link: "https://www.optyk-andrzej.pl/",
-    },
-  ];
-
   const [currentIndex, setCurrentIndex] = useState(0);
+  console.log(projects)
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
@@ -91,7 +42,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <section className=" my-10 mb-20 px-6 xl:px-24 2xl:px-44">
+    <section className=" my-10 mt-24 mb-20 px-6 xl:px-24 2xl:px-44">
       {/* card */}
       <div className="bg-white p-6 lg:p-16 rounded-xl">
         <div className=" xl:w-4/6 mb-10 xl:mb-20">
@@ -110,7 +61,7 @@ export default function Portfolio() {
               width={100}
               layout="responsive"
               className="rounded-xl"
-              alt={`Projekt numer ${currentIndex + 1} wykonany przez Domiweb`}
+              alt={`Grafika podglądowa przedstawiająca stronę internetową dla ${projects[currentIndex].title}`}
             />
           </div>
           {/* text container */}
@@ -120,11 +71,11 @@ export default function Portfolio() {
                 {projects[currentIndex].title}
               </h3>
               <p className="text-neutral-900 xl:text-lg font-light mb-6">
-                {projects[currentIndex].description}
+                {projects[currentIndex].header}
               </p>
               <Link
                 className="inline-flex gap-2 items-center font-semibold group xl:text-lg"
-                href={projects[currentIndex].link}
+                href={`/portfolio/${projects[currentIndex].id}`}
               >
                 Zobacz sam
                 <div className="p-2 rounded-full transition duration-300 group-hover:bg-green-500">

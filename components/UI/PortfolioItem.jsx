@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-export default function PortfolioItem({ title, description, imageSrc, link }) {
+export default function PortfolioItem({ title, description, image, link, id }) {
   return (
     <div className="bg-white shadow-lg rounded-xl p-6 2xl:p-10">
       <div>
         <Image
           className="rounded-xl"
-          src={imageSrc}
+          src={image}
           width={10}
           height={10}
           layout="responsive"
@@ -21,9 +21,9 @@ export default function PortfolioItem({ title, description, imageSrc, link }) {
       </p>
       <Link
         className="inline-flex gap-2 items-center font-semibold group xl:text-lg"
-        href={link}
+        href={`/portfolio/${id}`}
       >
-        Zobacz sam
+        Czytaj więcej
         <div className="p-2 rounded-full transition duration-300 group-hover:bg-green-500">
           <FaLongArrowAltRight className="text-xl transition duration-300 group-hover:text-white " />
         </div>
