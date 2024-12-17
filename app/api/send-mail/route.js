@@ -95,6 +95,7 @@ export async function POST(request) {
     const mailOptions = {
       from: process.env.NODEMAILER_EMAIL,
       to: "domiweb.biuro@gmail.com",
+      replyTo: email, // Adres e-mail klienta podany w formularzu
       subject: "Email ze strony DomiWeb od klienta",
       html: createEmailTemplate(fields),
     };
