@@ -62,19 +62,19 @@ export default function Nav() {
       <nav className="relative mx-auto">
         <div className="flex p-6 xl:px-24 2xl:px-44 pb-2 items-center justify-between">
           <Link href="/" className="font-semibold text-xl">
-            <div className="w-16">
+            <div className="w-20">
               <Image
                 src={"/logo-light.png"}
-                width={100}
-                height={100}
+                width={50}
+                height={50}
                 layout="responsive"
                 alt="logo firmy Domiweb składające się z liter D i W"
                 className="block dark:hidden"
               />
               <Image
                 src={"/logo-dark.png"}
-                width={100}
-                height={100}
+                width={50}
+                height={50}
                 layout="responsive"
                 alt="logo firmy Domiweb składające się z liter D i W"
                 className="hidden dark:block"

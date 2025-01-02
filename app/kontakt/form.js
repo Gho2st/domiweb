@@ -97,11 +97,11 @@ export default function Form() {
           {/* form container */}
           <div>
             {formSubmitted ? (
-              <div className="mt-10 lg:mt-20 dark:text-neutral-300">
-                <span className="text-2xl">
+              <div className="mt-10 lg:mt-20 ">
+                <span className="text-2xl dark:text-green-500">
                   Dziękujęmy za przesłanie formularza!
                 </span>
-                <p className="font-light text-lg mt-6">
+                <p className="font-light text-lg mt-6 dark:text-neutral-300">
                   Postaramy się odpowiedzieć tak szybko, jak to możliwe.
                 </p>
               </div>
