@@ -21,10 +21,10 @@ export default function Home() {
     <>
       <Nav />
       <main className="p-6 lg:px-24 2xl:px-44">
-        <h1 className="mt-6 font-semibold text-4xl xl:text-5xl 2xl:text-6xl capitalize">
+        <h1 className="mt-6 font-semibold text-4xl xl:text-5xl 2xl:text-6xl capitalize dark:text-neutral-200">
           Portfolio
         </h1>
-        <p className="my-10 mt-6 xl:mt-10 text-neutral-900 text-lg 2xl:text-xl font-light">
+        <p className="my-10 mt-6 xl:mt-10 text-neutral-900 dark:text-neutral-300 text-lg 2xl:text-xl font-light">
           W DomiWeb kochamy wyzwania. Jesteśmy w stanie przeistoczyć każdy Twój
           pomysł w życie.
         </p>

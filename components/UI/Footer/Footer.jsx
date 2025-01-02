@@ -13,7 +13,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative border-t-2 p-4 text-center">
+    <footer className="relative border-t-2 dark:border-green-500 p-4 text-center dark:text-neutral-200">
       <p className="my-3">
         <span> &copy; {currentYear} DomiWeb</span> - Wszelkie Prawa Zastrzeżone
       </p>

@@ -84,10 +84,10 @@ export default function Form() {
   return (
     <main>
       <section className="p-6 lg:px-24 2xl:px-44">
-        <h1 className="mx-auto mt-6 font-semibold text-4xl capitalize">
+        <h1 className="mx-auto mt-6 font-semibold text-4xl capitalize dark:text-neutral-200">
           Skontaktuj się z nami
         </h1>
-        <p className="mt-8 text-lg text-neutral-900 font-light">
+        <p className="mt-8 text-lg text-neutral-900 dark:text-neutral-300 font-light">
           Zróbmy razem świetny projekt
         </p>
         {formError && <p style={{ color: "red" }}>{formError}</p>}
@@ -97,7 +97,7 @@ export default function Form() {
           {/* form container */}
           <div>
             {formSubmitted ? (
-              <div className="mt-10 lg:mt-20">
+              <div className="mt-10 lg:mt-20 dark:text-neutral-300">
                 <span className="text-2xl">
                   Dziękujęmy za przesłanie formularza!
                 </span>
@@ -111,7 +111,7 @@ export default function Form() {
                   <div>
                     <label
                       htmlFor="fullName"
-                      className="text-sm text-neutral-700 font-medium"
+                      className="text-sm text-neutral-700 dark:text-neutral-400 font-medium"
                     >
                       * Imię i Nazwisko
                     </label>
@@ -133,7 +133,7 @@ export default function Form() {
                   <div>
                     <label
                       htmlFor="email"
-                      className="text-sm text-neutral-700 font-medium"
+                      className="text-sm text-neutral-700 dark:text-neutral-400 font-medium"
                     >
                       * Twój email
                     </label>
@@ -155,7 +155,7 @@ export default function Form() {
                 </div>
                 <label
                   htmlFor="text"
-                  className="text-sm text-neutral-700 font-medium"
+                  className="text-sm text-neutral-700 dark:text-neutral-400 font-medium"
                 >
                   * Twoja Wiadomość
                 </label>
@@ -188,11 +188,11 @@ export default function Form() {
             )}
           </div>
 
-          <div className="mt-10 bg-white p-6 py-10 rounded-xl">
-            <h2 className="text-xl xl:text-2xl font-semibold mb-5">
+          <div className="mt-10 bg-white dark:bg-neutral-950 p-6 py-10 rounded-xl">
+            <h2 className="text-xl xl:text-2xl font-semibold mb-5 dark:text-neutral-200">
               Oczekujesz bardziej personalnego kontaktu?
             </h2>
-            <p className="text-neutral-900 font-light">
+            <p className="text-neutral-900 dark:text-neutral-300 font-light">
               To możliwe. Umów wizytę z nami - chętnie porozmawiamy o twoich
               pomysłach & odpowiemy na nurtujące pytania jakie możesz mieć.
             </p>
@@ -207,14 +207,14 @@ export default function Form() {
                 />
               </div>
               <div>
-                <h3 className="font-semibold text-lg 2xl:text-xl">
+                <h3 className="font-semibold text-lg 2xl:text-xl dark:text-neutral-300">
                   Dominik Jojczyk
                 </h3>
-                <p className="text-sm mt-1 mb-6 xl:mb-4 font-semibold text-gray-500">
+                <p className="text-sm mt-1 mb-6 xl:mb-4 font-semibold text-gray-500 dark:text-neutral-400">
                   Założyciel, Engineering Team Leader
                 </p>
                 <Link
-                  className="flex gap-2 items-center font-semibold group "
+                  className="flex gap-2 items-center font-semibold group dark:text-neutral-300 "
                   href="tel:48576985894"
                 >
                   576 985 894

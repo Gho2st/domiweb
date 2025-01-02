@@ -35,7 +35,7 @@ export default function FAQ() {
 
   return (
     <section className="p-6 xl:p-24 2xl:p-44">
-      <h2 className="text-2xl xl:text-4xl text-center font-semibold">
+      <h2 className="text-2xl xl:text-4xl text-center font-semibold dark:text-neutral-200">
         Często zadawane pytania
       </h2>
       <div className="flex flex-col space-y-4 mt-10 2xl:mt-20">
@@ -45,12 +45,16 @@ export default function FAQ() {
           return (
             <div key={index} className="rounded-lg overflow-hidden">
               <div
-                className="flex flex-col justify-between  xl:w-3/4 xl:mx-auto bg-white p-3 xl:p-5  cursor-pointer"
+                className="flex flex-col justify-between  xl:w-3/4 xl:mx-auto bg-white dark:bg-neutral-950 p-3 xl:p-5  cursor-pointer"
                 onClick={() => toggleFAQ(index)}
               >
                 <div className="flex justify-between">
-                  <span className="font-medium xl:text-xl">{faq.question}</span>
-                  <div className="text-2xl">{isOpen ? "−" : "+"}</div>
+                  <span className="font-medium xl:text-xl dark:text-neutral-300">
+                    {faq.question}
+                  </span>
+                  <div className="text-2xl dark:text-neutral-300">
+                    {isOpen ? "−" : "+"}
+                  </div>
                 </div>
               </div>
 
@@ -63,7 +67,7 @@ export default function FAQ() {
                     transition={{ duration: 0.3, ease: "easeInOut" }} // Użycie easing dla płynniejszego przejścia
                     style={{ overflow: "hidden" }} // Zapewnia, że zawartość nie wychodzi poza granice
                   >
-                    <div className="font-light text-neutral-900 xl:w-3/4 xl:mx-auto xl:text-lg bg-white px-3 pb-5 xl:px-6">
+                    <div className="font-light text-neutral-900 dark:text-neutral-400  xl:w-3/4 xl:mx-auto xl:text-lg bg-white dark:bg-neutral-950 px-3 pb-5 xl:px-6">
                       {faq.answer}
                     </div>
                   </motion.div>

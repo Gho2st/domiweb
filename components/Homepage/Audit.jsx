@@ -8,10 +8,10 @@ export default function Audit() {
     <>
       <section className="p-6 mb-10 xl:px-24 2xl:px-44 2xl:min-height-[100vh] ">
         <div className="xl:w-4/5">
-          <h2 className="text-2xl xl:text-4xl mt-10 font-semibold xl:leading-snug">
+          <h2 className="text-2xl xl:text-4xl mt-10 font-semibold xl:leading-snug dark:text-neutral-200">
             Bezpłatny Audyt SEO Twojej Strony - Sprawdź, Jak Poprawić Widoczność
           </h2>
-          <p className="text-neutral-900 xl:text-xl mt-6 mb-10 font-light">
+          <p className="text-neutral-900 xl:text-xl mt-6 mb-10 font-light dark:text-neutral-300">
             Skorzystaj z darmowego audytu, by odkryć potencjał swojej strony i
             przyciągnąć więcej klientów. Dowiedz się, jak poprawić jej
             widoczność i osiągnąć lepsze wyniki w wyszukiwarkach.
@@ -29,7 +29,7 @@ export default function Audit() {
             />
           </div>
           <div className="flex justify-center flex-col">
-            <ul className="font-light xl:text-lg text-neutral-900">
+            <ul className="font-light xl:text-lg text-neutral-900 dark:text-neutral-300">
               <li className="flex justify-center xl:justify-normal items-center gap-4 mb-5">
                 <div className="bg-green-500 text-white text-lg w-10 h-10 min-w-[2.5rem] min-h-[2.5rem] rounded-full flex items-center justify-center">
                   1
@@ -64,7 +64,7 @@ export default function Audit() {
               </li>
             </ul>
             <Link
-              className="inline-flex gap-2 items-center font-semibold group"
+              className="inline-flex gap-2 items-center font-semibold group dark:text-neutral-200"
               href="/pozycjonowanie"
             >
               Czytaj więcej

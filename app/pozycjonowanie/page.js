@@ -53,14 +53,14 @@ export default function Home() {
         <section className="p-6 xl:px-24 2xl:px-44 py-10 mb-20">
           <div className="relative min-h-[100vh] lg:min-h-[86vh] ">
             <div className="lg:w-3/5">
-              <h1 className="text-sm xl:text-xl text-gray-500 font-semibold">
+              <h1 className="text-sm xl:text-xl text-gray-500 dark:text-neutral-400 font-semibold">
                 Pozycjowanie stron internetowych
               </h1>
-              <h2 className="mt-6 font-semibold  capitalize text-4xl leading-snug lg:text-5xl lg:leading-snug 2xl:text-6xl 2xl:leading-snug   ">
+              <h2 className="mt-6 font-semibold  capitalize text-4xl leading-snug lg:text-5xl lg:leading-snug 2xl:text-6xl 2xl:leading-snug dark:text-neutral-200  ">
                 Pozycjonowanie stron internetowych – dlaczego warto?
               </h2>
 
-              <p className="my-10 text-neutral-900 text-lg font-light xl:text-xl ">
+              <p className="my-10 text-neutral-900 dark:text-neutral-400 text-lg font-light xl:text-xl ">
                 Pozycjonowanie stron internetowych to proces, który sprawia, że
                 Twoja strona staje się widoczna w wynikach wyszukiwania Google.
                 Dzięki odpowiednim technikom SEO (ang. Search Engine

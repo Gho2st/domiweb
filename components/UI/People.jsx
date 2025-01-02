@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function People() {
   return (
     <section className="p-6 xl:px-24 2xl:px-44 py-10 mb-10">
-      <h2 className="text-3xl leading-snug mb-10 font-semibold">
+      <h2 className="text-3xl leading-snug mb-10 font-semibold dark:text-neutral-200">
         Ludzie, którzy tworzą DomiWeb
       </h2>
       {/* card container */}
@@ -17,8 +17,10 @@ export default function People() {
               className="rounded-2xl object-cover xl:object-contain"
             />
           </div>
-          <h3 className="mt-5 font-semibold">Dominik Jojczyk</h3>
-          <p className="text-sm mt-1 font-semibold text-gray-500">
+          <h3 className="mt-5 font-semibold dark:text-neutral-300">
+            Dominik Jojczyk
+          </h3>
+          <p className="text-sm mt-1 font-semibold text-gray-500 dark:text-neutral-400">
             Założyciel, Engineering Team Leader
           </p>
         </div>
@@ -32,8 +34,8 @@ export default function People() {
               alt="Zdjęcie Julii Płacheckiej, projektantki UI & UX firmy Domiweb."
             />
           </div>
-          <h3 className="mt-5 font-semibold">Julia</h3>
-          <p className="text-sm mt-1 font-semibold text-gray-500">
+          <h3 className="mt-5 font-semibold dark:text-neutral-300">Julia</h3>
+          <p className="text-sm mt-1 font-semibold text-gray-500 dark:text-neutral-400">
             Projektant UI & UX
           </p>
         </div>

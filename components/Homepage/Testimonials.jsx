@@ -73,10 +73,10 @@ export default function Testimonials() {
   return (
     <section className="p-6 xl:px-24 2xl:px-44">
       <div className="xl:w-3/4">
-        <h2 className="text-2xl xl:text-4xl xl:leading-snug font-semibold my-6">
+        <h2 className="text-2xl xl:text-4xl xl:leading-snug font-semibold my-6 dark:text-neutral-200">
           Opinie Klientów o Naszych Usługach Tworzenia Stron i SEO
         </h2>
-        <p className="text-neutral-900 xl:text-xl font-light">
+        <p className="text-neutral-900 dark:text-neutral-300 xl:text-xl font-light">
           Podziel się swoją opinią, aby pomóc innym użytkownikom! Twoja opinia
           to wirtualny drogowskaz dla innych.
         </p>
@@ -84,7 +84,7 @@ export default function Testimonials() {
       <Slider {...settings} className="my-10 mt-20 ">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="pb-10">
-            <div className="p-6 xl:p-10 bg-white rounded-xl w-11/12 mx-auto ">
+            <div className="p-6 xl:p-10 bg-white dark:bg-neutral-950 rounded-xl w-11/12 mx-auto ">
               <div className="flex justify-between mb-6">
                 <div className="w-9 xl:w-14">
                   <Image
@@ -97,10 +97,10 @@ export default function Testimonials() {
                 </div>
                 <div className="flex gap-1">{stars}</div>
               </div>
-              <p className="my-8 xl:text-lg text-neutral-900 font-light">
+              <p className="my-8 xl:text-lg text-neutral-900 dark:text-neutral-300 font-light">
                 {testimonial.review}
               </p>
-              <span className="font-semibold xl:text-lg">
+              <span className="font-semibold xl:text-lg dark:text-neutral-200">
                 {testimonial.name}
               </span>
             </div>

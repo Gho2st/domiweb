@@ -10,7 +10,7 @@ function ServiceCard({ icon, title, description, isLeftAligned }) {
   return (
     <motion.article
       ref={ref}
-      className={`relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-lg bg-white ${
+      className={`relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-lg bg-white dark:bg-neutral-950 ${
         isLeftAligned ? "rounded-r-xl ml-0" : "rounded-l-xl ml-auto"
       } my-14 xl:my-24`}
       initial={{ opacity: 0, x: isLeftAligned ? -200 : 200 }}
@@ -18,8 +18,8 @@ function ServiceCard({ icon, title, description, isLeftAligned }) {
       transition={{ duration: 1.2 }}
     >
       <div className="bg-green-500 rounded-lg inline-block p-3">{icon}</div>
-      <h2 className="text-xl 2xl:text-3xl my-5 font-semibold">{title}</h2>
-      <p className="text-neutral-900 font-light 2xl:text-lg">{description}</p>
+      <h2 className="text-xl 2xl:text-3xl my-5 font-semibold dark:text-neutral-200">{title}</h2>
+      <p className="text-neutral-900 font-light 2xl:text-lg dark:text-neutral-400">{description}</p>
       <span
         className={`absolute top-[50%] ${
           isLeftAligned ? "right-[-30px]" : "left-[-30px]"

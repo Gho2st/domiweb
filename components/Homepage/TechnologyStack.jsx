@@ -46,10 +46,10 @@ export default function TechnologyStack() {
 
   return (
     <section className="p-6 my-10 xl:my-32 lg:px-24 2xl:px-44 2xl:min-h-[55vh]">
-      <h2 className="text-2xl xl:text-5xl text-center font-semibold">
+      <h2 className="text-2xl xl:text-5xl text-center font-semibold dark:text-neutral-200">
         Wykorzystywane Technologie
       </h2>
-      <div className="flex items-center text-5xl xl:text-6xl px-6 xl:px-52 my-14 xl:my-24 justify-between ">
+      <div className="flex items-center text-5xl xl:text-6xl px-6 xl:px-52 my-14 xl:my-24 justify-between dark:text-neutral-400 ">
         <RiNextjsLine
           onClick={() => setActiveTech("Next.js")}
           className={`rounded-xl cursor-pointer hover:shadow-xl transition duration-300 ${
@@ -83,10 +83,10 @@ export default function TechnologyStack() {
         />
       </div>
       <div className="text-center xl:w-3/5 xl:mx-auto">
-        <h3 className="mt-10 mb-6 text-2xl xl:text-3xl font-semibold">
+        <h3 className="mt-10 mb-6 text-2xl xl:text-3xl font-semibold dark:text-neutral-200">
           {techDetails[activeTech].name}
         </h3>
-        <p className="text-neutral-900 font-light xl:text-lg">
+        <p className="text-neutral-900 font-light xl:text-lg dark:text-neutral-300">
           {techDetails[activeTech].description}
         </p>
       </div>

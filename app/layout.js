@@ -8,7 +8,6 @@ const font = Poppins({
 
 export const metadata = {
   title: "Tworzenie Stron Internetowych i Aplikacji Mobilnych - DomiWeb",
-
   description:
     "Zwiększ widoczność w sieci z DomiWeb! Oferujemy profesjonalne strony internetowe i aplikacje mobilne, optymalizowane pod SEO oraz zaprojektowane z myślą o doskonałym UX. Postaw na nowoczesne rozwiązania, które przyciągną klientów i wyróżnią Twoją markę w wynikach wyszukiwania Google.",
   alternates: {
@@ -19,7 +18,7 @@ export const metadata = {
     url: "https://www.domiweb.pl/",
     title: "Tworzenie Stron Internetowych i Aplikacji Mobilnych - DomiWeb",
     description:
-      "Zwiększ widoczność w sieci z DomiWeb! Oferujemy profesjonalne strony internetowe i aplikacje mobilne, optymalizowane pod SEO oraz zaprojektowane z myślą o doskonałym UX. Postaw na nowoczesne rozwiązania, które przyciągną klientów i wyróżnią Twoją markę w wynikach wyszukiwania Google.",
+      "Zwiększ widoczność w sieci z DomiWeb! Oferujemy profesjonalne strony internetowe i aplikacje mobilne, optymalizowane pod SEO oraz zaprojektowane z myślą o doskonałym UX.",
     images: "/opengraph-image.png",
   },
   robots: {
@@ -30,8 +29,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pl" className="dark">
-      <body className={`${font.className} bg-neutral-100 `}>{children}</body>
+    <html lang="pl">
+      <body className={`${font.className} bg-neutral-100 dark:bg-neutral-900`}>
+        {children}
+      </body>
     </html>
   );
 }

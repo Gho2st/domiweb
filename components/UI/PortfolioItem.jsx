@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function PortfolioItem({ title, description, image, link, id }) {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 2xl:p-10">
+    <div className="bg-white dark:bg-neutral-950 shadow-lg rounded-xl p-6 2xl:p-10">
       <div>
         <Image
           className="rounded-xl"
@@ -15,12 +15,12 @@ export default function PortfolioItem({ title, description, image, link, id }) {
           alt={title}
         />
       </div>
-      <h3 className="text-2xl xl:text-3xl font-semibold  mt-10">{title}</h3>
-      <p className="my-5 text-neutral-900 font-light 2xl:text-lg">
+      <h3 className="text-2xl xl:text-3xl font-semibold  mt-10 dark:text-neutral-300">{title}</h3>
+      <p className="my-5 text-neutral-900 dark:text-neutral-400 font-light 2xl:text-lg">
         {description}
       </p>
       <Link
-        className="inline-flex gap-2 items-center font-semibold group xl:text-lg"
+        className="inline-flex gap-2 items-center font-semibold group xl:text-lg dark:text-neutral-300"
         href={`/portfolio/${id}`}
       >
         Czytaj więcej

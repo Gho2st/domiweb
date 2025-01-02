@@ -6,10 +6,9 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import projects from "../../app/data/project"; // Ścieżka do danych
 
-
 export default function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log(projects)
+  console.log(projects);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
@@ -44,12 +43,12 @@ export default function Portfolio() {
   return (
     <section className=" my-10 mt-24 mb-20 px-6 xl:px-24 2xl:px-44">
       {/* card */}
-      <div className="bg-white p-6 lg:p-16 rounded-xl">
+      <div className="bg-white dark:bg-neutral-950 p-6 lg:p-16 rounded-xl">
         <div className=" xl:w-4/6 mb-10 xl:mb-20">
           <span className="text-green-500 text-lg font-semibold xl:text-2xl">
             Zobacz, co udało nam się stworzyć!
           </span>
-          <h2 className="text-2xl mt-4 xl:mt-8 font-semibold xl:text-4xl xl:leading-snug ">
+          <h2 className="text-2xl mt-4 xl:mt-8 font-semibold xl:text-4xl xl:leading-snug dark:text-neutral-100 ">
             Nasze Projekty - Zrealizowane Strony Internetowe i Kampanie SEO
           </h2>
         </div>
@@ -67,14 +66,14 @@ export default function Portfolio() {
           {/* text container */}
           <div className="xl:flex xl:flex-col xl:justify-between">
             <div className="">
-              <h3 className="text-xl xl:text-2xl mb-4 font-semibold">
+              <h3 className="text-xl xl:text-2xl mb-4 font-semibold dark:text-neutral-100">
                 {projects[currentIndex].title}
               </h3>
-              <p className="text-neutral-900 xl:text-lg font-light mb-6">
+              <p className="text-neutral-900 dark:text-neutral-100 xl:text-lg font-light mb-6 ">
                 {projects[currentIndex].header}
               </p>
               <Link
-                className="inline-flex gap-2 items-center font-semibold group xl:text-lg"
+                className="inline-flex gap-2 items-center font-semibold group xl:text-lg dark:text-neutral-100"
                 href={`/portfolio/${projects[currentIndex].id}`}
               >
                 Zobacz sam
