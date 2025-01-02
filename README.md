@@ -1,6 +1,6 @@
 # Domiweb
 
-![Project](/public/github/domiweb.png)
+![screenshot](/public/domiweb.png)
 
 ## Overview
 
