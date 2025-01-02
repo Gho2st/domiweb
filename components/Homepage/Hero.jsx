@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="">
       <div className="relative px-6 min-h-[100vh] lg:px-24 2xl:px-44  ">
-        <h1 className="mt-14 text-sm xl:text-xl text-gray-500 dark:text-neutral-400 font-semibold">
+        <h1 className="mt-10 xl:mt-14 text-sm xl:text-xl text-gray-500 dark:text-neutral-400 font-semibold">
           Tworzenie Stron Internetowych i Aplikacji Mobilnych z SEO
         </h1>
         <div className="lg:w-4/5 xl:w-9/12">
