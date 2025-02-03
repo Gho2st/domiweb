@@ -20,7 +20,7 @@ export default function Portfolio() {
     );
   };
 
-  // keybord handle
+  // keyboard handle
 
   useEffect(() => {
     const handleKeyDown = (event) => {
