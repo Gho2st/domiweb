@@ -7,6 +7,27 @@ import { FaQuoteRight } from "react-icons/fa";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Link from "next/link";
 
+// Dynamiczne metadane
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const currentProject = projects.find((p) => p.id === slug);
+
+  if (!currentProject) {
+    return {
+      title: "Projekt nie znaleziony",
+      description: "Nie znaleziono projektu o podanym adresie.",
+    };
+  }
+
+  return {
+    title: currentProject.title,
+    description: currentProject.header,
+    alternates: {
+      canonical: `/portfolio/${slug}`,
+    },
+  };
+}
+
 export default async function ProjectPage({ params }) {
   const slug = (await params).slug; // Pobierz dynamiczny parametr
   //   console.log("Parametr slug:", slug);
@@ -81,6 +102,7 @@ export default async function ProjectPage({ params }) {
             width={100}
             layout="responsive"
             className="rounded-xl"
+            alt={currentProject.id}
           />
           <Image
             src={`/portfolio/${currentProject.id}/2.png`}
@@ -88,6 +110,7 @@ export default async function ProjectPage({ params }) {
             width={100}
             layout="responsive"
             className="rounded-xl"
+            alt={currentProject.id}
           />
         </div>
         {/* REVIEW */}
