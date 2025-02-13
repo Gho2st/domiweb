@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "Zwiększ widoczność w sieci z DomiWeb! Oferujemy profesjonalne strony internetowe i aplikacje mobilne, optymalizowane pod SEO oraz zaprojektowane z myślą o doskonałym UX. Postaw na nowoczesne rozwiązania, które przyciągną klientów i wyróżnią Twoją markę w wynikach wyszukiwania Google.",
   alternates: {
-    canonical: "/",
+    canonical: "https://www.domiweb.pl/",
   },
   openGraph: {
     type: "website",
