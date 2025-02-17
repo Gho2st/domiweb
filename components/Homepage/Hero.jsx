@@ -39,18 +39,20 @@ export default function Hero() {
           </motion.p>
         </div>
         <div className="ml-6 pt-14 lg:ml-44 lg:pt-24">
-          <motion.div
-            className="bg-green-500 rounded-full p-2 inline-flex items-center justify-center cursor-pointer"
-            initial={{ scale: 0.8 }}
-            animate={{ scale: 1 }}
-            transition={{
-              duration: 0.8,
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
-          >
-            <FaLongArrowAltDown className="text-4xl xl:text-5xl text-white shadow-2xl" />
-          </motion.div>
+          <Link href="/#projekty">
+            <motion.div
+              className="bg-green-500 rounded-full p-2 inline-flex items-center justify-center cursor-pointer"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              transition={{
+                duration: 0.8,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
+              <FaLongArrowAltDown className="text-4xl xl:text-5xl text-white shadow-2xl" />
+            </motion.div>
+          </Link>
         </div>
 
         {/* Obrazek jako tło pod tekstem */}
