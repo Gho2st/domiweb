@@ -68,6 +68,11 @@ export default function Testimonials() {
       review:
         "Polecam, profesjonalna obsługa, strona przemyślana i miła dla oka:)",
     },
+    {
+      name: "Patryk Jędrzejek",
+      review:
+        "Genialna współpraca na najwyższym poziomie. DomiWeb to wysoki profesjonalizm, zaawansowane technologie przez co moja strona jest bezkonkurencyjna do innych w tej niszy. Do tego świetna komunikacja na każdym poziomie. Polecam!",
+    },
   ];
 
   return (

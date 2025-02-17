@@ -159,21 +159,37 @@ const projects = [
       "Projekt strony internetowej dla Telmech – Obróbka Metali skupiał się na stworzeniu profesjonalnego wizerunku firmy oraz efektywnym przedstawieniu jej usług. Witryna wyróżnia się nowoczesnym designem i grafikami generowanymi przy użyciu AI, które podkreślają innowacyjność marki. Optymalizacja SEO wspiera wyższą widoczność w wynikach wyszukiwania, a responsywny układ zapewnia wygodę użytkowania na różnych urządzeniach. Strona efektywnie wspomaga rozwój firmy i jej pozycję na rynku.",
   },
   {
-    id: "tomy",
-    title: "ToMy - Myje & Remontuje",
+    id: "jatryk",
+    title: "Jatryk - grafik Patryk Jędrzejek",
     header:
-      "Strona internetowa zaprojektowana z myślą o promocji usług porządkowych i remontowych. Przejrzysty układ ułatwia klientom szybkie nawiązanie kontaktu z firmą.",
-    image: "/portfolio/tomy/tomy.png",
-    link: "https://www.tomy-myje-remontuje.pl/",
+      "Portfolio dla grafika z animacjami i panelem admina wypracowane podczas wspólnej pracy nad projektem.",
+    image: "/portfolio/jatryk/jatryk.png",
+    link: "https://www.jatrykdesigner.pl/",
     review:
-      "Strona wygląda świetnie i doskonale spełnia swoją rolę! Klienci doceniają jej przejrzystość, a my zauważyliśmy wzrost liczby zapytań. To był strzał w dziesiątkę!",
-    name: "Tomasz",
-    company: "Właściciel ToMy",
+      "Genialna współpraca na najwyższym poziomie. DomiWeb to wysoki profesjonalizm, zaawansowane technologie przez co moja strona jest bezkonkurencyjna do innych w tej niszy. Do tego świetna komunikacja na każdym poziomie. Polecam!",
+    name: "Patryk Jędrzejek",
+    company: "Jatryk Designer",
     target:
-      "Strona internetowa ToMy – Myje & Remontuje skutecznie promuje usługi porządkowe i remontowe, przyciągając nowych klientów dzięki intuicyjnej nawigacji i zoptymalizowanemu SEO. Dzięki czytelnej strukturze i szybkiemu dostępowi do formularza kontaktowego użytkownicy mogą łatwo i wygodnie składać zapytania. Responsywny design strony zapewnia doskonałe doświadczenie na każdym urządzeniu.",
+      "Profesjonalne portfolio dla grafika z możliwością łatwej edycji treści. Responsywne treści do łatwiejszej prezentacji swoich prac graficznych",
     description:
-      "Projekt strony internetowej dla ToMy – Myje & Remontuje skupiał się na stworzeniu funkcjonalnej i estetycznej platformy, która efektywnie promuje usługi firmy. Witryna posiada przejrzysty układ i intuicyjną nawigację, ułatwiając użytkownikom szybkie znalezienie potrzebnych informacji oraz kontakt z firmą. Optymalizacja SEO wspiera widoczność w wyszukiwarkach, a responsywny projekt zapewnia wygodę korzystania z serwisu na dowolnym urządzeniu. Strona jest idealnym narzędziem wspierającym rozwój firmy na lokalnym rynku.",
+      "Projekt obejmował stworzenie nowoczesnej strony internetowej dla grafika, wykorzystując Next.js oraz Framer Motion do płynnych animacji. Dodatkowo zaimplementowano panel administracyjny oparty na Firebase, umożliwiający łatwe zarządzanie treścią i portfolio.",
   },
+  //   {
+  //     id: "tomy",
+  //     title: "ToMy - Myje & Remontuje",
+  //     header:
+  //       "Strona internetowa zaprojektowana z myślą o promocji usług porządkowych i remontowych. Przejrzysty układ ułatwia klientom szybkie nawiązanie kontaktu z firmą.",
+  //     image: "/portfolio/tomy/tomy.png",
+  //     link: "https://www.tomy-myje-remontuje.pl/",
+  //     review:
+  //       "Strona wygląda świetnie i doskonale spełnia swoją rolę! Klienci doceniają jej przejrzystość, a my zauważyliśmy wzrost liczby zapytań. To był strzał w dziesiątkę!",
+  //     name: "Tomasz",
+  //     company: "Właściciel ToMy",
+  //     target:
+  //       "Strona internetowa ToMy – Myje & Remontuje skutecznie promuje usługi porządkowe i remontowe, przyciągając nowych klientów dzięki intuicyjnej nawigacji i zoptymalizowanemu SEO. Dzięki czytelnej strukturze i szybkiemu dostępowi do formularza kontaktowego użytkownicy mogą łatwo i wygodnie składać zapytania. Responsywny design strony zapewnia doskonałe doświadczenie na każdym urządzeniu.",
+  //     description:
+  //       "Projekt strony internetowej dla ToMy – Myje & Remontuje skupiał się na stworzeniu funkcjonalnej i estetycznej platformy, która efektywnie promuje usługi firmy. Witryna posiada przejrzysty układ i intuicyjną nawigację, ułatwiając użytkownikom szybkie znalezienie potrzebnych informacji oraz kontakt z firmą. Optymalizacja SEO wspiera widoczność w wyszukiwarkach, a responsywny projekt zapewnia wygodę korzystania z serwisu na dowolnym urządzeniu. Strona jest idealnym narzędziem wspierającym rozwój firmy na lokalnym rynku.",
+  //   },
 ];
 
 export default projects;

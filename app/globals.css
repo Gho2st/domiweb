@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -73,8 +73,11 @@ span {
 
 .slick-prev:before,
 .slick-next:before {
-  color: black !important;
   font-size: 1.5rem !important;
+}
+
+.slick-dots li button:before {
+  color: white !important;
 }
 
 /* custom css */
@@ -91,7 +94,7 @@ span {
   .slick-next:before {
     visibility: hidden !important;
   }
-  .slick-prev:before{
+  .slick-prev:before {
     visibility: hidden !important;
   }
 }
