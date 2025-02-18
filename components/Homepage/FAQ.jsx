@@ -38,7 +38,7 @@ export default function FAQ() {
       <h2 className="text-2xl xl:text-4xl text-center font-semibold dark:text-neutral-200">
         Często zadawane pytania
       </h2>
-      <div className="flex flex-col space-y-4 mt-10 2xl:mt-20">
+      <div className="flex flex-col space-y-4 mt-10 xl:mt-16 2xl:mt-20">
         {faqs.map((faq, index) => {
           const isOpen = expandedIndex === index;
 

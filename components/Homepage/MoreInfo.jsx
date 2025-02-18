@@ -7,13 +7,13 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 
 export default function MoreInfo() {
   return (
-    <section className="p-6 xl:px-24 2xl:px-44 2xl:my-20 ">
+    <section className="p-6 xl:px-24 2xl:px-44 xl:my-20 2xl:my-32 ">
       <h2 className="capitalize mb-14 xl:mb-20 text-2xl xl:text-4xl xl:w-3/5 font-semibold xl:leading-snug dark:text-neutral-200">
         Dlaczego warto wybrać DomiWeb do stworzenia swojej strony lub aplikacji?
       </h2>
-      <div className="grid grid-cols-1 gap-14 xl:grid-cols-3 dark:text-neutral-300 ">
+      <div className="grid grid-cols-1 gap-12 xl:grid-cols-2 2xl:grid-cols-3 dark:text-neutral-300 ">
         {/* card 1 */}
-        <div className="rounded-xl">
+        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <FaSpellCheck className="text-5xl mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">
@@ -28,7 +28,7 @@ export default function MoreInfo() {
           </p>
         </div>
         {/* card 2 */}
-        <div className="rounded-xl">
+        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <FaHandsHelping className="text-5xl  mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">
@@ -42,7 +42,7 @@ export default function MoreInfo() {
           </p>
         </div>
         {/* card 3 */}
-        <div className="rounded-xl">
+        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <MdAirlineStops className="text-5xl mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">
@@ -56,7 +56,7 @@ export default function MoreInfo() {
           </p>
         </div>
         {/* card 4 */}
-        <div className="rounded-xl">
+        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <MdOutlinePriceCheck className="text-5xl mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">
@@ -70,7 +70,7 @@ export default function MoreInfo() {
         </div>
 
         {/* card 5 */}
-        <div className="rounded-xl">
+        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <MdOutlineHighQuality className="text-5xl mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">
@@ -83,8 +83,8 @@ export default function MoreInfo() {
             rozwiązania o najwyższej jakości.
           </p>
         </div>
-
-        <div className=" rounded-xl">
+        {/* card 6 */}
+        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <MdOutlineSupportAgent className="text-5xl mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">

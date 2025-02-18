@@ -7,6 +7,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaPeopleCarry } from "react-icons/fa";
 import { RiPlantFill } from "react-icons/ri";
 import Services from "@/components/UI/Services";
+import Help from "./Help";
 
 export const metadata = {
   title: "Pozycjonowanie stron internetowych | DomiWeb",
@@ -28,7 +29,7 @@ export default function Home() {
     },
     {
       icon: <FaSearch className="text-4xl text-green-100" />,
-      title: "Zwiększenie ruchu na stronie",
+      title: "Większy ruch na stronie",
       description:
         "Dobrze przeprowadzone pozycjonowanie zwiększa liczbę odwiedzin Twojej strony. Zwiększony ruch oznacza więcej potencjalnych klientów, którzy mogą zapoznać się z Twoją ofertą i dokonać zakupu lub skorzystać z usług. Poprzez optymalizację treści, słów kluczowych i struktury strony, możesz przyciągnąć nowych użytkowników.",
     },
@@ -81,6 +82,7 @@ export default function Home() {
           </div>
         </section>
         <Services cards={cardsData} />
+        <Help />
       </main>
       <Cta />
       <Footer />
