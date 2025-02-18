@@ -14,19 +14,19 @@ export default function Help() {
         dla Twoich celów i branży.
       </p>
       <div className="grid md:grid-cols-2 gap-6 md:gap-12 my-12 xl:my-20 text-neutral-900 dark:text-neutral-300">
-        <div className="p-6 leading-loose border-green-500 border-2 rounded-xl border-opacity-45 dark:bg-neutral-950">
+        <div className="p-6 leading-loose border-green-500 border-2 rounded-xl border-opacity-55 dark:bg-neutral-950">
           Indywidualne podejście – analizujemy Twoją stronę i konkurencję, aby
           opracować skuteczną strategię.
         </div>
-        <div className="p-6 leading-loose border-green-500 border-2 rounded-xl border-opacity-45 dark:bg-neutral-950">
+        <div className="p-6 leading-loose border-green-500 border-2 rounded-xl border-opacity-55 dark:bg-neutral-950">
           Nowoczesne techniki SEO – stosujemy sprawdzone metody, które przynoszą
           długoterminowe efekty.
         </div>
-        <div className="p-6 leading-loose border-green-500 border-2 rounded-xl border-opacity-45 dark:bg-neutral-950">
+        <div className="p-6 leading-loose border-green-500 border-2 rounded-xl border-opacity-55 dark:bg-neutral-950">
           Transparentność działań – regularnie raportujemy postępy i efekty
           naszej pracy.
         </div>
-        <div className="p-6 leading-loose border-green-500 border-2 rounded-xl border-opacity-45 dark:bg-neutral-950">
+        <div className="p-6 leading-loose border-green-500 border-2 rounded-xl border-opacity-55 dark:bg-neutral-950">
           Stałe wsparcie i optymalizację – SEO to proces, dlatego nieustannie
           monitorujemy i ulepszamy Twoją stronę.
         </div>
