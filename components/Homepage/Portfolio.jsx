@@ -41,7 +41,10 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <section id="projekty" className=" my-10 mt-24 mb-20 px-6 xl:px-24 2xl:px-44">
+    <section
+      id="projekty"
+      className=" my-10 mt-24 mb-20 px-6 xl:px-24 2xl:px-44"
+    >
       {/* card */}
       <div className="bg-white dark:bg-neutral-950 p-6 lg:p-16 rounded-xl">
         <div className=" xl:w-4/6 mb-10 xl:mb-20">
@@ -64,7 +67,7 @@ export default function Portfolio() {
             />
           </div>
           {/* text container */}
-          <div className="xl:flex xl:flex-col xl:justify-between">
+          <div className="flex flex-col justify-between min-h-[400px] xl:min-h-[350px] 2xl:min-h-[420px]">
             <div className="">
               <h3 className="text-xl xl:text-2xl mb-4 font-semibold dark:text-neutral-100">
                 {projects[currentIndex].title}
