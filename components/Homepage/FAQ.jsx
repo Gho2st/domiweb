@@ -19,14 +19,34 @@ export default function FAQ() {
     {
       question: "Ile kosztuje utrzymanie witryny internetowej?",
       answer:
-        "Ceny hostingu + certyfikat SSL to ok. 120-150zł rocznie, domeny 70zł rocznie.",
+        "Ceny hostingu + certyfikat SSL to ok. 120-150zł rocznie, domeny 70zł rocznie. Zapewniamy wsparcie techniczne po zakończeniu projektu, aby wszystko działało bez zarzutu.",
     },
     {
       question: "Ile trzeba czekać na odpowiedź?",
       answer:
         "W większości przypadków odpowiadamy od razu, maksymalnie do paru godzin.",
     },
-    // Możesz dodać więcej pytań i odpowiedzi tutaj
+    {
+      question:
+        "Czy mogę samodzielnie aktualizować treści na stronie/aplikacji?",
+      answer:
+        "Tak, możemy przygotować intuicyjny panel do zarządzania treścią, dzięki któremu będziesz mógł samodzielnie aktualizować stronę lub aplikację.",
+    },
+    {
+      question: "Czy strona będzie dostosowana do urządzeń mobilnych?",
+      answer:
+        "Oczywiście, każda nasza strona jest w pełni responsywna i świetnie wygląda na urządzeniach mobilnych.",
+    },
+    {
+      question: "Czy oferujecie usługi pozycjonowania (SEO) lub marketingu?",
+      answer:
+        "Tak, oferujemy zarówno usługi SEO, pozycjonowanie, jak i wsparcie marketingowe, żeby Twoja strona lub aplikacja dotarła do szerszego grona odbiorców.",
+    },
+    {
+      question: "Jakie informacje muszę dostarczyć, aby rozpocząć projekt?",
+      answer:
+        "Wystarczy, że opowiesz nam o swojej chęci realizacji projektu i misji, którą chcesz osiągnąć - resztę ustalimy razem!",
+    },
   ];
 
   const toggleFAQ = (index) => {

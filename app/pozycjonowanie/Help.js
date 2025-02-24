@@ -13,7 +13,7 @@ export default function Help() {
         biznesu. Dlatego podchodzimy do SEO kompleksowo, dostosowując strategię
         dla Twoich celów i branży.
       </p>
-      <div className="grid md:grid-cols-2 gap-6 md:gap-12 my-12 xl:my-20 text-neutral-900 dark:text-neutral-300">
+      <div className="grid xl:text-lg md:grid-cols-2 gap-6 md:gap-12 my-12 xl:my-20 text-neutral-900 dark:text-neutral-300">
         <div className="p-6 leading-loose border-green-500 border-2 rounded-xl border-opacity-55 dark:bg-neutral-950">
           Indywidualne podejście – analizujemy Twoją stronę i konkurencję, aby
           opracować skuteczną strategię.
