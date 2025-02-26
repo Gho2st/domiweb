@@ -21,7 +21,9 @@ export default function People() {
             Dominik Jojczyk
           </h3>
           <p className="text-sm mt-1 font-semibold text-gray-500 dark:text-neutral-400">
-            Założyciel, Engineering Team Leader
+            Pasjonat technologii od małego. „Uwielbiam rozwiązywać zagadki i pić
+            kawę przy kodowaniu – a najbardziej cieszy mnie, gdy Twój projekt
+            ożywa.”
           </p>
         </div>
         {/* 2 card */}
@@ -36,7 +38,8 @@ export default function People() {
           </div>
           <h3 className="mt-5 font-semibold dark:text-neutral-300">Julia</h3>
           <p className="text-sm mt-1 font-semibold text-gray-500 dark:text-neutral-400">
-            Projektant UI & UX
+            Sercem designerka, głową strateg. „Projektuję tak, byś czuł się
+            dumny ze swojej strony – ma być piękna i Twoja.”
           </p>
         </div>
       </div>

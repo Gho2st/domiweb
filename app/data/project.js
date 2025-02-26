@@ -29,6 +29,7 @@ const projects = [
     name: "Dominika",
     company: "Menadżerka",
     image: "/portfolio/hukimuki/hukimuki.png",
+    link: "https://www.hukimuki.pl/",
   },
   {
     id: "barbarapiekos",
@@ -174,22 +175,6 @@ const projects = [
     description:
       "Projekt obejmował stworzenie nowoczesnej strony internetowej dla grafika, wykorzystując Next.js oraz Framer Motion do płynnych animacji. Dodatkowo zaimplementowano panel administracyjny oparty na Firebase, umożliwiający łatwe zarządzanie treścią i portfolio.",
   },
-  //   {
-  //     id: "tomy",
-  //     title: "ToMy - Myje & Remontuje",
-  //     header:
-  //       "Strona internetowa zaprojektowana z myślą o promocji usług porządkowych i remontowych. Przejrzysty układ ułatwia klientom szybkie nawiązanie kontaktu z firmą.",
-  //     image: "/portfolio/tomy/tomy.png",
-  //     link: "https://www.tomy-myje-remontuje.pl/",
-  //     review:
-  //       "Strona wygląda świetnie i doskonale spełnia swoją rolę! Klienci doceniają jej przejrzystość, a my zauważyliśmy wzrost liczby zapytań. To był strzał w dziesiątkę!",
-  //     name: "Tomasz",
-  //     company: "Właściciel ToMy",
-  //     target:
-  //       "Strona internetowa ToMy – Myje & Remontuje skutecznie promuje usługi porządkowe i remontowe, przyciągając nowych klientów dzięki intuicyjnej nawigacji i zoptymalizowanemu SEO. Dzięki czytelnej strukturze i szybkiemu dostępowi do formularza kontaktowego użytkownicy mogą łatwo i wygodnie składać zapytania. Responsywny design strony zapewnia doskonałe doświadczenie na każdym urządzeniu.",
-  //     description:
-  //       "Projekt strony internetowej dla ToMy – Myje & Remontuje skupiał się na stworzeniu funkcjonalnej i estetycznej platformy, która efektywnie promuje usługi firmy. Witryna posiada przejrzysty układ i intuicyjną nawigację, ułatwiając użytkownikom szybkie znalezienie potrzebnych informacji oraz kontakt z firmą. Optymalizacja SEO wspiera widoczność w wyszukiwarkach, a responsywny projekt zapewnia wygodę korzystania z serwisu na dowolnym urządzeniu. Strona jest idealnym narzędziem wspierającym rozwój firmy na lokalnym rynku.",
-  //   },
 ];
 
 export default projects;

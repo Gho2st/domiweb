@@ -15,7 +15,7 @@ export default function TechnologyStack() {
     "Next.js": {
       name: "Next.js",
       description:
-        "Next.js oferuje Server-Side Rendering (SSR) i Static Site Generation (SSG), co przekłada się na szybsze ładowanie stron. Klienci docenią responsywne i efektywne strony, co może przyczynić się do zwiększenia zadowolenia użytkowników.",
+        "Szybkość, o jakiej marzysz. Dzięki Server-Side Rendering i Static Site Generation Twoja strona ładować się będzie w mgnieniu oka – klienci to pokochają!",
     },
     Wordpress: {
       name: "Wordpress",

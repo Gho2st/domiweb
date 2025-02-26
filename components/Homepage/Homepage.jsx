@@ -15,21 +15,21 @@ import { FaPeopleCarry } from "react-icons/fa";
 const cardsData = [
   {
     icon: <FaCode className="text-4xl text-green-100" />,
-    title: "Tworzenie Responsywnych Stron Internetowych",
+    title: "Strony, które działają na każdym ekranie",
     description:
-      "Oferujemy nowoczesne strony internetowe, które rozwijamy wspólnie z klientami od pierwszego kontaktu aż do wdrożenia. Każda nasza strona jest unikalna, stworzona tak, by wyróżniać się w sieci i spełniać  oczekiwania zarówno użytkowników, jak i wyszukiwarek.",
+      "Tworzymy witryny od zera – razem z Tobą, od pierwszej rozmowy po wielki start. Każda jest niepowtarzalna, skrojona na miarę i gotowa, by zachwycić użytkowników oraz wyszukiwarki.",
   },
   {
     icon: <FaSearch className="text-4xl text-green-100" />,
-    title: "Pozycjonowanie Stron Internetowych (SEO)",
+    title: "Wysokie miejsca w Google)",
     description:
-      "Naszym celem jest, aby Twoja strona zajmowała czołowe miejsca w wynikach wyszukiwania. Oferujemy pełne wsparcie w zakresie SEO, pomagając Ci osiągnąć sukces i wyprzedzić konkurencję w Google. Dzięki naszym działaniom Twoja strona nie tylko będzie widoczna, ale także zyska większy ruch i lepsze wyniki biznesowe.",
+      "Chcemy, by Twoja strona była tam, gdzie szukają Cię klienci. Z SEO od DomiWeb wskoczysz na czołowe pozycje, przyciągniesz ruch i zostawisz konkurencję w tyle.",
   },
   {
     icon: <FaPeopleCarry className="text-4xl text-green-100" />,
-    title: "Wsparcie Techniczne Stron Internetowych",
+    title: "Wsparcie, na które możesz liczyć",
     description:
-      "Zapewniamy wsparcie techniczne na każdym etapie działania Twojej strony. Niezależnie od tego, czy jesteś naszym klientem, czy dopiero zaczynasz przygodę z naszą firmą, możesz liczyć na naszą pomoc i zaangażowanie. Oferujemy aktualizacje, zabezpieczenia i konserwację stron, dbając o to, by Twoja witryna była zawsze w doskonałej formie.",
+      "Jesteśmy z Tobą nie tylko na starcie, ale i potem. Pilnujemy, by Twoja strona działała jak marzenie – aktualizacje, bezpieczeństwo, poprawki – bierzemy to na siebie.",
   },
 ];
 

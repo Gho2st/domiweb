@@ -46,7 +46,7 @@ export default function Portfolio() {
       className=" my-10 mt-24 mb-20 px-6 xl:px-24 2xl:px-44"
     >
       {/* card */}
-      <div className="bg-white dark:bg-neutral-950 p-6 lg:p-16 rounded-xl">
+      <div className="bg-white shadow-xl dark:bg-neutral-950 p-6 lg:p-16 rounded-xl">
         <div className=" xl:w-4/6 mb-10 xl:mb-20">
           <span className="text-green-500 text-lg font-semibold xl:text-2xl">
             Zobacz, co udało nam się stworzyć!

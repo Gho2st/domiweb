@@ -10,7 +10,7 @@ function ServiceCard({ icon, title, description, isLeftAligned }) {
   return (
     <motion.article
       ref={ref}
-      className={`relative w-5/6 xl:w-3/5 p-6 xl:p-10 rounded-lg bg-white dark:bg-neutral-950 ${
+      className={`relative w-5/6 xl:w-3/5 shadow-xl p-6 xl:p-10 rounded-lg bg-white dark:bg-neutral-950 ${
         isLeftAligned ? "rounded-r-xl ml-0" : "rounded-l-xl ml-auto"
       } my-14 xl:my-24`}
       initial={{ opacity: 0, x: isLeftAligned ? -200 : 200 }}

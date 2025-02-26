@@ -25,8 +25,10 @@ export default function Home() {
           Portfolio
         </h1>
         <p className="my-10 mt-6 xl:mt-10 text-neutral-900 dark:text-neutral-300 text-lg 2xl:text-xl font-light">
-          W DomiWeb kochamy wyzwania. Jesteśmy w stanie przeistoczyć każdy Twój
-          pomysł w życie.
+          W DomiWeb uwielbiamy dawać kształt marzeniom. Każdy projekt to dla nas
+          nowa historia – Twoja może być następna! Zobacz, jak pomogliśmy innym
+          rozwinąć skrzydła w sieci. Od małych pasji po duże biznesy – z nami
+          każdy znajdzie swoje miejsce online.
         </p>
         {/* grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 2xl:gap-12 mb-10">

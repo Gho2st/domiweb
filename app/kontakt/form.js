@@ -87,8 +87,12 @@ export default function Form() {
         <h1 className="mx-auto mt-6 font-semibold text-4xl capitalize dark:text-neutral-200">
           Skontaktuj się z nami
         </h1>
-        <p className="mt-8 text-lg text-neutral-900 dark:text-neutral-300 font-light">
-          Zróbmy razem świetny projekt
+        <p className="mt-8 mb-2 text-lg text-neutral-900 dark:text-neutral-300 font-light">
+          Zróbmy razem świetny projekt. Masz pomysł, który czeka na realizację?
+          A może chcesz po prostu pogadać o tym, jak możemy Ci pomóc? W DomiWeb
+          jesteśmy gotowi, by słuchać i działać. Napisz, zadzwoń albo wpadnij na
+          kawę – wirtualną lub prawdziwą. Razem stworzymy coś, z czego będziesz
+          dumny!
         </p>
         {formError && <p style={{ color: "red" }}>{formError}</p>}
 
@@ -188,7 +192,7 @@ export default function Form() {
             )}
           </div>
 
-          <div className="mt-10 bg-white dark:bg-neutral-950 p-6 py-10 rounded-xl">
+          <div className="mt-10 shadow-xl bg-white dark:bg-neutral-950 p-6 py-10 rounded-xl">
             <h2 className="text-xl xl:text-2xl font-semibold mb-5 dark:text-neutral-200">
               Oczekujesz bardziej personalnego kontaktu?
             </h2>

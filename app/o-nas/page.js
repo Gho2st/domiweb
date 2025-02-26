@@ -26,25 +26,25 @@ export default function Home() {
       icon: <FaCode className="text-4xl text-green-100" />,
       title: "Pierwszy Kontakt",
       description:
-        "Rozpocznij swoją podróż z nami, dzieląc się swoimi pomysłami lub wyzwaniami. Możesz skontaktować się z nami za pośrednictwem e-maila, telefonu lub umówić się na osobiste spotkanie. Nasz zespół zapewni Ci szybką odpowiedź i pomoc, aby zrozumieć Twoje potrzeby i oczekiwania.",
+        "Zacznijmy od rozmowy – opowiedz nam, co Ci w duszy gra. Napisz, zadzwoń albo umów się na spotkanie, a my zajmiemy się resztą. Szybko odpiszemy i pokażemy, jak możemy Ci pomóc. To Twój pierwszy krok do czegoś świetnego – zrobimy go razem!",
     },
     {
       icon: <FaSearch className="text-4xl text-green-100" />,
       title: "Analiza i Planowanie",
       description:
-        "Po zrozumieniu Twoich potrzeb, przeprowadzimy dokładną analizę i zaplanujemy strategię działania. Naszym celem jest stworzenie rozwiązania, które spełni Twoje oczekiwania i pomoże w osiągnięciu celów biznesowych. Zawsze staramy się dostarczyć najwyższą jakość usług.",
+        "Kiedy już się poznamy, usiądziemy do Twoich pomysłów jak do dobrego planu przy domowym stole. Przeanalizujemy, co potrzebujesz, i stworzymy strategię, która da Ci stronę nie tylko ładną, ale i skuteczną. Z nami zawsze wiesz, na czym stoisz.",
     },
     {
       icon: <RiPlantFill className="text-4xl text-green-100" />,
       title: " Programowanie i Rozwój",
       description:
-        "Nasz zespół programistów pracuje nad stworzeniem funkcjonalnej i estetycznej strony internetowej, dostosowanej do Twoich potrzeb. Oferujemy wsparcie techniczne na każdym etapie realizacji projektu, aby zapewnić pełne zadowolenie z efektów naszej pracy.",
+        "Nasz programista zamieni Twoje marzenia w kod – stronę, która wygląda świetnie i działa jeszcze lepiej. Jesteśmy z Tobą na każdym etapie, byś czuł się spokojny i zadowolony z tego, co tworzymy. To Twój projekt, ale nasz wspólny sukces.",
     },
     {
       icon: <FaPeopleCarry className="text-4xl text-green-100" />,
       title: "Publikacja i Wsparcie",
       description:
-        "Po zakończeniu procesu programowania, Twoja strona zostanie opublikowana i udostępniona światu. Nasza praca nie kończy się na tym etapie – oferujemy również długoterminowe wsparcie, monitorując wydajność strony i wprowadzając niezbędne poprawki, aby zapewnić jej optymalne działanie w Internecie.",
+        "Gdy wszystko gotowe, Twoja strona rusza w świat – a my nie znikamy. Dbamy o nią jak o własny dom, pilnując, by działała bez zarzutu. Potrzebujesz zmian? Jesteśmy tuż obok, gotowi pomóc.",
     },
   ];
   return (
@@ -65,7 +65,9 @@ export default function Home() {
                 Przygoda zaczęła się od dziecięcej pasji i wielkich ambicji
                 zrodzonych przy starym laptopie. Z biegiem lat, dzięki
                 zaangażowaniu i ciężkiej pracy, udało się przekształcić te
-                marzenia w rzeczywistość.
+                marzenia w rzeczywistość. Teraz chcemy, byś Ty też poczuł się u
+                nas jak w domu - zespołem, który słucha, wspiera i sprawia, że
+                Twoje cele stają się osiągalne.
               </p>
             </div>
             {/* Obrazek jako tło pod tekstem */}

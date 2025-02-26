@@ -34,33 +34,31 @@ export default function Audit() {
                 <div className="bg-green-500 text-white text-lg w-10 h-10 min-w-[2.5rem] min-h-[2.5rem] rounded-full flex items-center justify-center">
                   1
                 </div>
-                Analiza SEO – zidentyfikowanie słów kluczowych i optymalizacja
-                treści
+                Analiza SEO – Znajdziemy słowa kluczowe i ulepszymy treści.
               </li>
               <li className="flex justify-center xl:justify-normal items-center gap-4 mb-5">
                 <div className="bg-green-500 text-white text-lg w-10 h-10 min-w-[2.5rem] min-h-[2.5rem] rounded-full flex items-center justify-center">
                   2
                 </div>
-                Ocena wydajności – sprawdzenie szybkości ładowania strony
+                Szybkość – Sprawdzimy, jak przyspieszyć Twoją stronę.
               </li>
               <li className="flex justify-center xl:justify-normal items-center gap-4 mb-5">
                 <div className="bg-green-500 text-white text-lg w-10 h-10 min-w-[2.5rem] min-h-[2.5rem] rounded-full flex items-center justify-center">
                   3
                 </div>
-                Audyt UX/UI – poprawa użyteczności i intuicyjności strony
+                Użyteczność – Poprawimy to, co ułatwi życie użytkownikom.
               </li>
               <li className="flex justify-center xl:justify-normal items-center gap-4 mb-5">
                 <div className="bg-green-500 text-white text-lg w-10 h-10 min-w-[2.5rem] min-h-[2.5rem] rounded-full flex items-center justify-center">
                   4
                 </div>
-                Bezpieczeństwo – identyfikacja i eliminacja potencjalnych
-                zagrożeń
+                Bezpieczeństwo – Zadbamy, by wszystko było pod kontrolą.
               </li>
               <li className="flex justify-center xl:justify-normal items-center gap-4 mb-8">
                 <div className="bg-green-500 text-white text-lg w-10 h-10 min-w-[2.5rem] min-h-[2.5rem] rounded-full flex items-center justify-center">
                   5
                 </div>
-                Rekomendacje techniczne – optymalizacja kodu i struktury strony
+                Rekomendacje – Podpowiemy, jak wspiąć się wyżej.
               </li>
             </ul>
             <Link

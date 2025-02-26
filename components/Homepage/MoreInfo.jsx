@@ -13,7 +13,7 @@ export default function MoreInfo() {
       </h2>
       <div className="grid grid-cols-1 gap-12 xl:grid-cols-2 2xl:grid-cols-3 dark:text-neutral-300 ">
         {/* card 1 */}
-        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
+        <div className="rounded-xl shadow-2xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <FaSpellCheck className="text-5xl mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">
@@ -28,7 +28,7 @@ export default function MoreInfo() {
           </p>
         </div>
         {/* card 2 */}
-        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
+        <div className="rounded-xl shadow-2xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <FaHandsHelping className="text-5xl  mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">
@@ -42,7 +42,7 @@ export default function MoreInfo() {
           </p>
         </div>
         {/* card 3 */}
-        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
+        <div className="rounded-xl shadow-2xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <MdAirlineStops className="text-5xl mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">
@@ -56,7 +56,7 @@ export default function MoreInfo() {
           </p>
         </div>
         {/* card 4 */}
-        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
+        <div className="rounded-xl shadow-2xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <MdOutlinePriceCheck className="text-5xl mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">
@@ -70,7 +70,7 @@ export default function MoreInfo() {
         </div>
 
         {/* card 5 */}
-        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
+        <div className="rounded-xl shadow-2xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <MdOutlineHighQuality className="text-5xl mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">
@@ -84,7 +84,7 @@ export default function MoreInfo() {
           </p>
         </div>
         {/* card 6 */}
-        <div className="rounded-xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
+        <div className="rounded-xl shadow-2xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950">
           <MdOutlineSupportAgent className="text-5xl mb-4 text-green-500" />
 
           <h3 className="text-lg xl:text-xl font-medium">

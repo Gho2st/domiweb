@@ -23,27 +23,27 @@ export default function Home() {
   const cardsData = [
     {
       icon: <FaCode className="text-4xl text-green-100" />,
-      title: "Zwiększenie widoczności w Google",
+      title: "Bądź widoczny w Google",
       description:
-        "Pozycjonowanie to klucz do osiągnięcia wysokich wyników w wyszukiwarce Google. Im wyżej znajduje się Twoja strona w wynikach wyszukiwania, tym większa szansa, że dotrzesz do potencjalnych klientów. Działania SEO pomagają zoptymalizować stronę, aby była bardziej atrakcyjna i lepiej rozpoznawalna w Google.",
+        "Wyobraź sobie, że Twoja strona wyskakuje na pierwszej stronie wyników, gdy ktoś szuka tego, co oferujesz. To nie magia – to SEO. Dzięki nam Twoja witryna stanie się łatwa do znalezienia, a Ty dotrzesz do ludzi, którzy naprawdę chcą Cię poznać.",
     },
     {
       icon: <FaSearch className="text-4xl text-green-100" />,
-      title: "Większy ruch na stronie",
+      title: "Przyciągaj więcej gości",
       description:
-        "Dobrze przeprowadzone pozycjonowanie zwiększa liczbę odwiedzin Twojej strony. Zwiększony ruch oznacza więcej potencjalnych klientów, którzy mogą zapoznać się z Twoją ofertą i dokonać zakupu lub skorzystać z usług. Poprzez optymalizację treści, słów kluczowych i struktury strony, możesz przyciągnąć nowych użytkowników.",
+        "Dobre pozycjonowanie to jak otwarcie drzwi do większej liczby odwiedzających. Więcej ruchu na stronie to więcej szans na nowych klientów – takich, którzy zajrzą, zostaną i skorzystają z Twojej oferty. Zoptymalizujemy wszystko: od słów kluczowych po strukturę, by ludzie do Ciebie trafiali.",
     },
     {
       icon: <RiPlantFill className="text-4xl text-green-100" />,
-      title: "Budowanie zaufania i autorytetu",
+      title: "Zbuduj zaufanie",
       description:
-        "Dzięki odpowiednim działaniom SEO, Twoja strona staje się bardziej wiarygodna i autentyczna w oczach użytkowników. Wysoka pozycja w Google buduje zaufanie do Twojej firmy i sprawia, że użytkownicy chętniej odwiedzają Twoją stronę oraz podejmują decyzje zakupowe.",
+        "Strony na szczycie Google budzą respekt – i słusznie! Wysoka pozycja to znak, że warto Ci zaufać. Zadbamy, by Twoja witryna wyglądała profesjonalnie i autentycznie, a użytkownicy chętniej klikali właśnie w Twój link.",
     },
     {
       icon: <FaPeopleCarry className="text-4xl text-green-100" />,
-      title: "Konkurencyjność na rynku",
+      title: "Wyróżnij się na tle innych",
       description:
-        "Pozycjonowanie pozwala Twojej stronie wyróżnić się wśród konkurencji. Dzięki odpowiednim działaniom SEO, możesz przyciągnąć klientów, którzy szukają produktów lub usług podobnych do Twoich, ale wybiorą Ciebie, ponieważ Twoja strona jest lepiej widoczna i bardziej dopasowana do ich potrzeb.",
+        "Rynek pełen jest konkurencji, ale z nami to Ty będziesz o krok przed nimi. Pokażemy światu, co masz do zaoferowania, i sprawimy, że klienci wybiorą Ciebie – bo łatwiej Cię znajdą i bardziej im się spodobasz.",
     },
   ];
 
@@ -62,11 +62,12 @@ export default function Home() {
               </h2>
 
               <p className="my-10 text-neutral-900 dark:text-neutral-400 text-lg font-light xl:text-xl ">
-                Pozycjonowanie stron internetowych to proces, który sprawia, że
-                Twoja strona staje się widoczna w wynikach wyszukiwania Google.
-                Dzięki odpowiednim technikom SEO (ang. Search Engine
-                Optimization) strona może dotrzeć do nowych klientów,
-                przyciągnąć większy ruch i wyróżnić się na tle konkurencji.
+                Chcesz, by Twoja strona była widoczna w Google i przyciągała
+                nowych ludzi? W DomiWeb wiemy, jak to zrobić. Pozycjonowanie
+                (SEO) to dla nas nie tylko techniczne sztuczki – to sposób, by
+                Twój biznes rozkwitł w sieci, a Ty poczuł się pewniej na rynku.
+                Z nami Twoja strona stanie się miejscem, do którego klienci
+                trafią naturalnie.
               </p>
             </div>
             {/* Obrazek jako tło pod tekstem */}
