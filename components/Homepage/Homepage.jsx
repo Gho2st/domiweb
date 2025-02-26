@@ -21,7 +21,7 @@ const cardsData = [
   },
   {
     icon: <FaSearch className="text-4xl text-green-100" />,
-    title: "Wysokie miejsca w Google)",
+    title: "Wysokie miejsca w Google",
     description:
       "Chcemy, by Twoja strona była tam, gdzie szukają Cię klienci. Z SEO od DomiWeb wskoczysz na czołowe pozycje, przyciągniesz ruch i zostawisz konkurencję w tyle.",
   },
