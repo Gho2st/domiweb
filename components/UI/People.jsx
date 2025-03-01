@@ -7,14 +7,14 @@ export default function People() {
         Zespół DomiWeb – poznaj nas!
       </h2>
       {/* card container */}
-      <div className="grid grid-cols-2 gap-6 mt-10">
+      <div className="grid md:grid-cols-2 gap-6 mt-10">
         <div className="">
           <div className="relative mb-10 w-full h-64 bg-green-300 rounded-2xl overflow-hidden">
             <Image
               src={"/people/dominik2.png"}
               alt="Zdjęcie Dominika Jojczyka, właściciela firmy Domiweb."
               layout="fill"
-              className="rounded-2xl object-cover xl:object-contain"
+              className="rounded-2xl object-contain"
             />
           </div>
           <h3 className="mt-5 font-semibold dark:text-neutral-300">
@@ -32,7 +32,7 @@ export default function People() {
             <Image
               src={"/people/julia.png"}
               layout="fill"
-              className="rounded-2xl object-cover xl:object-contain"
+              className="rounded-2xl object-contain"
               alt="Zdjęcie Julii Płacheckiej, projektantki UI & UX firmy Domiweb."
             />
           </div>

@@ -4,7 +4,7 @@ export default function Experience() {
       <h2 className="text-3xl xl:text-4xl font-semibold dark:text-neutral-200">
         Doświadczenie
       </h2>
-      <p className="text-neutral-900 dark:text-neutral-400 text-lg font-light mt-6 mb-10 ">
+      <p className="text-neutral-900 dark:text-neutral-400 text-lg font-light  mb-10 mt-10 ">
         Dziś wierzymy, że prawdziwy sukces rodzi się z dobrego kontaktu i
         wspólnej pracy. Nie chodzi nam tylko o tworzenie nowoczesnych stron –
         chodzi o to, byś czuł, że jesteśmy Twoimi partnerami na każdym kroku.

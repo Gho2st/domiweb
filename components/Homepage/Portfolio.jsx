@@ -8,7 +8,11 @@ import projects from "../../app/data/project"; // Ścieżka do danych
 
 export default function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log(projects);
+  const [touchStart, setTouchStart] = useState(null); // Początkowa pozycja palca
+  const [touchEnd, setTouchEnd] = useState(null); // Końcowa pozycja palca
+
+  // Minimalna odległość przeciągnięcia (w pikselach), aby uznać za swipe
+  const minSwipeDistance = 50;
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
@@ -20,8 +24,33 @@ export default function Portfolio() {
     );
   };
 
-  // keyboard handle
+  // Obsługa zdarzeń dotykowych
+  const onTouchStart = (e) => {
+    // Zapisujemy pozycję początkową palca (X)
+    setTouchEnd(null); // Resetujemy końcową pozycję
+    setTouchStart(e.targetTouches[0].clientX);
+  };
 
+  const onTouchMove = (e) => {
+    // Aktualizujemy pozycję końcową podczas przeciągania
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const onTouchEnd = () => {
+    if (!touchStart || !touchEnd) return; // Jeśli nie ma pozycji początkowej lub końcowej, nic nie robimy
+
+    const distance = touchStart - touchEnd; // Obliczamy różnicę (odległość przeciągnięcia)
+    const isLeftSwipe = distance > minSwipeDistance; // Swipe w lewo (następny)
+    const isRightSwipe = distance < -minSwipeDistance; // Swipe w prawo (poprzedni)
+
+    if (isLeftSwipe) {
+      handleNext(); // Swipe w lewo – następny projekt
+    } else if (isRightSwipe) {
+      handlePrevious(); // Swipe w prawo – poprzedni projekt
+    }
+  };
+
+  // Obsługa klawiatury (pozostaje bez zmian)
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "ArrowLeft") {
@@ -31,11 +60,8 @@ export default function Portfolio() {
       }
     };
 
-    // event listening
-
     window.addEventListener("keydown", handleKeyDown);
     return () => {
-      //remove event listening
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
@@ -43,36 +69,41 @@ export default function Portfolio() {
   return (
     <section
       id="projekty"
-      className="my-10 mt-24 mb-20 px-6 xl:px-24 2xl:px-44"
+      className="my-10 mt-24 mb-20 md:px-6 xl:px-24 2xl:px-44"
     >
-      {/* card */}
-      <div className="bg-white shadow-xl dark:bg-neutral-950 p-6 lg:p-16 rounded-xl">
-        <div className=" xl:w-4/6 mb-10 xl:mb-20">
+      <div className="bg-white shadow-xl dark:bg-neutral-950 p-6 lg:p-16 md:rounded-xl">
+        <div className="xl:w-4/6 mb-10 xl:mb-20">
           <span className="text-green-500 text-lg font-semibold xl:text-2xl">
             Zobacz, co udało nam się stworzyć!
           </span>
-          <h2 className="text-2xl leading-snug mt-4 xl:mt-8 font-semibold xl:text-4xl xl:leading-snug dark:text-neutral-100 ">
+          <h2 className="text-2xl leading-snug mt-4 xl:mt-8 font-semibold xl:text-4xl xl:leading-snug dark:text-neutral-100">
             Nasze Projekty - Zrealizowane Strony Internetowe i Kampanie SEO
           </h2>
         </div>
         <div className="sm:grid md:grid-cols-2 gap-x-16">
-          <div className="w-full mb-10 lg:mb-0">
+          {/* Kontener, na którym nasłuchujemy zdarzeń dotykowych */}
+          <div
+            className="w-full mb-10 lg:mb-0"
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}
+          >
             <Image
               src={projects[currentIndex].image}
               height={100}
               width={100}
               layout="responsive"
               className="rounded-xl"
-              alt={`Grafika podglądowa przedstawiająca stronę internetową dla ${projects[currentIndex].title}`}
+              alt={`Strona dla ${projects[currentIndex].title} – realizacja DomiWeb z Nowego Sącza`}
             />
           </div>
-          {/* text container */}
+          {/* Text container */}
           <div className="flex flex-col justify-between min-h-[400px] xl:min-h-[350px] 2xl:min-h-[420px]">
             <div className="">
               <h3 className="text-xl xl:text-2xl mb-4 font-semibold dark:text-neutral-100">
                 {projects[currentIndex].title}
               </h3>
-              <p className="text-neutral-900 dark:text-neutral-100 xl:text-lg font-light mb-6 ">
+              <p className="text-neutral-900 dark:text-neutral-100 xl:text-lg font-light mb-6">
                 {projects[currentIndex].header}
               </p>
               <Link
@@ -81,20 +112,20 @@ export default function Portfolio() {
               >
                 Zobacz sam
                 <div className="p-2 rounded-full transition duration-300 group-hover:bg-green-500">
-                  <FaLongArrowAltRight className="text-xl transition duration-300 group-hover:text-white " />
+                  <FaLongArrowAltRight className="text-xl transition duration-300 group-hover:text-white" />
                 </div>
               </Link>
             </div>
             <div className="flex space-x-2 justify-end pr-5 mt-2">
               <button
                 onClick={handlePrevious}
-                className="flex justify-center items-center bg-gray-300 p-1 hover:bg-gray-200  rounded-full transition duration-300"
+                className="flex justify-center items-center bg-gray-300 p-1 hover:bg-gray-200 rounded-full transition duration-300"
               >
-                <IoIosArrowBack className="text-3xl text-gray-500 hover:text-gray-600 " />
+                <IoIosArrowBack className="text-3xl text-gray-500 hover:text-gray-600" />
               </button>
               <button
                 onClick={handleNext}
-                className="flex justify-center items-center bg-gray-300 p-1   hover:bg-gray-200  rounded-full transition duration-300"
+                className="flex justify-center items-center bg-gray-300 p-1 hover:bg-gray-200 rounded-full transition duration-300"
               >
                 <IoIosArrowForward className="text-3xl text-gray-500 hover:text-gray-600" />
               </button>
