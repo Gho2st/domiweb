@@ -55,10 +55,10 @@ export default function FAQ() {
 
   return (
     <section className="p-6 xl:p-24 2xl:p-44">
-      <h2 className="text-2xl xl:text-4xl text-center font-semibold dark:text-neutral-200">
+      <h2 className="text-3xl leading-snug xl:text-4xl xl:leading-snug text-center font-semibold dark:text-neutral-200">
         Często zadawane pytania
       </h2>
-      <div className="flex flex-col space-y-4 mt-10 xl:mt-16 2xl:mt-20">
+      <div className="flex flex-col space-y-4 mt-14 xl:mt-16 2xl:mt-20">
         {faqs.map((faq, index) => {
           const isOpen = expandedIndex === index;
 
