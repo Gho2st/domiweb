@@ -84,7 +84,7 @@ export default function Form() {
   return (
     <main>
       <section className="p-6 lg:px-24 2xl:px-44">
-        <h1 className="mx-auto mt-6 font-semibold text-4xl capitalize dark:text-neutral-200">
+        <h1 className="mx-auto leading-snug mt-6 font-semibold text-4xl capitalize dark:text-neutral-200">
           Kontakt – Strony i Aplikacje Mobilne w Nowym Sączu
         </h1>
         <p className="mt-8 mb-2 text-lg text-neutral-900 dark:text-neutral-300 font-light">

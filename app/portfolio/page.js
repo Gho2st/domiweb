@@ -25,7 +25,7 @@ export default function Home() {
           Portfolio Stron Internetowych i Aplikacji Mobilnych – DomiWeb Nowy
           Sącz
         </h1>
-        <h2 className="mt-6 font-semibold text-4xl capitalize  lg:leading-snug 2xl:text-6xl 2xl:leading-snug dark:text-neutral-100">
+        <h2 className="mt-6 leading-snug font-semibold text-4xl capitalize  lg:leading-snug 2xl:text-6xl 2xl:leading-snug dark:text-neutral-100">
           Nasze projekty – od Nowego Sącza po Kraków i całą Polskę
         </h2>
         <p className="my-10 mt-6 xl:mt-10 text-neutral-900 dark:text-neutral-300 text-lg 2xl:text-xl font-light">

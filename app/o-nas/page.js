@@ -66,15 +66,14 @@ export default function Home() {
                 ambicji zrodzonych przy starym laptopie. Z biegiem lat, dzięki
                 ciężkiej pracy, przekształciliśmy te marzenia w rzeczywistość –
                 najpierw w Nowym Sączu, a potem w całej Polsce, w tym w
-                Krakowie, gdzie pomogliśmy m.in. Żłobkowi Wesołe Wygibasy.
-                Jesteśmy małym zespołem, który słucha, wspiera i sprawia, że
-                Twoje cele stają się osiągalne. Chcemy, byś poczuł się u nas jak
-                w domu, a Twoja firma rozwinęła skrzydła w sieci – napisz do
-                nas!
+                Krakowie. Jesteśmy małym zespołem, który słucha, wspiera i
+                sprawia, że Twoje cele stają się osiągalne. Chcemy, byś poczuł
+                się u nas jak w domu, a Twoja firma rozwinęła skrzydła w sieci –
+                napisz do nas!
               </p>
             </div>
             {/* Obrazek jako tło pod tekstem */}
-            <div className="absolute w-4/5 md:w-3/5 lg:w-2/5 xl:w-2/6 -bottom-8 -right-16 -z-10   ">
+            <div className="absolute w-4/5 md:w-3/5 lg:w-2/5 xl:w-2/6 -bottom-52 md:-bottom-24 lg:-bottom-0 -right-16 -z-10   ">
               <Image
                 src="/o-nas.png"
                 alt="Dekoracyjny obrazek"
