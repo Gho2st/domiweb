@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <section className="p-6 xl:px-24 2xl:px-44 py-10 mt-40 md:mt-0">
+    <section className="p-6 xl:px-24 2xl:px-44 py-10">
       <h2 className="text-3xl xl:text-4xl font-semibold dark:text-neutral-200">
         Doświadczenie
       </h2>

@@ -73,7 +73,7 @@ export default function Home() {
               </p>
             </div>
             {/* Obrazek jako tło pod tekstem */}
-            <div className="absolute w-4/5 md:w-3/5 lg:w-2/5 xl:w-2/6 -bottom-52 md:-bottom-24 lg:-bottom-0 -right-16 -z-10   ">
+            <div className="mx-auto lg:absolute w-4/5 md:w-3/5 lg:w-2/5 xl:w-2/6 lg:-bottom-0 md:-right-0 -z-10   ">
               <Image
                 src="/o-nas.png"
                 alt="Dekoracyjny obrazek"

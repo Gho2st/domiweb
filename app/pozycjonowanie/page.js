@@ -51,8 +51,8 @@ export default function Home() {
     <>
       <Nav />
       <main className="overflow-hidden">
-        <section className="p-6 xl:px-24 2xl:px-44 py-10 mb-20">
-          <div className="relative min-h-[100vh] lg:min-h-[86vh] ">
+        <section className="p-6 xl:px-24 2xl:px-44 py-10 mb-20 ">
+          <div className="relative  lg:min-h-[86vh] ">
             <div className="lg:w-3/5">
               <h1 className="text-sm xl:text-xl text-gray-500 dark:text-neutral-400 font-semibold">
                 Pozycjonowanie Stron w Nowym Sączu – DomiWeb
@@ -61,7 +61,7 @@ export default function Home() {
                 Pozycjonowanie stron internetowych – dlaczego warto?
               </h2>
 
-              <p className="my-10 text-neutral-900 dark:text-neutral-400 text-lg font-light 2xl:text-xl ">
+              <p className="my-10 text-lg text-neutral-900 dark:text-neutral-400 md:text-lg font-light 2xl:text-xl ">
                 Chcesz, by Twoja strona była widoczna w Google i przyciągała
                 nowych ludzi – także w Nowym Sączu? W DomiWeb wiemy, jak to
                 zrobić! Pozycjonowanie (SEO) to dla nas sposób, by Twój biznes
@@ -71,7 +71,7 @@ export default function Home() {
               </p>
             </div>
             {/* Obrazek jako tło pod tekstem */}
-            <div className="absolute -bottom-24 -right-0 w-3/5 lg:w-2/5 xl:w-4/12 lg:-bottom-0 -z-10   ">
+            <div className="mx-auto lg:absolute lg:-right-0 w-3/5 lg:w-2/5 xl:w-4/12 lg:-bottom-0 -z-10   ">
               <Image
                 src="/seo.png"
                 alt="Obrazek przedstawiający chłopaka zajmującego się pozycjonowaniem stron internetowych"
