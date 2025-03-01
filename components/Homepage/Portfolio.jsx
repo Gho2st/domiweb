@@ -13,11 +13,6 @@ export default function Portfolio() {
   // Minimalna odległość przeciągnięcia (w pikselach), aby uznać za swipe
   const minSwipeDistance = 50;
 
-  // Sprawdzenie, czy projects istnieje
-  if (!projects || projects.length === 0) {
-    return <p>Brak projektów do wyświetlenia.</p>;
-  }
-
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
   };
@@ -67,6 +62,11 @@ export default function Portfolio() {
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, []);
+
+  // Sprawdzenie, czy projects istnieje
+  if (!projects || projects.length === 0) {
+    return <p>Brak projektów do wyświetlenia.</p>;
+  }
 
   return (
     <section
