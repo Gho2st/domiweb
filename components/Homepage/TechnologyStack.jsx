@@ -46,7 +46,7 @@ export default function TechnologyStack() {
 
   return (
     <section className="p-6 my-10 xl:my-32 lg:px-24 2xl:px-44 2xl:min-h-[55vh]">
-      <h2 className="text-4xl xl:text-5xl text-center font-semibold dark:text-neutral-200">
+      <h2 className="text-4xl leading-snug xl:text-5xl text-center font-semibold dark:text-neutral-200">
         Wykorzystywane Technologie
       </h2>
       <div className="flex items-center text-5xl xl:text-6xl px-6 xl:px-52 my-14 xl:my-24 justify-between dark:text-neutral-400 ">

@@ -8,7 +8,7 @@ import { MdOutlineSupportAgent } from "react-icons/md";
 export default function MoreInfo() {
   return (
     <section className="p-6 xl:px-24 2xl:px-44 xl:my-20 2xl:my-32 ">
-      <h2 className="capitalize mb-14 xl:mb-20 text-2xl xl:text-4xl xl:w-3/5 font-semibold xl:leading-snug dark:text-neutral-200">
+      <h2 className="capitalize leading-snug mb-14 xl:mb-20 text-2xl xl:text-4xl xl:w-3/5 font-semibold xl:leading-snug dark:text-neutral-200">
         Dlaczego warto wybrać DomiWeb do stworzenia swojej strony lub aplikacji?
       </h2>
       <div className="grid grid-cols-1 gap-12 xl:grid-cols-2 2xl:grid-cols-3 dark:text-neutral-300 ">

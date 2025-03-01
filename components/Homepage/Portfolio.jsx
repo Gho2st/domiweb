@@ -43,7 +43,7 @@ export default function Portfolio() {
   return (
     <section
       id="projekty"
-      className=" my-10 mt-24 mb-20 px-6 xl:px-24 2xl:px-44"
+      className="my-10 mt-24 mb-20 px-6 xl:px-24 2xl:px-44"
     >
       {/* card */}
       <div className="bg-white shadow-xl dark:bg-neutral-950 p-6 lg:p-16 rounded-xl">
@@ -51,7 +51,7 @@ export default function Portfolio() {
           <span className="text-green-500 text-lg font-semibold xl:text-2xl">
             Zobacz, co udało nam się stworzyć!
           </span>
-          <h2 className="text-2xl mt-4 xl:mt-8 font-semibold xl:text-4xl xl:leading-snug dark:text-neutral-100 ">
+          <h2 className="text-2xl leading-snug mt-4 xl:mt-8 font-semibold xl:text-4xl xl:leading-snug dark:text-neutral-100 ">
             Nasze Projekty - Zrealizowane Strony Internetowe i Kampanie SEO
           </h2>
         </div>

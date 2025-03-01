@@ -5,7 +5,7 @@ import Homepage from "@/components/Homepage/Homepage";
 
 export default function Home() {
   return (
-    <main className="overflow-hidden leading-snug">
+    <main className="overflow-hidden">
       <Nav />
       <Homepage />
       <Footer />

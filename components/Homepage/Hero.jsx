@@ -18,7 +18,7 @@ export default function Hero() {
         </motion.h1>
         <div className="lg:w-4/5 xl:w-9/12">
           <motion.h2
-            className="mt-6 font-semibold text-4xl capitalize lg:text-5xl lg:leading-snug 2xl:text-6xl 2xl:leading-snug dark:text-neutral-100"
+            className="mt-6 leading-snug font-semibold text-4xl capitalize lg:text-5xl lg:leading-snug 2xl:text-6xl 2xl:leading-snug dark:text-neutral-100"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
