@@ -10,22 +10,22 @@ import Services from "@/components/UI/Services";
 import Help from "./Help";
 
 export const metadata = {
-  title: "Pozycjonowanie stron internetowych | DomiWeb",
+  title: "Pozycjonowanie Stron Nowy Sącz – SEO | DomiWeb",
   alternates: {
     canonical: "/pozycjonowanie",
   },
 
   description:
-    "Dowiedz się, dlaczego pozycjonowanie stron internetowych jest ważne. Dzięki SEO Twoja strona może zyskać większy ruch i wyróżnić się w Google.",
+    "Pozycjonowanie stron w Nowym Sączu z DomiWeb! Z nami Twoja witryna będzie widoczna w Google – od Krakowa po całą Polskę. Umów się na darmową konsultację i zacznijmy!",
 };
 
 export default function Home() {
   const cardsData = [
     {
       icon: <FaCode className="text-4xl text-green-100" />,
-      title: "Bądź widoczny w Google",
+      title: "Bądź widoczny w Google – lokalnie i poza Nowym Sączem",
       description:
-        "Wyobraź sobie, że Twoja strona wyskakuje na pierwszej stronie wyników, gdy ktoś szuka tego, co oferujesz. To nie magia – to SEO. Dzięki nam Twoja witryna stanie się łatwa do znalezienia, a Ty dotrzesz do ludzi, którzy naprawdę chcą Cię poznać.",
+        "Wyobraź sobie, że Twoja strona wyskakuje na pierwszej stronie wyników w Google – w Nowym Sączu i całej Polsce! To nie magia – to SEO. Dzięki nam Twoja witryna stanie się łatwa do znalezienia, a Ty dotrzesz do ludzi, którzy chcą Cię poznać.",
     },
     {
       icon: <FaSearch className="text-4xl text-green-100" />,
@@ -55,19 +55,19 @@ export default function Home() {
           <div className="relative min-h-[100vh] lg:min-h-[86vh] ">
             <div className="lg:w-3/5">
               <h1 className="text-sm xl:text-xl text-gray-500 dark:text-neutral-400 font-semibold">
-                Pozycjowanie stron internetowych
+                Pozycjonowanie Stron w Nowym Sączu – DomiWeb
               </h1>
-              <h2 className="mt-6 font-semibold  capitalize text-4xl leading-snug lg:text-5xl lg:leading-snug 2xl:text-6xl 2xl:leading-snug dark:text-neutral-200  ">
+              <h2 className="mt-6 font-semibold capitalize text-4xl leading-snug 2xl:text-6xl lg:leading-snug  2xl:leading-snug dark:text-neutral-200  ">
                 Pozycjonowanie stron internetowych – dlaczego warto?
               </h2>
 
-              <p className="my-10 text-neutral-900 dark:text-neutral-400 text-lg font-light xl:text-xl ">
+              <p className="my-10 text-neutral-900 dark:text-neutral-400 text-lg font-light 2xl:text-xl ">
                 Chcesz, by Twoja strona była widoczna w Google i przyciągała
-                nowych ludzi? W DomiWeb wiemy, jak to zrobić. Pozycjonowanie
-                (SEO) to dla nas nie tylko techniczne sztuczki – to sposób, by
-                Twój biznes rozkwitł w sieci, a Ty poczuł się pewniej na rynku.
-                Z nami Twoja strona stanie się miejscem, do którego klienci
-                trafią naturalnie.
+                nowych ludzi – także w Nowym Sączu? W DomiWeb wiemy, jak to
+                zrobić! Pozycjonowanie (SEO) to dla nas sposób, by Twój biznes
+                rozkwitł w sieci, a Ty poczuł się pewniej na rynku. Z nami Twoja
+                strona stanie się miejscem, do którego klienci trafią naturalnie
+                – od Nowego Sącza po Kraków i całą Polskę!
               </p>
             </div>
             {/* Obrazek jako tło pod tekstem */}

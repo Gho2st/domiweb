@@ -4,7 +4,7 @@ export default function People() {
   return (
     <section className="p-6 xl:px-24 2xl:px-44 py-10 mb-10">
       <h2 className="text-3xl leading-snug mb-10 font-semibold dark:text-neutral-200">
-        Ludzie, którzy tworzą DomiWeb
+        Zespół DomiWeb – poznaj nas!
       </h2>
       {/* card container */}
       <div className="grid grid-cols-2 gap-6 mt-10">

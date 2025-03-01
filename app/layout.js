@@ -7,18 +7,18 @@ const font = Poppins({
 });
 
 export const metadata = {
-  title: "Tworzenie Stron Internetowych i Aplikacji Mobilnych - DomiWeb",
+  title: "Strony i Aplikacje Mobilne Nowy Sącz – SEO | DomiWeb",
   description:
-    "Zwiększ widoczność w sieci z DomiWeb! Oferujemy profesjonalne strony internetowe i aplikacje mobilne, optymalizowane pod SEO oraz zaprojektowane z myślą o doskonałym UX. Postaw na nowoczesne rozwiązania, które przyciągną klientów i wyróżnią Twoją markę w wynikach wyszukiwania Google.",
+    "Strony internetowe i aplikacje mobilne w Nowym Sączu – DomiWeb! Nowoczesne rozwiązania z SEO, które przyciągną klientów. Zadbamy o Twoją widoczność w Google – napisz do nas!",
   alternates: {
     canonical: "https://www.domiweb.pl/",
   },
   openGraph: {
     type: "website",
     url: "https://www.domiweb.pl/",
-    title: "Tworzenie Stron Internetowych i Aplikacji Mobilnych - DomiWeb",
+    title: "Strony i Aplikacje Mobilne Nowy Sącz – SEO | DomiWeb",
     description:
-      "Zwiększ widoczność w sieci z DomiWeb! Oferujemy profesjonalne strony internetowe i aplikacje mobilne, optymalizowane pod SEO oraz zaprojektowane z myślą o doskonałym UX.",
+      "Strony internetowe i aplikacje mobilne w Nowym Sączu – DomiWeb! Nowoczesne rozwiązania z SEO, które przyciągną klientów. Zadbamy o Twoją widoczność w Google – napisz do nas!",
     images: "/opengraph-image.png",
   },
   robots: {

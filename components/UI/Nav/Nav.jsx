@@ -68,7 +68,7 @@ export default function Nav() {
                 width={50}
                 height={50}
                 layout="responsive"
-                alt="logo firmy Domiweb składające się z liter D i W"
+                alt="Logo DomiWeb – tworzenie stron i aplikacji mobilnych w Nowym Sączu"
                 className="block dark:hidden"
               />
               <Image
@@ -76,7 +76,7 @@ export default function Nav() {
                 width={50}
                 height={50}
                 layout="responsive"
-                alt="logo firmy Domiweb składające się z liter D i W"
+                alt="Logo DomiWeb – tworzenie stron i aplikacji mobilnych w Nowym Sączu"
                 className="hidden dark:block"
               />
             </div>

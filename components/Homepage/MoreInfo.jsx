@@ -52,7 +52,8 @@ export default function MoreInfo() {
             Dbamy o to, aby Twoja strona osiągała wysokie pozycje w
             wyszukiwarkach. W DomiWeb stosujemy skuteczne techniki SEO, aby
             pomóc Ci zdobywać nowych klientów i zwiększać widoczność Twojej
-            strony w Google.
+            strony w Google szczególnie w wynikach loklalnych w mieście
+            działania.
           </p>
         </div>
         {/* card 4 */}
@@ -65,7 +66,7 @@ export default function MoreInfo() {
           <p className="mt-4 text-neutral-900 dark:text-neutral-400 font-light">
             Oferujemy konkurencyjne ceny bez kompromisów w jakości. Naszym celem
             jest dostarczenie profesjonalnych rozwiązań, które są dostępne dla
-            każdego, niezależnie od budżetu.
+            każdego, niezależnie od budżetu czy formy działania.
           </p>
         </div>
 

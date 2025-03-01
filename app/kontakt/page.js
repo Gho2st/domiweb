@@ -4,13 +4,13 @@ import Nav from "@/components/UI/Nav/Nav";
 import Form from "./form";
 
 export const metadata = {
-  title: "Kontakt - Skontaktuj się z nami | Domiweb",
+  title: "Kontakt – Strony Internetowe Nowy Sącz | DomiWeb",
   alternates: {
     canonical: "/kontakt",
   },
 
   description:
-    "Masz pytania lub pomysł na współpracę? Skontaktuj się z zespołem Domiweb, aby omówić swoje potrzeby i dowiedzieć się, jak możemy wspólnie osiągnąć Twoje cele biznesowe. Jesteśmy tu, aby odpowiedzieć na wszelkie pytania i zapewnić wsparcie na każdym etapie.",
+    "Kontakt z DomiWeb w Nowym Sączu! Strony i aplikacje mobilne – od Krakowa po całą Polskę. Napisz, zadzwoń lub umów się na kawę – zacznijmy Twój projekt już dziś!",
 };
 
 export default function Contact() {

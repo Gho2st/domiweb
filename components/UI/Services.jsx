@@ -18,7 +18,7 @@ function ServiceCard({ icon, title, description, isLeftAligned }) {
       transition={{ duration: 1.2 }}
     >
       <div className="bg-green-500 rounded-lg inline-block p-3">{icon}</div>
-      <h2 className="text-xl 2xl:text-3xl my-5 font-semibold dark:text-neutral-200">{title}</h2>
+      <h2 className="text-xl leading-snug  2xl:text-3xl 2xl:leading-snug my-5 font-semibold dark:text-neutral-200">{title}</h2>
       <p className="text-neutral-900 font-light 2xl:text-lg dark:text-neutral-400">{description}</p>
       <span
         className={`absolute top-[50%] ${

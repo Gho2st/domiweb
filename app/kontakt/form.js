@@ -85,11 +85,12 @@ export default function Form() {
     <main>
       <section className="p-6 lg:px-24 2xl:px-44">
         <h1 className="mx-auto mt-6 font-semibold text-4xl capitalize dark:text-neutral-200">
-          Skontaktuj się z nami
+          Kontakt – Strony i Aplikacje Mobilne w Nowym Sączu
         </h1>
         <p className="mt-8 mb-2 text-lg text-neutral-900 dark:text-neutral-300 font-light">
-          Zróbmy razem świetny projekt. Masz pomysł, który czeka na realizację?
-          A może chcesz po prostu pogadać o tym, jak możemy Ci pomóc? W DomiWeb
+          Zróbmy razem świetny projekt – w Nowym Sączu lub gdziekolwiek w
+          Polsce! Masz pomysł, który czeka na realizację? A może chcesz po
+          prostu pogadać o tym, jak możemy Ci pomóc – np. w Krakowie? W DomiWeb
           jesteśmy gotowi, by słuchać i działać. Napisz, zadzwoń albo wpadnij na
           kawę – wirtualną lub prawdziwą. Razem stworzymy coś, z czego będziesz
           dumny!

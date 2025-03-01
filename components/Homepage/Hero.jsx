@@ -14,7 +14,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Tworzenie Stron Internetowych i Aplikacji Mobilnych z SEO
+          Strony Internetowe i Aplikacje Mobilne w Nowym Sączu – DomiWeb
         </motion.h1>
         <div className="lg:w-4/5 xl:w-9/12">
           <motion.h2
@@ -23,8 +23,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            Nowoczesne Strony i Aplikacje Mobilne – Wysokiej Jakości User
-            Experience
+            Nowoczesne rozwiązania z SEO – przyciągnij więcej klientów!
           </motion.h2>
 
           <motion.p
@@ -33,9 +32,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            Tworzymy nowoczesne, responsywne strony internetowe i aplikacje
-            mobilne, które przyciągają użytkowników oraz są zoptymalizowane pod
-            kątem SEO, zapewniając widoczność w wyszukiwarkach
+            W Nowym Sączu tworzymy piękne, responsywne witryny i aplikacje
+            mobilne – zoptymalizowane pod SEO. Z nami Twoja firma będzie
+            widoczna w Google i gotowa na sukces – napisz do nas!
           </motion.p>
         </div>
         <div className="ml-6 pt-14 lg:ml-44 lg:pt-24">
@@ -64,7 +63,7 @@ export default function Hero() {
         >
           <Image
             src="/blok.png"
-            alt="Dekoracyjny obrazek"
+            alt="Dekoracyjny obrazek przedstawiający budowę strony lub aplikacji z kartonów"
             layout="responsive"
             width={100}
             height={100}
