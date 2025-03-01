@@ -1,17 +1,17 @@
 export default function Experience() {
   return (
-    <section className="p-6 xl:px-24 2xl:px-44 py-10">
+    <section className="p-6 xl:px-24 2xl:px-44 py-10 ">
       <h2 className="text-3xl xl:text-4xl font-semibold dark:text-neutral-200">
         Doświadczenie
       </h2>
-      <p className="text-neutral-900 text-lg font-light mt-6 mb-10 ">
+      <p className="text-neutral-900 dark:text-neutral-400 text-lg font-light mt-6 mb-10 ">
         Dziś wierzymy, że prawdziwy sukces rodzi się z dobrego kontaktu i
         wspólnej pracy. Nie chodzi nam tylko o tworzenie nowoczesnych stron –
         chodzi o to, byś czuł, że jesteśmy Twoimi partnerami na każdym kroku.
         Usiądź z nami przy kawie (choćby wirtualnej!), opowiedz o swoich
         potrzebach, a my zamienimy je w rozwiązania, które działają.
       </p>
-      <p className="text-neutral-900 text-lg font-light mt-6 mb-16 ">
+      <p className="text-neutral-900 dark:text-neutral-400 text-lg font-light mt-6 mb-16 ">
         Przez lata pomogliśmy ludziom takim jak Ty – od lokalnych pasjonatów po
         rozwijające się firmy. Stworzyliśmy stronę dla małych sklepów, które
         dzięki temu zaczęły przyciągać tłumy, i pomogliśmy młodym ambitnym
