@@ -5,14 +5,18 @@ import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import projects from "../../app/data/project"; // Ścieżka do danych
-
 export default function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [touchStart, setTouchStart] = useState(null); // Początkowa pozycja palca
-  const [touchEnd, setTouchEnd] = useState(null); // Końcowa pozycja palca
+  const [touchStart, setTouchStart] = useState(null); // Początkowa pozycja (X)
+  const [touchEnd, setTouchEnd] = useState(null); // Końcowa pozycja (X)
 
   // Minimalna odległość przeciągnięcia (w pikselach), aby uznać za swipe
   const minSwipeDistance = 50;
+
+  // Sprawdzenie, czy projects istnieje
+  if (!projects || projects.length === 0) {
+    return <p>Brak projektów do wyświetlenia.</p>;
+  }
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
@@ -24,33 +28,31 @@ export default function Portfolio() {
     );
   };
 
-  // Obsługa zdarzeń dotykowych
+  // Obsługa zdarzeń dotykowych (dla urządzeń mobilnych)
   const onTouchStart = (e) => {
-    // Zapisujemy pozycję początkową palca (X)
     setTouchEnd(null); // Resetujemy końcową pozycję
-    setTouchStart(e.targetTouches[0].clientX);
+    setTouchStart(e.targetTouches[0]?.clientX);
   };
 
   const onTouchMove = (e) => {
-    // Aktualizujemy pozycję końcową podczas przeciągania
-    setTouchEnd(e.targetTouches[0].clientX);
+    setTouchEnd(e.targetTouches[0]?.clientX);
   };
 
   const onTouchEnd = () => {
-    if (!touchStart || !touchEnd) return; // Jeśli nie ma pozycji początkowej lub końcowej, nic nie robimy
+    if (!touchStart || !touchEnd) return;
 
-    const distance = touchStart - touchEnd; // Obliczamy różnicę (odległość przeciągnięcia)
-    const isLeftSwipe = distance > minSwipeDistance; // Swipe w lewo (następny)
-    const isRightSwipe = distance < -minSwipeDistance; // Swipe w prawo (poprzedni)
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
 
     if (isLeftSwipe) {
-      handleNext(); // Swipe w lewo – następny projekt
+      handleNext();
     } else if (isRightSwipe) {
-      handlePrevious(); // Swipe w prawo – poprzedni projekt
+      handlePrevious();
     }
   };
 
-  // Obsługa klawiatury (pozostaje bez zmian)
+  // Obsługa klawiatury
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === "ArrowLeft") {
