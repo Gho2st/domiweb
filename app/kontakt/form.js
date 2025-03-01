@@ -98,7 +98,7 @@ export default function Form() {
         {formError && <p style={{ color: "red" }}>{formError}</p>}
 
         {/* contact container */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-10 lg:mt-12">
           {/* form container */}
           <div>
             {formSubmitted ? (
@@ -230,7 +230,7 @@ export default function Form() {
           </div>
         </div>
       </section>
-      <div className="p-6 lg:mt-10">
+      <div className="p-6 lg:mt-20">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1292.540067393763!2d20.63364013565588!3d49.61509389777563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473dfb91bf3cafbb%3A0x262021a6662173f!2sDomiweb%20-%20Strony%20internetowe!5e0!3m2!1spl!2spl!4v1730563297297!5m2!1spl!2spl"
           loading="lazy"
