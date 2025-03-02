@@ -11,7 +11,7 @@ export default function Audit() {
           <h2 className="text-2xl leading-snug xl:text-4xl mt-10 font-semibold xl:leading-snug dark:text-neutral-200">
             Bezpłatny Audyt SEO Twojej Strony - Sprawdź, Jak Poprawić Widoczność
           </h2>
-          <p className="text-neutral-900 xl:text-xl mt-6 mb-10 font-light dark:text-neutral-300">
+          <p className="text-neutral-900 dark:text-neutral-400 font-light text-lg 2xl:text-xl mt-6 mb-10">
             Skorzystaj z darmowego audytu, by odkryć potencjał swojej strony i
             przyciągnąć więcej klientów. Dowiedz się, jak poprawić jej
             widoczność i osiągnąć lepsze wyniki w wyszukiwarkach.
