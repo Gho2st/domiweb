@@ -127,11 +127,11 @@ export default function MoreInfo() {
               key={index}
               initial={{ opacity: 0, x: 20 }}
               animate={{
-                opacity: index === currentIndex ? 1 : 0.7, // Wyróżnienie aktywnej karty
+                opacity: index === currentIndex ? 1 : 0.35, // Wyróżnienie aktywnej karty
                 x: 0,
               }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className={`flex-none w-80 rounded-xl shadow-2xl border-green-500 border-2 border-opacity-45 p-6 dark:bg-neutral-950 snap-center ${
+              className={`flex-none w-80 rounded-xl  border-green-500 border-4 border-opacity-45 p-6 dark:bg-neutral-950 snap-center ${
                 index === currentIndex ? "scale-105" : "scale-100"
               }`}
             >
