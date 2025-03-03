@@ -143,22 +143,22 @@ const projects = [
     description:
       "Projekt strony internetowej EOS – Ozonowanie Kraków skoncentrował się na funkcjonalności i użyteczności, aby przyciągać klientów lokalnych. Witryna zawiera przejrzysty formularz kontaktowy, który umożliwia łatwe składanie zapytań oraz zamawianie usług. Dzięki optymalizacji SEO strona wspiera lepszą widoczność w wynikach wyszukiwania, a responsywny design gwarantuje wygodę użytkowania na każdym urządzeniu. Nowa witryna pomaga w skutecznym pozyskiwaniu klientów i budowaniu profesjonalnego wizerunku firmy.",
   },
-  {
-    id: "telmech",
-    title: "Telmech - Obróbka Metali",
-    header:
-      "Nowoczesna witryna dla firmy zajmującej się obróbką metali. Projekt wyróżnia się zastosowaniem AI w generowaniu grafik oraz optymalizacją SEO.",
-    image: "/portfolio/telmech/telmech.png",
-    link: "https://www.telmech.com/",
-    review:
-      "Strona przerosła nasze oczekiwania! Klienci są pod wrażeniem profesjonalnego wyglądu, a SEO od razu przyniosło widoczne efekty w postaci większej liczby zapytań. Świetna robota!",
-    name: "Właściciel",
-    company: "Telmech",
-    target:
-      "Strona internetowa Telmech – Obróbka Metali wspiera rozwój firmy, skutecznie prezentując jej ofertę i przyciągając nowych klientów. Zastosowanie technologii AI do generowania grafik podkreśla nowoczesne podejście firmy, a zoptymalizowane SEO pozwala na wyższą widoczność w wyszukiwarkach. Przejrzysty design oraz responsywność strony zwiększają wygodę użytkowników, budując zaufanie do marki.",
-    description:
-      "Projekt strony internetowej dla Telmech – Obróbka Metali skupiał się na stworzeniu profesjonalnego wizerunku firmy oraz efektywnym przedstawieniu jej usług. Witryna wyróżnia się nowoczesnym designem i grafikami generowanymi przy użyciu AI, które podkreślają innowacyjność marki. Optymalizacja SEO wspiera wyższą widoczność w wynikach wyszukiwania, a responsywny układ zapewnia wygodę użytkowania na różnych urządzeniach. Strona efektywnie wspomaga rozwój firmy i jej pozycję na rynku.",
-  },
+  // {
+  //   id: "telmech",
+  //   title: "Telmech - Obróbka Metali",
+  //   header:
+  //     "Nowoczesna witryna dla firmy zajmującej się obróbką metali. Projekt wyróżnia się zastosowaniem AI w generowaniu grafik oraz optymalizacją SEO.",
+  //   image: "/portfolio/telmech/telmech.png",
+  //   link: "https://www.telmech.com/",
+  //   review:
+  //     "Strona przerosła nasze oczekiwania! Klienci są pod wrażeniem profesjonalnego wyglądu, a SEO od razu przyniosło widoczne efekty w postaci większej liczby zapytań. Świetna robota!",
+  //   name: "Właściciel",
+  //   company: "Telmech",
+  //   target:
+  //     "Strona internetowa Telmech – Obróbka Metali wspiera rozwój firmy, skutecznie prezentując jej ofertę i przyciągając nowych klientów. Zastosowanie technologii AI do generowania grafik podkreśla nowoczesne podejście firmy, a zoptymalizowane SEO pozwala na wyższą widoczność w wyszukiwarkach. Przejrzysty design oraz responsywność strony zwiększają wygodę użytkowników, budując zaufanie do marki.",
+  //   description:
+  //     "Projekt strony internetowej dla Telmech – Obróbka Metali skupiał się na stworzeniu profesjonalnego wizerunku firmy oraz efektywnym przedstawieniu jej usług. Witryna wyróżnia się nowoczesnym designem i grafikami generowanymi przy użyciu AI, które podkreślają innowacyjność marki. Optymalizacja SEO wspiera wyższą widoczność w wynikach wyszukiwania, a responsywny układ zapewnia wygodę użytkowania na różnych urządzeniach. Strona efektywnie wspomaga rozwój firmy i jej pozycję na rynku.",
+  // },
   {
     id: "jatryk",
     title: "Jatryk - grafik Patryk Jędrzejek",
