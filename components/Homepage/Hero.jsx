@@ -38,7 +38,7 @@ export default function Hero() {
           </motion.p>
         </div>
         <div className="ml-6 pt-14 lg:ml-44 lg:pt-24">
-          <Link href="/#projekty">
+          <Link aria-label="Przejdź do sekcji projektów" href="/#projekty">
             <motion.div
               className="bg-green-500 rounded-full p-2 inline-flex items-center justify-center cursor-pointer"
               initial={{ scale: 0.8 }}

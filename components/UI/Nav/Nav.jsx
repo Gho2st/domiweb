@@ -126,6 +126,10 @@ export default function Nav() {
               isOpen ? "open" : ""
             }`}
             type="button"
+            aria-label={
+              isOpen ? "Zamknij menu nawigacyjne" : "Otwórz menu nawigacyjne"
+            }
+            aria-expanded={isOpen}
             onClick={handleMenuToggle}
           >
             <span className="hamburger-top dark:bg-neutral-300"></span>
