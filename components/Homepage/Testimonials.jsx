@@ -42,7 +42,7 @@ export default function Testimonials() {
             key={index}
             className="flex-1 min-h-[300px] md:min-h-[350px] xl:min-h-[400px] pb-10"
           >
-            <div className="p-6 2xl:p-10 bg-white dark:bg-neutral-950 rounded-xl w-11/12 mx-auto h-full flex flex-col justify-between">
+            <div className="p-6 2xl:p-10 shadow-xl bg-white dark:bg-neutral-950 rounded-xl w-11/12 mx-auto h-full flex flex-col justify-between">
               <div>
                 <div className="flex justify-between mb-6">
                   <div className="w-9 xl:w-14">

@@ -82,13 +82,15 @@ export default function Nav() {
             </div>
           </Link>
           <div className="hidden space-x-8 font-bold lg:flex dark:text-neutral-200">
-            <Link href="/o-nas">O Nas</Link>
-            <Link href="/portfolio">Portfolio</Link>
-            <Link href="/pozycjonowanie">Pozycjonowanie</Link>
-            <Link href="/kontakt">Kontakt</Link>
+            <Link className="hover:text-green-500 transition-colors duration-300 ease-in-out" href="/o-nas">
+              O Nas
+            </Link>
+            <Link className="hover:text-green-500 transition-colors duration-300 ease-in-out" href="/portfolio">Portfolio</Link>
+            <Link className="hover:text-green-500 transition-colors duration-300 ease-in-out" href="/pozycjonowanie">Pozycjonowanie</Link>
+            <Link className="hover:text-green-500 transition-colors duration-300 ease-in-out" href="/kontakt">Kontakt</Link>
             <Link
               href="tel:+48576985894"
-              className="inline-flex justify-center items-center gap-2 text-green-500 font-bold"
+              className="inline-flex justify-center items-center gap-2 text-green-500 font-bold hover:text-neutral-200 transition-colors duration-300 ease-in-out"
             >
               Umów Spotkanie
               <IoIosCall className="text-xl" />
@@ -97,7 +99,7 @@ export default function Nav() {
               onClick={toggleDarkMode}
               className="inline-flex justify-center items-center"
             >
-              <MdDarkMode className="text-xl" />
+              <MdDarkMode className="text-xl dark:text-yellow-500" />
             </button>
           </div>
           <button

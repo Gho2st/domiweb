@@ -67,7 +67,7 @@ const projects = [
     id: "nshkipe",
     title: "Stowarzyszenie Hodowców Ptaków",
     header:
-      "Dynamiczna witryna z panelem administracyjnym umożliwiającym zarządzanie treściami i użytkownikami. Idealne rozwiązanie dla organizacji potrzebujących szybkiego dostępu do aktualizacji.",
+      "Dynamiczna witryna z panelem administracyjnym umożliwiającym zarządzanie treściami i użytkownikami.",
     image: "/portfolio/nshkipe/nshkipe.png",
     link: "https://www.nshkipe.com.pl/",
     review:

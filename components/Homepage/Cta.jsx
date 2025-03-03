@@ -7,7 +7,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function Cta() {
   return (
-    <section className="p-6 xl:px-24 2xl:px-44 py-10">
+    <section className="p-6 xl:px-24 2xl:px-44 py-10 my-10">
       <p className="text-center font-medium text-xl xl:text-2xl text-green-500">
         Popracujmy razem
       </p>

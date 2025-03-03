@@ -4,7 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { motion } from "framer-motion"; // Import framer-motion
 import projects from "../../app/data/project"; // Ścieżka do danych
+
 export default function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [touchStart, setTouchStart] = useState(null); // Początkowa pozycja (X)
@@ -25,7 +27,7 @@ export default function Portfolio() {
 
   // Obsługa zdarzeń dotykowych (dla urządzeń mobilnych)
   const onTouchStart = (e) => {
-    setTouchEnd(null); // Resetujemy końcową pozycję
+    setTouchEnd(null);
     setTouchStart(e.targetTouches[0]?.clientX);
   };
 
@@ -73,7 +75,7 @@ export default function Portfolio() {
       id="projekty"
       className="my-10 mt-24 mb-20 md:px-6 xl:px-24 2xl:px-44"
     >
-      <div className="bg-white shadow-xl dark:bg-neutral-950 p-6 lg:p-16 md:rounded-xl">
+      <div className="bg-white shadow-xl dark:bg-neutral-950 px-6 py-10 lg:p-16 md:rounded-xl">
         <div className="xl:w-4/6 mb-10 xl:mb-20">
           <span className="text-green-500 text-lg font-semibold xl:text-2xl">
             Zobacz, co udało nam się stworzyć!
@@ -83,31 +85,40 @@ export default function Portfolio() {
           </h2>
         </div>
         <div className="sm:grid md:grid-cols-2 gap-x-16">
-          {/* Kontener, na którym nasłuchujemy zdarzeń dotykowych */}
+          {/* Kontener obrazu z ustalonym stosunkiem proporcji */}
           <div
-            className="w-full mb-10 lg:mb-0"
+            className="w-full mb-10 lg:mb-0 aspect-[16/9] relative"
             onTouchStart={onTouchStart}
             onTouchMove={onTouchMove}
             onTouchEnd={onTouchEnd}
           >
-            <Image
-              src={projects[currentIndex].image}
-              height={100}
-              width={100}
-              layout="responsive"
-              className="rounded-xl"
-              alt={`Strona dla ${projects[currentIndex].title} – realizacja DomiWeb z Nowego Sącza`}
-            />
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0, scale: 0.98 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              className="absolute inset-0"
+            >
+              <Image
+                src={projects[currentIndex].image}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-xl"
+                alt={`Strona dla ${projects[currentIndex].title} – realizacja DomiWeb z Nowego Sącza`}
+              />
+            </motion.div>
           </div>
           {/* Text container */}
-          <div className="flex flex-col justify-between min-h-[400px] xl:min-h-[350px] 2xl:min-h-[420px]">
-            <div className="">
-              <h3 className="text-xl xl:text-2xl mb-4 font-semibold dark:text-neutral-100">
-                {projects[currentIndex].title}
-              </h3>
-              <p className="text-neutral-900 dark:text-neutral-100 xl:text-lg font-light mb-6">
-                {projects[currentIndex].header}
-              </p>
+          <div className="flex flex-col justify-between min-h-[380px] md:h-[350px] xl:h-[350px] 2xl:h-[420px]">
+            <div>
+              <div>
+                <h3 className="text-xl xl:text-2xl mb-4 font-semibold dark:text-neutral-100">
+                  {projects[currentIndex].title}
+                </h3>
+                <p className="text-neutral-900 dark:text-neutral-400 xl:text-lg font-light mb-6">
+                  {projects[currentIndex].header}
+                </p>
+              </div>
               <Link
                 className="inline-flex gap-2 items-center font-semibold group xl:text-lg dark:text-neutral-100"
                 href={`/portfolio/${projects[currentIndex].id}`}
