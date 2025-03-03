@@ -82,12 +82,30 @@ export default function Nav() {
             </div>
           </Link>
           <div className="hidden space-x-8 font-bold lg:flex dark:text-neutral-200">
-            <Link className="hover:text-green-500 transition-colors duration-300 ease-in-out" href="/o-nas">
+            <Link
+              className="hover:text-green-500 transition-colors duration-300 ease-in-out"
+              href="/o-nas"
+            >
               O Nas
             </Link>
-            <Link className="hover:text-green-500 transition-colors duration-300 ease-in-out" href="/portfolio">Portfolio</Link>
-            <Link className="hover:text-green-500 transition-colors duration-300 ease-in-out" href="/pozycjonowanie">Pozycjonowanie</Link>
-            <Link className="hover:text-green-500 transition-colors duration-300 ease-in-out" href="/kontakt">Kontakt</Link>
+            <Link
+              className="hover:text-green-500 transition-colors duration-300 ease-in-out"
+              href="/portfolio"
+            >
+              Portfolio
+            </Link>
+            <Link
+              className="hover:text-green-500 transition-colors duration-300 ease-in-out"
+              href="/pozycjonowanie"
+            >
+              Pozycjonowanie
+            </Link>
+            <Link
+              className="hover:text-green-500 transition-colors duration-300 ease-in-out"
+              href="/kontakt"
+            >
+              Kontakt
+            </Link>
             <Link
               href="tel:+48576985894"
               className="inline-flex justify-center items-center gap-2 text-green-500 font-bold hover:text-neutral-200 transition-colors duration-300 ease-in-out"
@@ -128,9 +146,9 @@ export default function Nav() {
             >
               <div className="flex flex-col items-center justify-center w-full text-lg space-y-6 font-semibold rounded-sm dark:text-neutral-300">
                 <Link href="/o-nas">O Nas</Link>
-                <Link href="/kontakt">Kontakt</Link>
                 <Link href="/portfolio">Portfolio</Link>
                 <Link href="/pozycjonowanie">Pozycjonowanie</Link>
+                <Link href="/kontakt">Kontakt</Link>
                 <div className="h-[0.1rem] w-full bg-gray-300"></div>
                 <Link
                   href="tel:+48576985894"

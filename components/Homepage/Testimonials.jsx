@@ -36,13 +36,13 @@ export default function Testimonials() {
           to wirtualny drogowskaz dla innych.
         </p>
       </div>
-      <div className="flex flex-col md:flex-row my-10 mt-20">
+      <div className="flex flex-col gap-6 md:flex-row my-10 mt-20">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="flex-1 min-h-[300px] md:min-h-[350px] xl:min-h-[400px] pb-10"
+            className="flex-1 min-h-[300px] md:min-h-[350px] xl:min-h-[400px]"
           >
-            <div className="p-6 2xl:p-10 shadow-xl bg-white dark:bg-neutral-950 rounded-xl w-11/12 mx-auto h-full flex flex-col justify-between">
+            <div className="p-6 2xl:p-10 shadow-xl bg-white dark:bg-neutral-950 rounded-xl  h-full flex flex-col justify-between">
               <div>
                 <div className="flex justify-between mb-6">
                   <div className="w-9 xl:w-14">
