@@ -4,16 +4,27 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { motion } from "framer-motion"; // Import framer-motion
+import { motion } from "framer-motion";
 import projects from "../../app/data/project"; // Ścieżka do danych
 
 export default function Portfolio() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [touchStart, setTouchStart] = useState(null); // Początkowa pozycja (X)
-  const [touchEnd, setTouchEnd] = useState(null); // Końcowa pozycja (X)
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
 
-  // Minimalna odległość przeciągnięcia (w pikselach), aby uznać za swipe
   const minSwipeDistance = 50;
+
+  // Preload obrazów
+  useEffect(() => {
+    const preloadImages = () => {
+      projects.forEach((project) => {
+        const img = new window.Image(); // Używamy natywnego obiektu Image
+        img.src = project.image; // Ładujemy każdy obraz w tle
+      });
+    };
+
+    preloadImages();
+  }, []); // Puste zależności – ładuje się tylko raz przy montowaniu komponentu
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % projects.length);
@@ -25,7 +36,6 @@ export default function Portfolio() {
     );
   };
 
-  // Obsługa zdarzeń dotykowych (dla urządzeń mobilnych)
   const onTouchStart = (e) => {
     setTouchEnd(null);
     setTouchStart(e.targetTouches[0]?.clientX);
@@ -65,7 +75,6 @@ export default function Portfolio() {
     };
   }, []);
 
-  // Sprawdzenie, czy projects istnieje
   if (!projects || projects.length === 0) {
     return <p>Brak projektów do wyświetlenia.</p>;
   }
@@ -85,7 +94,7 @@ export default function Portfolio() {
           </h2>
         </div>
         <div className="sm:grid md:grid-cols-2 gap-x-16">
-          {/* Kontener obrazu z ustalonym stosunkiem proporcji */}
+          {/* Kontener obrazu */}
           <div
             className="w-full mb-10 lg:mb-0 aspect-[16/9] relative"
             onTouchStart={onTouchStart}
@@ -93,7 +102,7 @@ export default function Portfolio() {
             onTouchEnd={onTouchEnd}
           >
             <motion.div
-              key={currentIndex}
+              key={currentIndex} // Klucz zmienia się z indeksem, co wyzwala animację
               initial={{ opacity: 0, scale: 0.98 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}

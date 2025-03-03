@@ -137,7 +137,7 @@ export default function Testimonials() {
 
   return (
     <section className="xl:px-24 2xl:px-44 my-32">
-      <div className="xl:w-3/4 px-6">
+      <div className="xl:w-3/4 px-6 md:px-0">
         <h2 className="text-3xl leading-snug xl:text-4xl xl:leading-snug font-semibold my-6 dark:text-neutral-200">
           Opinie Klientów o Naszych Usługach Tworzenia Stron i SEO
         </h2>
@@ -151,7 +151,7 @@ export default function Testimonials() {
         <div className="relative">
           <motion.div
             ref={carouselRef}
-            className="flex gap-6 overflow-x-hidden scrollbar-hide snap-x snap-mandatory my-10 mt-20"
+            className="flex gap-6 overflow-x-hidden scrollbar-hide snap-x snap-mandatory my-10 mt-20 pb-6"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
