@@ -87,7 +87,7 @@ export default function Form() {
         <h1 className="mx-auto leading-snug mt-6 font-semibold text-4xl capitalize dark:text-neutral-200">
           Kontakt – Strony i Aplikacje Mobilne w Nowym Sączu
         </h1>
-        <p className="mt-8 mb-2 text-lg text-neutral-900 dark:text-neutral-300 font-light">
+        <p className="mt-8 mb-2 text-lg text-neutral-900 dark:text-neutral-400 font-light">
           Zróbmy razem świetny projekt – w Nowym Sączu lub gdziekolwiek w
           Polsce! Masz pomysł, który czeka na realizację? A może chcesz po
           prostu pogadać o tym, jak możemy Ci pomóc – np. w Krakowie? W DomiWeb
@@ -197,7 +197,7 @@ export default function Form() {
             <h2 className="text-xl xl:text-2xl font-semibold mb-5 dark:text-neutral-200">
               Oczekujesz bardziej personalnego kontaktu?
             </h2>
-            <p className="text-neutral-900 dark:text-neutral-300 font-light">
+            <p className="text-neutral-900 dark:text-neutral-400 font-light">
               To możliwe. Umów wizytę z nami - chętnie porozmawiamy o twoich
               pomysłach & odpowiemy na nurtujące pytania jakie możesz mieć.
             </p>

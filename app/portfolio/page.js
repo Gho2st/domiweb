@@ -21,14 +21,14 @@ export default function Home() {
     <>
       <Nav />
       <main className="p-6 lg:px-24 2xl:px-44">
-        <h1 className="mt-10 xl:mt-14 text-sm xl:text-xl text-gray-500 dark:text-neutral-400 font-semibold">
+        <h1 className="mt-6 text-sm xl:text-xl text-gray-500 dark:text-neutral-400 font-semibold">
           Portfolio Stron Internetowych i Aplikacji Mobilnych – DomiWeb Nowy
           Sącz
         </h1>
         <h2 className="mt-6 leading-snug font-semibold text-4xl capitalize  lg:leading-snug 2xl:text-6xl 2xl:leading-snug dark:text-neutral-100">
           Nasze projekty – od Nowego Sącza po Kraków i całą Polskę
         </h2>
-        <p className="my-10 mt-6 xl:mt-10 text-neutral-900 dark:text-neutral-300 text-lg 2xl:text-xl font-light">
+        <p className="my-10 mt-6 xl:mt-10 text-neutral-900 dark:text-neutral-400 text-lg 2xl:text-xl font-light">
           W DomiWeb lubimy dawać kształt marzeniom – także w Nowym Sączu! Każdy
           projekt to nowa historia, a Twoja może być następna. Pomogliśmy w
           sieci rozwinąć skrzydła firmom z Krakowa, jak Żłobek Wesołe Wygibasy,
