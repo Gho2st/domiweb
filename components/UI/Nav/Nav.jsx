@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoIosCall } from "react-icons/io";
 import { MdDarkMode } from "react-icons/md";
+import { FaSun } from "react-icons/fa6";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -117,7 +118,10 @@ export default function Nav() {
               onClick={toggleDarkMode}
               className="inline-flex justify-center items-center"
             >
-              <MdDarkMode className="text-xl dark:text-yellow-500" />
+              {!darkMode && (
+                <MdDarkMode className="text-xl dark:text-yellow-500" />
+              )}
+              {darkMode && <FaSun className="text-xl dark:text-yellow-500" />}
             </button>
           </div>
           <button

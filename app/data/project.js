@@ -5,7 +5,7 @@ const projects = [
     description:
       "Wesołe Wygibasy to dynamicznie rozwijające się krakowskie placówki dla dzieci, które postawiły na nowoczesne rozwiązania technologiczne, aby wyróżnić się na lokalnym rynku. Stworzyliśmy dla nich stronę internetową opartą na technologii Next.js, znanej z wysokiej wydajności i elastyczności. Dzięki integracji z AWS, witryna zyskała funkcjonalność regularnego aktualizowania galerii zdjęć, co pozwala na bieżąco dzielić się z rodzicami wyjątkowymi momentami z życia żłobka. Strona została zaprojektowana z myślą o intuicyjności i łatwości obsługi. Zawiera przejrzysty cennik, który pomaga rodzicom szybko zapoznać się z ofertą, oraz formularz kontaktowy z wbudowanym zabezpieczeniem reCAPTCHA, chroniącym przed spamem. Ponadto, wdrożono inne przydatne funkcjonalności, które wspierają zarówno komunikację z rodzicami, jak i sprawne zarządzanie placówką. Wszystko to składa się na kompleksowe narzędzie, które podnosi jakość obsługi oraz wzmacnia pozycję Wesołych Wygibasów jako lidera wśród lokalnych placówek opiekuńczo-edukacyjnych.",
     header:
-      "Strona internetowa dla krakowskiej sieci żłobków, zaprojektowana z myślą o rodzicach. Jasny, przyjazny design, intuicyjna nawigacja i pastelowa kolorystyka tworzą komfortowe doświadczenie użytkownika.",
+      "Strona internetowa dla krakowskiej sieci żłobków, zaprojektowana z myślą o rodzicach. Jasny, przyjazny design, intuicyjna nawigacja i pastelowa kolorystyka.",
     target:
       "Dzięki nowej stronie internetowej Wesołe Wygibasy zyskały znaczący wzrost widoczności na rynku lokalnym. Integracja z reklamami Google pomogła pozyskać większą liczbę klientów, co przełożyło się na większe zainteresowanie ofertą placówek. Regularna aktualizacja zdjęć i treści na stronie buduje zaangażowanie obecnych rodziców i zaufanie wśród nowych. Wdrożone rozwiązania SEO, takie jak optymalizacja treści, struktury strony oraz odpowiednie meta tagi, zwiększyły pozycję witryny w wynikach wyszukiwania, przyciągając więcej organicznego ruchu. Formularz kontaktowy z zaawansowaną kontrolą antyspamową (reCAPTCHA) poprawił komunikację, eliminując niechciane wiadomości. Dodatkowo, zoptymalizowana wydajność strony zapewnia szybkie ładowanie i intuicyjną nawigację, co pozytywnie wpływa na doświadczenie użytkowników.",
     review:
@@ -51,7 +51,7 @@ const projects = [
     id: "szlafrok",
     title: "Sklep Specjalistyczny SzlafrO.K.",
     header:
-      "Dzięki integracji z AWS, strona zapewnia szybkie ładowanie i wysoką dostępność. Użytkownicy mogą łatwo przeglądać ofertę, a responsywny design gwarantuje wygodę na różnych urządzeniach.",
+      "Dzięki integracji z AWS, strona zapewnia szybkie ładowanie i wysoką dostępność. Użytkownicy mogą łatwo przeglądać ofertę, responsywny na różnych urządzeniach.",
     image: "/portfolio/szlafrok/szlafrok.png",
     link: "https://www.szlafroki.krakow.pl/",
     name: "Marian",
@@ -67,7 +67,7 @@ const projects = [
     id: "nshkipe",
     title: "Stowarzyszenie Hodowców Ptaków",
     header:
-      "Dynamiczna witryna z panelem administracyjnym umożliwiającym zarządzanie treściami i użytkownikami.",
+      "Dynamiczna witryna z panelem administracyjnym umożliwiającym zarządzanie treścią i użytkownikami.",
     image: "/portfolio/nshkipe/nshkipe.png",
     link: "https://www.nshkipe.com.pl/",
     review:

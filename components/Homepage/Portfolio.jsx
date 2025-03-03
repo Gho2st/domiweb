@@ -109,7 +109,7 @@ export default function Portfolio() {
             </motion.div>
           </div>
           {/* Text container */}
-          <div className="flex flex-col justify-between min-h-[380px] md:h-[350px] xl:h-[350px] 2xl:h-[420px]">
+          <div className="flex flex-col justify-between min-h-[330px] md:h-[350px] xl:h-[350px] 2xl:h-[420px]">
             <div>
               <div>
                 <h3 className="text-xl xl:text-2xl mb-4 font-semibold dark:text-neutral-100">

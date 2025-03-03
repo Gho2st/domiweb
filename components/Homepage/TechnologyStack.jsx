@@ -40,7 +40,7 @@ export default function TechnologyStack() {
     AI: {
       name: "AI",
       description:
-        "Sztuczna inteligencja wspiera nowoczesne strony internetowe, automatyzując procesy, analizując dane użytkowników oraz personalizując ich doświadczenia. Dzięki AI mogę tworzyć inteligentne funkcje, takie jak rekomendacje treści, automatyczne analizy SEO czy chatboty wspomagające obsługę klienta, co zwiększa interaktywność i efektywność witryny.",
+        "Sztuczna inteligencja wspiera nowoczesne strony internetowe, automatyzując procesy, analizując dane użytkowników oraz personalizując ich doświadczenia.",
     },
   };
 
