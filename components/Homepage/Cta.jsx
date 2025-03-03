@@ -27,16 +27,16 @@ export default function Cta() {
       </div>
 
       <div className=" flex justify-between w-4/5 xl:w-3/5 mx-auto text-4xl mt-14 xl:mt-20 dark:text-neutral-400">
-        <Link href={"https://www.facebook.com/profile.php?id=100093145422125"}>
+        <Link aria-label="Przejdź do profilu Domiweb na facebooku" href={"https://www.facebook.com/profile.php?id=100093145422125"}>
           <FaFacebook className="transtion duration-300 hover:text-green-500 cursor-pointer" />
         </Link>
-        <Link href={"https://www.instagram.com/domiweb.pl/"}>
+        <Link aria-label="Przejdź do profilu Domiweb na instagramie" href={"https://www.instagram.com/domiweb.pl/"}>
           <FaInstagram className="transtion duration-300 hover:text-green-500 cursor-pointer" />
         </Link>
-        <Link href={"https://www.linkedin.com/in/dominikjojczyk/"}>
+        <Link aria-label="Przejdź do profilu Właściciela na linkedin" href={"https://www.linkedin.com/in/dominikjojczyk/"}>
           <FaLinkedinIn className="transtion duration-300 hover:text-green-500 cursor-pointer" />
         </Link>
-        <Link href={"https://github.com/Gho2st"}>
+        <Link aria-label="Przejdź do profilu Właściciela na github" href={"https://github.com/Gho2st"}>
           <FaGithub className="transtion duration-300 hover:text-green-500 cursor-pointer" />
         </Link>
       </div>

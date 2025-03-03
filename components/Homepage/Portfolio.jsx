@@ -132,11 +132,13 @@ export default function Portfolio() {
             <div className="flex space-x-2 justify-end pr-5 mt-2">
               <button
                 onClick={handlePrevious}
+                aria-label="przewiń do poprzedniego projektu"
                 className="flex justify-center items-center bg-gray-300 p-1 hover:bg-gray-200 rounded-full transition duration-300"
               >
                 <IoIosArrowBack className="text-3xl text-gray-500 hover:text-gray-600" />
               </button>
               <button
+                aria-label="przewiń do kolejnego projektu"
                 onClick={handleNext}
                 className="flex justify-center items-center bg-gray-300 p-1 hover:bg-gray-200 rounded-full transition duration-300"
               >
