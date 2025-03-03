@@ -141,7 +141,7 @@ export default function Testimonials() {
         <h2 className="text-3xl leading-snug xl:text-4xl xl:leading-snug font-semibold my-6 dark:text-neutral-200">
           Opinie Klientów o Naszych Usługach Tworzenia Stron i SEO
         </h2>
-        <p className="text-neutral-900 dark:text-neutral-300 xl:text-xl font-light">
+        <p className="text-neutral-900 dark:text-neutral-400 xl:text-lg 2xl:text-xl font-light">
           Podziel się swoją opinią, aby pomóc innym użytkownikom! Twoja opinia
           to wirtualny drogowskaz dla innych.
         </p>
