@@ -13,10 +13,9 @@ import { motion } from "framer-motion";
 export default function MoreInfo() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef(null);
-  const touchStartX = useRef(null); // Pozycja startowa dotyku
-  const touchEndX = useRef(null); // Pozycja końcowa dotyku
+  const touchStartX = useRef(null);
+  const touchEndX = useRef(null);
 
-  // Dane kart
   const cards = [
     {
       icon: <FaSpellCheck className="text-5xl mb-4 text-green-500" />,
@@ -55,7 +54,6 @@ export default function MoreInfo() {
     },
   ];
 
-  // Funkcja przewijania karuzeli
   const scrollToIndex = (index) => {
     if (carouselRef.current) {
       const cardWidth = 320; // Szerokość karty (w-80 = 320px)
@@ -66,21 +64,18 @@ export default function MoreInfo() {
     }
   };
 
-  // Obsługa kliknięcia "dalej"
   const handleNext = () => {
     const nextIndex = (currentIndex + 1) % cards.length;
     setCurrentIndex(nextIndex);
     scrollToIndex(nextIndex);
   };
 
-  // Obsługa kliknięcia "wstecz"
   const handlePrevious = () => {
     const prevIndex = (currentIndex - 1 + cards.length) % cards.length;
     setCurrentIndex(prevIndex);
     scrollToIndex(prevIndex);
   };
 
-  // Obsługa swipe (przeciągania)
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
   };
@@ -93,48 +88,58 @@ export default function MoreInfo() {
     if (!touchStartX.current || !touchEndX.current) return;
 
     const difference = touchStartX.current - touchEndX.current;
-    const swipeThreshold = 50; // Minimalna odległość do uznania swipe
+    const swipeThreshold = 50;
 
     if (difference > swipeThreshold) {
-      // Swipe w lewo - następna karta
       handleNext();
     } else if (difference < -swipeThreshold) {
-      // Swipe w prawo - poprzednia karta
       handlePrevious();
     }
 
-    // Resetowanie pozycji
     touchStartX.current = null;
     touchEndX.current = null;
   };
 
+  // Obsługa drag w Framer Motion
+  const handleDragEnd = (event, info) => {
+    const dragThreshold = 50; // Minimalna odległość do uznania przeciągnięcia
+    if (info.offset.x < -dragThreshold) {
+      handleNext();
+    } else if (info.offset.x > dragThreshold) {
+      handlePrevious();
+    }
+  };
+
   return (
-    <section className="  my-16 xl:my-20 2xl:my-32">
+    <section className="my-16 xl:my-20 2xl:my-32">
       <h2 className="px-6 xl:px-24 2xl:px-44 capitalize leading-snug mb-14 xl:mb-20 text-2xl xl:text-4xl xl:w-3/5 font-semibold xl:leading-snug dark:text-neutral-200">
         Dlaczego warto wybrać DomiWeb?
       </h2>
       <div className="relative">
-        {/* Kontener karuzeli */}
-        <div
+        {/* Kontener karuzeli z drag */}
+        <motion.div
           ref={carouselRef}
-          className="flex xl:pl-24 2xl:pl-44 overflow-x-hidden scrollbar-hide gap-6 snap-x snap-mandatory"
+          className="flex hover:cursor-pointer xl:pl-24 2xl:pl-44 overflow-x-hidden scrollbar-hide gap-6 snap-x snap-mandatory"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
+          drag="x" // Włączamy drag w osi X
+          dragConstraints={{ left: 0, right: 0 }} // Ograniczenie drag, aby nie wychodziło poza kontener
+          onDragEnd={handleDragEnd} // Obsługa zakończenia drag
+          dragElastic={0.2} // Elastyczność drag (im mniejsza wartość, tym bardziej sztywne)
         >
           {cards.map((card, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, x: 20 }}
               animate={{
-                opacity: index === currentIndex ? 1 : 0.35, // Wyróżnienie aktywnej karty
+                opacity: index === currentIndex ? 1 : 0.35,
                 x: 0,
               }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className={`flex-none w-80 rounded-xl   border-green-500 border-4 border-opacity-75 p-6 dark:bg-neutral-950 snap-center ${
+              className={`flex-none w-80 rounded-xl border-green-500 border-4 border-opacity-75 p-6 dark:bg-neutral-950 snap-center ${
                 index === currentIndex ? "scale-105" : "scale-100"
-              }
-                `}
+              }`}
             >
               {card.icon}
               <h3 className="text-lg xl:text-xl font-medium dark:text-neutral-200">
@@ -145,7 +150,7 @@ export default function MoreInfo() {
               </p>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
         <div className="hidden md:flex space-x-2 justify-end pr-5 mt-10">
           <button
             aria-label="przewiń do poprzedniego projektu"
