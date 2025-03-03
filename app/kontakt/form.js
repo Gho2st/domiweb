@@ -84,9 +84,12 @@ export default function Form() {
   return (
     <main>
       <section className="p-6 lg:px-24 2xl:px-44">
-        <h1 className="mx-auto leading-snug mt-6 font-semibold text-4xl capitalize dark:text-neutral-200">
+        <h1 className="mt-6 text-sm xl:text-xl text-gray-500 dark:text-neutral-400 font-semibold">
           Kontakt – Strony i Aplikacje Mobilne w Nowym Sączu
         </h1>
+        <h2 className="mt-6 leading-snug font-semibold text-4xl capitalize  lg:leading-snug 2xl:text-6xl 2xl:leading-snug dark:text-neutral-100">
+          Skontaktuj się z nami!
+        </h2>
         <p className="mt-8 mb-2 text-lg text-neutral-900 dark:text-neutral-400 font-light">
           Zróbmy razem świetny projekt – w Nowym Sączu lub gdziekolwiek w
           Polsce! Masz pomysł, który czeka na realizację? A może chcesz po

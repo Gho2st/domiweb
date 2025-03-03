@@ -37,7 +37,7 @@ function ServiceCard({ icon, title, description, isLeftAligned }) {
 
 export default function Services({ cards }) {
   return (
-    <section className="pb-10 mt-14 xl:px-44">
+    <section className="pb-10 my-32 xl:px-44">
       {cards.map((card, index) => (
         <ServiceCard
           key={index}
