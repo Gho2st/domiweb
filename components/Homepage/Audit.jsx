@@ -6,9 +6,9 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 export default function Audit() {
   return (
     <>
-      <section className="p-6 mb-10 xl:px-24 2xl:px-44 2xl:min-height-[100vh] ">
+      <section className="p-6 my-32 xl:px-24 2xl:px-44 2xl:min-height-[100vh] ">
         <div className="xl:w-4/5">
-          <h2 className="text-2xl leading-snug xl:text-4xl mt-10 font-semibold xl:leading-snug dark:text-neutral-200">
+          <h2 className="text-3xl leading-snug xl:text-4xl mt-10 font-semibold xl:leading-snug dark:text-neutral-200">
             Bezpłatny Audyt SEO Twojej Strony - Sprawdź, Jak Poprawić Widoczność
           </h2>
           <p className="text-neutral-900 dark:text-neutral-400 font-light xl:text-lg 2xl:text-xl mt-6 mb-10">

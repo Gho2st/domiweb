@@ -136,9 +136,9 @@ export default function Testimonials() {
   );
 
   return (
-    <section className="xl:px-24 2xl:px-44">
+    <section className="xl:px-24 2xl:px-44 my-32">
       <div className="xl:w-3/4 px-6">
-        <h2 className="text-2xl leading-snug xl:text-4xl xl:leading-snug font-semibold my-6 dark:text-neutral-200">
+        <h2 className="text-3xl leading-snug xl:text-4xl xl:leading-snug font-semibold my-6 dark:text-neutral-200">
           Opinie Klientów o Naszych Usługach Tworzenia Stron i SEO
         </h2>
         <p className="text-neutral-900 dark:text-neutral-300 xl:text-xl font-light">

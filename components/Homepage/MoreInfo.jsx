@@ -111,8 +111,8 @@ export default function MoreInfo() {
   };
 
   return (
-    <section className="my-16 xl:my-20 2xl:my-32">
-      <h2 className="px-6 xl:px-24 2xl:px-44 capitalize leading-snug mb-14 xl:mb-20 text-2xl xl:text-4xl xl:w-3/5 font-semibold xl:leading-snug dark:text-neutral-200">
+    <section className="my-32 xl:my-20 2xl:my-32">
+      <h2 className="px-6 xl:px-24 2xl:px-44 capitalize leading-snug mb-14 xl:mb-20 text-3xl xl:text-4xl xl:w-3/5 font-semibold xl:leading-snug dark:text-neutral-200">
         Dlaczego warto wybrać DomiWeb?
       </h2>
       <div className="relative">
