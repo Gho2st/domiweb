@@ -109,15 +109,15 @@ export default function MoreInfo() {
   };
 
   return (
-    <section className="p-6 xl:px-24 2xl:px-44 my-16 xl:my-20 2xl:my-32">
-      <h2 className="capitalize leading-snug mb-14 xl:mb-20 text-2xl xl:text-4xl xl:w-3/5 font-semibold xl:leading-snug dark:text-neutral-200">
+    <section className="  my-16 xl:my-20 2xl:my-32">
+      <h2 className="px-6 xl:px-24 2xl:px-44 capitalize leading-snug mb-14 xl:mb-20 text-2xl xl:text-4xl xl:w-3/5 font-semibold xl:leading-snug dark:text-neutral-200">
         Dlaczego warto wybrać DomiWeb?
       </h2>
       <div className="relative">
         {/* Kontener karuzeli */}
         <div
           ref={carouselRef}
-          className="flex overflow-x-hidden scrollbar-hide gap-6 snap-x snap-mandatory"
+          className="flex xl:pl-24 2xl:pl-44 overflow-x-hidden scrollbar-hide gap-6 snap-x snap-mandatory"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
@@ -131,9 +131,10 @@ export default function MoreInfo() {
                 x: 0,
               }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
-              className={`flex-none w-80 rounded-xl  border-green-500 border-4 border-opacity-45 p-6 dark:bg-neutral-950 snap-center ${
+              className={`flex-none w-80 rounded-xl  border-green-500 border-4 border-opacity-75 p-6 dark:bg-neutral-950 snap-center ${
                 index === currentIndex ? "scale-105" : "scale-100"
-              }`}
+              }
+                `}
             >
               {card.icon}
               <h3 className="text-lg xl:text-xl font-medium dark:text-neutral-200">
