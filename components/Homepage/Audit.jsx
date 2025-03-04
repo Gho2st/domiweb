@@ -62,7 +62,7 @@ export default function Audit() {
               </li>
             </ul>
             <Link
-              className="inline-flex gap-2 items-center font-semibold group dark:text-neutral-200"
+              className="inline-flex gap-2 items-center font-semibold group dark:text-neutral-200 w-fit"
               href="/pozycjonowanie"
             >
               Czytaj więcej

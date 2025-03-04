@@ -51,10 +51,10 @@ export default function Home() {
     <>
       <Nav />
       <main className="overflow-hidden">
-        <section className="p-6 xl:px-24 2xl:px-44 py-10 mb-20 ">
+        <section className="p-6 xl:px-24 2xl:px-44 mb-20 ">
           <div className="relative  lg:min-h-[86vh] ">
             <div className="lg:w-3/5">
-              <h1 className="text-sm xl:text-xl text-gray-500 dark:text-neutral-400 font-semibold">
+              <h1 className="text-sm mt-6 xl:text-xl text-gray-500 dark:text-neutral-400 font-semibold">
                 Pozycjonowanie Stron w Nowym Sączu – DomiWeb
               </h1>
               <h2 className="mt-6 font-semibold capitalize text-4xl leading-snug 2xl:text-6xl lg:leading-snug  2xl:leading-snug dark:text-neutral-200  ">
