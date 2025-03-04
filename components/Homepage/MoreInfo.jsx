@@ -64,6 +64,11 @@ export default function MoreInfo() {
     }
   };
 
+  const handleCardClick = (index) => {
+    setCurrentIndex(index);
+    scrollToIndex(index);
+  };
+
   const handleNext = () => {
     const nextIndex = (currentIndex + 1) % cards.length;
     setCurrentIndex(nextIndex);
@@ -131,6 +136,7 @@ export default function MoreInfo() {
           {cards.map((card, index) => (
             <motion.div
               key={index}
+              onClick={() => handleCardClick(index)} // Obsługa kliknięcia
               initial={{ opacity: 0, x: 20 }}
               animate={{
                 opacity: index === currentIndex ? 1 : 0.35,
