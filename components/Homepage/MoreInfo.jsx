@@ -124,7 +124,7 @@ export default function MoreInfo() {
         {/* Kontener karuzeli z drag */}
         <motion.div
           ref={carouselRef}
-          className="flex hover:cursor-pointer xl:pl-24 2xl:pl-44 overflow-x-hidden scrollbar-hide gap-6 snap-x snap-mandatory"
+          className="flex hover:cursor-grabbing xl:pl-24 2xl:pl-44 overflow-x-hidden scrollbar-hide gap-6 snap-x snap-mandatory"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
