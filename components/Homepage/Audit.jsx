@@ -17,8 +17,8 @@ export default function Audit() {
             widoczność i osiągnąć lepsze wyniki w wyszukiwarkach.
           </p>
         </div>
-        <div className="xl:flex xl:justify-center xl:gap-x-24 xl:mt-20 ">
-          <div className="mb-10 xl:w-1/3">
+        <div className="flex flex-col md:flex-row justify-center gap-x-24 md:gap-x-12 xl:gap-x-32 xl:mt-20 ">
+          <div className="mb-10 w-8/12 md:w-1/2 xl:w-1/3 flex justify-center items-center  mx-auto md:mx-0">
             <Image
               src={"/gif.gif"}
               alt="gif przedstawiajacy audyt seo"
@@ -30,31 +30,31 @@ export default function Audit() {
           </div>
           <div className="flex justify-center flex-col">
             <ul className="font-light xl:text-lg text-neutral-900 dark:text-neutral-300">
-              <li className="flex justify-center xl:justify-normal items-center gap-4 mb-5">
+              <li className="flex  xl:justify-normal items-center gap-4 mb-5">
                 <div className="bg-green-500 text-white text-lg w-10 h-10 min-w-[2.5rem] min-h-[2.5rem] rounded-full flex items-center justify-center">
                   1
                 </div>
                 Analiza SEO – Znajdziemy słowa kluczowe i ulepszymy treści.
               </li>
-              <li className="flex justify-center xl:justify-normal items-center gap-4 mb-5">
+              <li className="flex  xl:justify-normal items-center gap-4 mb-5">
                 <div className="bg-green-500 text-white text-lg w-10 h-10 min-w-[2.5rem] min-h-[2.5rem] rounded-full flex items-center justify-center">
                   2
                 </div>
                 Szybkość – Sprawdzimy, jak przyspieszyć Twoją stronę.
               </li>
-              <li className="flex justify-center xl:justify-normal items-center gap-4 mb-5">
+              <li className="flex  xl:justify-normal items-center gap-4 mb-5">
                 <div className="bg-green-500 text-white text-lg w-10 h-10 min-w-[2.5rem] min-h-[2.5rem] rounded-full flex items-center justify-center">
                   3
                 </div>
                 Użyteczność – Poprawimy to, co ułatwi życie użytkownikom.
               </li>
-              <li className="flex justify-center xl:justify-normal items-center gap-4 mb-5">
+              <li className="flex  xl:justify-normal items-center gap-4 mb-5">
                 <div className="bg-green-500 text-white text-lg w-10 h-10 min-w-[2.5rem] min-h-[2.5rem] rounded-full flex items-center justify-center">
                   4
                 </div>
                 Bezpieczeństwo – Zadbamy, by wszystko było pod kontrolą.
               </li>
-              <li className="flex justify-center xl:justify-normal items-center gap-4 mb-8">
+              <li className="flex  xl:justify-normal items-center gap-4 mb-8">
                 <div className="bg-green-500 text-white text-lg w-10 h-10 min-w-[2.5rem] min-h-[2.5rem] rounded-full flex items-center justify-center">
                   5
                 </div>
