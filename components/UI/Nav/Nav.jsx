@@ -65,7 +65,7 @@ export default function Nav() {
           <Link href="/" className="font-semibold text-xl">
             <div className="w-20">
               <Image
-                src={"/logo-light.png"}
+                src={"/logo/1.png"}
                 width={50}
                 height={50}
                 layout="responsive"
@@ -73,7 +73,7 @@ export default function Nav() {
                 className="block dark:hidden"
               />
               <Image
-                src={"/logo-dark.png"}
+                src={"/logo/2.png"}
                 width={50}
                 height={50}
                 layout="responsive"
