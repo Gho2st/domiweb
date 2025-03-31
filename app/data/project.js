@@ -16,6 +16,22 @@ const projects = [
     image: "/portfolio/wesolewygibasy/wesolewygibasy.png",
   },
   {
+    id: "muszynova",
+    title: "Muszynova - Wielojęzyczna Strona Parku Rozrywki",
+    header:
+      "Nowoczesna, wielojęzyczna strona dla parku rozrywki z animacjami i optymalizacją SEO, stworzona z myślą o globalnym zasięgu.",
+    image: "/portfolio/muszynova/muszynova.png",
+    link: "https://www.muszynova.pl/",
+    review:
+      "Współpraca z Domiweb to czysta przyjemność! Stworzyli dla nas stronę, która nie tylko świetnie wygląda, ale też działa bez zarzutu w 5 językach. Dzięki ich pracy przyciągamy więcej klientów z różnych krajów. Polecam z całego serca!",
+    name: "Marzena Mikulec",
+    company: "Muszynova",
+    target:
+      "Stworzenie responsywnej, wielojęzycznej strony zoptymalizowanej pod SEO, która przyciąga turystów z różnych krajów i zapewnia łatwą nawigację.",
+    description:
+      "Projekt obejmował stworzenie nowoczesnej strony dla parku rozrywki Muszynova, wykorzystując Next.js i next-intl do obsługi 5 języków (pl, en, sk, de, ua). Zastosowano Framer Motion do płynnych animacji, takich jak lewitujące logo, oraz zoptymalizowano stronę pod kątem SEO i wydajności za pomocą Lighthouse (wyniki 90+ w kategoriach Performance, Accessibility, SEO). Wdrożono dynamiczną sitemapę z tagami hreflang dla lepszego indeksowania w Google.",
+  },
+  {
     id: "hukimuki",
     title: "Pub & Club Huki Muki",
     description:
